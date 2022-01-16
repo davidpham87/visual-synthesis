@@ -13,4 +13,8 @@ pom.xml.asc
 .nrepl-port
 .cpcache/
 .clj-kondo/*
-.lsp/*  
+.lsp/*
+resources
+node_modules/*
+.shadow-cljs/*
+public/js/*

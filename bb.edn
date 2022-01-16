@@ -1,3 +1,46 @@
-{:tasks
- {dev
-  (shell (str "npx shadow-cljs watch app -A:dev"))}}
+{:paths ["scripts"]
+ :min-bb-version "0.4.0"
+ :tasks
+ {:requires ([babashka.fs :as fs]
+             [postcss])
+
+  dev:postcss
+  {:doc "Postcss watch mode"
+   :task (do
+           (println "Postcss: watching")
+           (postcss/watch! "src/css/app.css" "public/css/app.css"))}
+
+  release:postcss
+  {:doc "Postcss Release mode"
+   :task (do
+           (println "Postcss: watching")
+           (postcss/release! "src/css/app.css" "output/visual-synthesis/css/app.css"))}
+
+  dev:shadow
+  {:doc "Shadow-cljs watch mode"
+   :task (do
+           (println "Running shadow-cljs watch")
+           (shell (str "npx shadow-cljs watch app -A:dev")))}
+
+  release:shadow
+  {:doc "Shadow-cljs Release app "
+   :task (shell (str "npx shadow-cljs release app"))}
+
+  dev:backend
+  {:doc "Run a clojure repl"
+   :task (clojure "-M:clj:nrepl")}
+
+  -dev {:depends [dev:shadow dev:postcss]}
+
+  dev
+  {:doc "Run shadow-cljs in development mode."
+   :task
+   (do
+     (println "Runs dev mode")
+     (run '-dev {:parallel true}))}
+
+  -release {:depends [release:postcss release:shadow]}
+  release
+  {:doc "Advanced compilation of the app project."
+   :task
+   (run '-release {:parallel true})}}}

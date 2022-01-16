@@ -1,0 +1,187 @@
+[{:study
+  "A serious game to parameterize Bayesian networks: Validation in a case study in northeastern Madagascar",
+  :study-id "Celio, 2019",
+  :study-area-map "map_celio2019.jpg",
+  :journal "Environmental Modelling & Software",
+  :doi "10.1016/j.envsoft.2019.104525",
+  :year 2019,
+  :project "Telecoupling",
+  :authors
+  "Enrico Celio , R. Ntsiva N. Andriatsitohaina, Julie G. Zaehringer"}
+ {:study
+  "Aboveground carbon stocks in Madagascar’s vanilla production landscape – exploring rehabilitation through agroforestry in the light of land-use history",
+  :study-id "Soazafy, 2021",
+  :journal "Applied Geography",
+  :doi "10.1016/j.gecco.2021.e01853",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Marie Rolande Soazafy, Kristina Osen, Annemarie Wurz, Estelle Raveloaritiana, Dominic Andreas Martin, Hery Lisy Tiana Ranarijaona, Dirk Holscher"}
+ {:study
+  "Beyond deforestation monitoring in conservation hotspots: Analysing landscape mosaic dynamics in north-eastern Madagascar",
+  :study-id "Zaehringer, 2021a",
+  :study-area-map "map_zaehringer2021.jpg",
+  :journal "Applied Geography",
+  :doi "10.1016/j.apgeog.2015.12.009",
+  :year 2016,
+  :project "Telecoupling",
+  :authors
+  "Julie G. Zaehringer, Cornelia Hett, Bruno Ramamonjisoa, Peter Messerli "}
+ {:study
+  "Bird diversity and endemism along a land?use gradient in Madagascar: The conservation value of vanilla agroforests",
+  :study-id "Martin, 2021a",
+  :journal "Biotropica",
+  :doi "10.1111/btp.12859",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Dominic Andreas Martin, Rouvah Andriafanomezantsoa, Saskia Dröge, Kristina Osen, Eric Rakotomalala, Annemarie Wurz, Aristide Andrianarimisa, Holger Kreft"}
+ {:study
+  "Capabilities Under Telecoupling: Human Well-Being Between Cash Crops and Protected Areas in North-Eastern Madagascar",
+  :study-id "Llopis, 2020",
+  :journal "Frontiers in Sustainable Food Systems",
+  :doi "10.3389/fsufs.2019.00126",
+  :year 2020,
+  :project "Telecoupling",
+  :authors
+  "Jorge C. Llopis, Clara L. Diebold, Flurina Schneider, Paul C. Harimalala, Laby Patrick, Peter Messerli, Julie G. Zaehringer"}
+ {:study
+  "Decreasing predation rates and shifting predator compositions along a land?use gradient in Madagascar's vanilla landscapes",
+  :study-id "Schwab, 2021",
+  :journal "Journal of Applied Ecology",
+  :doi "10.1111/1365-2664.13766",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Dominik Schwab, Annemarie Wurz, Ingo Grass, Anjaharinony A. N. A. Rakotomalala, Kristina Osen, Marie Rolande Soazafy, Dominic A. Martin, Teja Tscharntke"}
+ {:study
+  "Effects of protected area establishment and cash crop price dynamics on land use transitions 1990–2017 in north-eastern Madagascar",
+  :study-id "Llopis, 2019",
+  :study-area-map "map_llopis2019.jpg",
+  :journal "Journal of Land Use Science",
+  :doi "10.1080/1747423X.2019.1625979",
+  :year 2019,
+  :project "Telecoupling",
+  :authors
+  "Jorge C. Llopis, Paul C. Harimalala, Roger Bär, Andreas Heinimann, Zo Hasina Rabemananjara, Julie G. Zaehringe"}
+ {:study
+  "Exploring farmers' agrobiodiversity management practices and knowledge in clove agroforests of Madagascar",
+  :study-id "Mariel, 2021",
+  :journal "People and Nature",
+  :doi "10.1002/pan3.10238",
+  :year 2021,
+  :project "Other",
+  :authors
+  "Juliette Mariel, Stéphanie M. Carrière, Eric Penot, Pascal Danthu, Verohanitra Rafidison, Vanesse Labeyrie"}
+ {:study
+  "Identifying agents of change for sustainable land governance",
+  :study-id "Andriamihaja, 2021",
+  :study-area-map "map_andriamihaja2021.jpg",
+  :journal "Land Use Policy",
+  :doi "10.1016/j.landusepol.2020.104882",
+  :year 2021,
+  :project "Telecoupling",
+  :authors
+  "O. Ravaka Andriamihaja, Florence Metz , Julie G. Zaehringer , Manuel Fischer, Peter Messerli,"}
+ {:study
+  "Land Competition under Telecoupling: Distant Actors’ Environmental versus Economic Claims on Land in North-Eastern Madagascar",
+  :study-id "Andriamihaja, 2019",
+  :study-area-map "map_andriamihaja2019.jpg",
+  :journal "Sustainability",
+  :doi "10.3390/su11030851",
+  :year 2019,
+  :project "Telecoupling",
+  :authors
+  "O. Ravaka Andriamihaja, Florence Metz, Julie G. Zaehringer, Manuel Fischer, Peter Messerli"}
+ {:study
+  "Land?use history determines stand structure and tree diversity in vanilla agroforests of northeastern Madagascar",
+  :study-id "Osen, 2021",
+  :journal "Applied Vegetation Science",
+  :doi "10.1111/avsc.12563",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Kristina Osen, Marie Rolande Soazafy, Dominic Andreas Martin, Annemarie Wurz, Adriane März, Hery Lisy Tiana Ranarijaona, Dirk Hölscher"}
+ {:study
+  "Land?use intensification increases richness of native and exotic herbaceous plants, but not endemics, in Malagasy vanilla landscapes",
+  :study-id "Raveloaritiana, 2021",
+  :journal "Diversity and Distributions",
+  :doi "10.1111/ddi.13226",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Estelle Raveloaritiana, Annemarie Wurz, Ingo Grass, Kristina Osen, Marie Rolande Soazafy, Dominic A. Martin, Lucien Faliniaina, Nantenaina H. Rakotomalala, Maria S. Vorontsova, Teja Tscharntke, Bakolimalala Rakouth"}
+ {:study
+  "Listening to a changing landscape: Acoustic indices reflect bird species richness and plot-scale vegetation structure across different land-use types in north-eastern Madagascar",
+  :study-id "Dröge, 2021",
+  :journal "Ecological Indicators",
+  :doi "10.1016/j.ecolind.2020.106929",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Saskia Droge, Dominic Andreas Martin, Rouvah Andriafanomezantsoa, Zuzana Burivalova, Thio Rosin Fulgence, Kristina Osen, Eric Rakotomalala, Dominik Schwab, Annemarie Wurz, Torsten Richter, Holger Kreft"}
+ {:study
+  "Remote sensing combined with social-ecological data: The importance of diverse land uses for ecosystem service provision in north-eastern Madagascar",
+  :study-id "Zaehringer, 2021b",
+  :journal "Ecosystem Services",
+  :doi "10.1016/j.ecoser.2017.04.004",
+  :year 2017,
+  :project "Telecoupling",
+  :authors
+  "J.G. Zaehringer, G. Schwilch, O.R. Andriamihaja, B. Ramamonjisoa, P. Messerli"}
+ {:study
+  "Revealing Regional Deforestation Dynamics in North-Eastern Madagascar—Insights from Multi-Temporal Land Cover Change Analysis",
+  :study-id "Zaehringer, 2015",
+  :study-area-map "map_zaehringer2015.jpg",
+  :journal "Land",
+  :doi "10.3390/land4020454",
+  :year 2015,
+  :project "Telecoupling",
+  :authors "Julie G. Zaehringer, Sandra Eckert, Peter Messerli"}
+ {:study
+  "Shade-Tree Rehabilitation in Vanilla Agroforests is Yield Neutral and May Translate into Landscape-Scale Canopy Cover Gains",
+  :study-id "Martin, 2021b",
+  :journal "Ecosystems",
+  :doi "10.1007/s10021-020-00586-5",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Dominic Andreas Martin, Annemarie Wurz, Kristina Osen, Ingo Grass, Dirk Hölscher, Thorien Rabemanantsoa, Teja Tscharntke, Holger Kreft"}
+ {:study "Spider traps amphibian in northeastern Madagascar",
+  :study-id "Fulgulence, 2021",
+  :journal "Ecology and Evolution",
+  :doi "10.1002/ece3.7102",
+  :year 2021,
+  :project "Diversity Turn",
+  :authors
+  "Thio Rosin Fulgence, Dominic Andreas Martin, Holger Kreft, Fanomezana Mihaja Ratsoavina, Aristide Andrianarimisa"}
+ {:study
+  "The Persistence of Self-Provisioning Among Smallholder Farmers in Northeast Madagascar",
+  :study-id "Turner, 2015",
+  :journal "Human Ecology",
+  :doi "10.1007/s10745-015-9791-8",
+  :year 2015,
+  :project "Other",
+  :authors "Rheyna Laney, B. L. Turner"}
+ {:study
+  "Year-to-year ecosystem services supply in conservation contexts in north-eastern Madagascar: Trade-offs between global demands and local needs",
+  :study-id "Llopis, 2021",
+  :study-area-map "map_llopis2021.jpg",
+  :journal "Ecosystem Services",
+  :doi "10.1016/j.ecoser.2021.101249",
+  :year 2021,
+  :project "Telecoupling",
+  :authors
+  "Jorge C. Llopis, Jonas F. Chastonay, Franziska C. Birrer, Roger Bär, R. Ntsiva N. Andriatsitohaina, Peter Messerli, Andreas Heinimann, Julie G. Zaehringer"}
+ {:study
+  "Conservation versus local livelihoods? Sustainable development challenges in Madagascar",
+  :study-id "Zaehringer, 2018",
+  :year 2018,
+  :project "Telecoupling",
+  :authors "Julie G. Zaehringer"}
+ {:study
+  "Perspectives on vanilla farming in the SAVA Region (north-eastern Madagascar): The Diversity Turn Baseline Study (DTBS)",
+  :study-id "Hänke, 2018",
+  :project "Diversity Turn",
+  :authors
+  "Hendrik Hänke, Jan Barkmann, Lloyd Blum, Yvonne Franke, Dominic A. Martin, Janna Niens, Kristina Osen, Viviana Uruena, S. Annette Witherspoon, Annemarie Wurz"}]

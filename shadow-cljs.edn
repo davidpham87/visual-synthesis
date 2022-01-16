@@ -17,8 +17,7 @@
     :modules
     {:main {:init-fn wyssacademy.visual-synthesis.core/main
             :preloads [day8.re-frame-10x.preload
-                       re-frame-flow.preload]
-            :depends-on #{:shared}}}
+                       re-frame-flow.preload]}}
 
     :compiler-options
     {:closure-warnings {:global-this :off}
