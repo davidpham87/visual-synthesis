@@ -1,0 +1,47 @@
+{:deps {:aliases [:cljs]}
+ :nrepl
+ {:port 3334
+  :middleware
+  [refactor-nrepl.middleware/wrap-refactor]}
+ :dev-http {8080 "public"}
+ :builds
+ {:app
+  {:target :browser
+   :asset-path "js"
+   :module-loader true
+   :modules {:main {:init-fn wyssacademy.visual-synthesis.core/main}}
+   :closure-defines {}
+
+   :dev
+   {:output-dir "public/js"
+    :modules
+    {:main {:init-fn wyssacademy.visual-synthesis.core/main
+            :preloads [day8.re-frame-10x.preload
+                       re-frame-flow.preload]
+            :depends-on #{:shared}}}
+
+    :compiler-options
+    {:closure-warnings {:global-this :off}
+     :closure-defines
+     {re-frame.trace.trace-enabled? true
+      "re_frame.trace.trace_enabled_QMARK_" true
+      "day8.re_frame.tracing.trace_enabled_QMARK_" true
+      re-frame-flow.trace.dispatch-enabled? true}}}
+
+   :release
+   {:output-dir "output/visual_synthesis/js"
+    :compiler-options
+    {:output-feature-set :es6
+     :infer-externs :auto
+     :optimizations :advanced
+     :externs ["externs/material-ui.ext.js"
+               "datascript/externs.js"]}}
+
+   :devtools
+   {:browser-inject :main
+    :autoload true
+    :loader-mode :eval
+    :repl-pprint true
+    :http-root "public"
+    :preloads [shadow.remote.runtime.cljs.browser
+               devtools.preload]}}}}

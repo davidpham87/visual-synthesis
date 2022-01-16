@@ -1,0 +1,3 @@
+{:tasks
+ {dev
+  (shell (str "npx shadow-cljs watch app -A:dev"))}}
