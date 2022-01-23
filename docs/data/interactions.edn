@@ -1,0 +1,259 @@
+[{:link-description
+  "Old-growth forests have higher species richness across most taxa, and are especially important for endemic and threatened species",
+  :link-name "Link_1",
+  :out "Protected old-growth forest",
+  :effect "+",
+  :in "Biodiversity",
+  :studies
+  [{:study "Raveloaritiana, 2021",
+    :explanation
+    "Importance of old-growth forest for maintaining herbaceous species that are intolerant to disturbance / land-use intensification or transformation of old-growth forests into agricultural lands causes loss of herbaciousendemic species",
+    :rank 1}
+   {:study "Martin, 2021a",
+    :explanation
+    "Old growth forest have the highest bird species diversity (overall and endemic) /  old-growth forest had many unique species and distinct community assemblages /  threatened and near-threatened species most frequently in\nold-growth forest.",
+    :rank 2}]}
+ {:link-description
+  "Forest fragments have low species richness across most taxa, but remain an important habitat for endemic species and forest dependent tree species",
+  :link-name "Link_2",
+  :out nil,
+  :effect "-",
+  :in nil,
+  :studies
+  [{:study "Raveloaritiana, 2021",
+    :explanation
+    "Forest fragments had the lowest  genreal herbacious species richnes but provides important habitat  for herbaceous endemic species",
+    :rank 1}
+   {:study "Osen, 2021",
+    :explanation
+    "Forest fragments have the strongest tree diversity after old growth forest",
+    :rank 2}
+   {:study "Martin, 2021b",
+    :explanation
+    "The small size, the high level of wood extraction, and abundant disturbances in studied forest fragments, caused strong losses in bird diversity compared to the contiguous old-growth  forest. ",
+    :rank 3}]}
+ {:link-description
+  "Although transforming remaining natural forests into forest-derived vanilla agroforests can already be considered unfavourable in terms of biodiversity conservation, these remain important to endemic species conservation",
+  :link-name "Link_3",
+  :out nil,
+  :effect "--",
+  :in nil,
+  :studies
+  [{:study "Martin, 2021b",
+    :explanation
+    "Important role of forest-derived vanilla agroforests for endemic birds",
+    :rank 1}
+   {:study "Schwab, 2021",
+    :explanation
+    "Transforming remaining natural forests into forest-derived vanilla agroforests, even without the use of fire, can already be considered unfavourable in terms of biodiversity conservation",
+    :rank 2}
+   {:study "f", :explanation nil, :rank 3}]}
+ {:link-description
+  "Rice paddies indicate a particilularly low endemic species richness but a particularly high nativeand exotic species richness and therefor play an important role for  certain specialized wetland species",
+  :link-name "Link_4",
+  :out nil,
+  :effect "++",
+  :in nil,
+  :studies
+  [{:study "Raveloaritiana, 2021",
+    :explanation
+    "Rice paddies had the highest richness of native herbaceous species and different herbaceous species composition compared to any other land-use types, but lowet endemic herbacious species:  important reservoir of different native herbaceous plan",
+    :rank 1}
+   {:study "Martin, 2021a",
+    :explanation
+    "Although rice paddies had the lowest bird species richness (especialy endemic), they might play an important role for certain specialized wetland species, as a total of six species were exclusively found in them",
+    :rank 2}]}
+ {:link-description
+  "Old-growth forests are particularly important for the regulation of atmospheric carbon",
+  :link-name "Link_5",
+  :out nil,
+  :effect "+",
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation
+    "Old-growth forests provided the highest aboveground carbon stocks (ACS)",
+    :rank 1}]}
+ {:link-description
+  "Forest-derived vanilla agroforest as human-dominated landscapes are good atmospheric carbon stock",
+  :link-name "Link_6",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation
+    "Forest-derived agroforests can play an important role to maintain ACS through large-statured native and endemic tree species / Large diameter tree in forest-derived  agroforest able a high ACS altough lower stem density / maintaining large-diameter trees or promoting their growth would lead to ACS increases in both types of agroforests / Higher ACS role than fallow derived vanilla agroforests",
+    :rank 1}
+   {:study "Martin, 2021b",
+    :explanation
+    "Vanilla agroforests can act as permanent carbon stock reservoirs because once they are successfully established, vanilla sales provide considerable income, making it unprofitable to abandon or clear-cut the agroforests ",
+    :rank 2}]}
+ {:link-description
+  "Slash-and-burn shifting cultivation for hill rice production are a major driver of deforestation and could therefore raise carbon stocks at the landscape level",
+  :link-name "Link_7",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Llopis, 2020",
+    :explanation
+    "Slash-and-burn shifting cultivation for hill rice production are a major driver of deforestation",
+    :rank 1}
+   {:study " (Mertz et al., 2009) in Zaehringer et al.",
+    :explanation
+    "Long-fallow shifting cultivation could raise carbon stocks at the landscape level",
+    :rank 2}]}
+ {:link-description
+  "Biodiversity influences aboveground carbon stocks capacities",
+  :link-name "Link_8",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation
+    "Species composition, diversity, and structure result in ACS differences.",
+    :rank 1}]}
+ {:link-description "Importance of trees as aboveground carbon stocks",
+  :link-name "Link_9",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation
+    "The largest share of aboveground carbon stocks (ACS) in tropical forests is contained in trees / Stem diameter and stem density had comparable effects on ACS in agroforests, whereas wood density played a minor role / Apart from their outstanding role for carbon stocks, large-sized trees within landscapes represent keystone structures and play unique ecological roles which cannot be fully compensated by younger and smaller trees, making the global decline of large-sized trees even more worrying / Variation in ACS mainly influenced by mean stem diameter and stem density per plot / the density of large trees predominantly explains ACS variation in pantropical forests ",
+    :rank 1}]}
+ {:link-description
+  "Forest fragments are commonly used to harvest wood and other resources",
+  :link-name "Link_10",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation
+    "Forest fragments are commonly used to harvest wood and other resources.",
+    :rank 1}]}
+ {:link-description
+  "Forest-derived vanilla as an important cash crop source",
+  :link-name "Link_11",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation "Vanilla as a major cash crop",
+    :rank 1}]}
+ {:link-description
+  "Fallow-derived vanilla as an important cash crop source",
+  :link-name "Link_12",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation "Vanilla as a major cash crop",
+    :rank 1}]}
+ {:link-description "Forest fragments keep predation rates high",
+  :link-name "Link_13",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Schwab, 2021",
+    :explanation
+    "Disturbance in forest fragment causes a general predation stimulation (especially ants)",
+    :rank 1}]}
+ {:link-description
+  "Forest derived vanilla plots as human-modified land have the strongest potential of conserving predation as an ecosystem function",
+  :link-name "Link_14",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Schwab, 2021",
+    :explanation
+    "Forest-derived vanilla plots reduce the predation succes of arborealarthropod predators due to clearing of understorey vegetation / Vanilla agroforestry have the potential of conserving predation as an ecosystem function",
+    :rank 1}]}
+ {:link-description
+  "Rice paddy indicate a particularly low predation rate",
+  :link-name "Link_15",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Schwab, 2021",
+    :explanation
+    "Rice paddy indicate a particularly low predation rate",
+    :rank 1}]}
+ {:link-description "Predation is strongly influenced by tree density",
+  :link-name "Link_16",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Schwab, 2021",
+    :explanation
+    "Stem density and vegetation density are the most important local characteristics that are driving predation pressure",
+    :rank 1}]}
+ {:link-description
+  "Whilst the PAs appear to have a significant positive effect on local communities well-being by helping to secure a healthy environment, these carry strong damaging impacts on populations most reliant on forest land for their livelihoods.",
+  :link-name "Link_17",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Llopis, 2020",
+    :explanation
+    "The only positive impact of the PAs on local well-being that participants could identify was that of providing a healthy environment / Negative impacts of PA on well-being : most relevant refers to the impact of the PA on people�s ability to secure food, difficulties in accessing land / While the PAs appeared to have had a significant positive effect in helping to secure a healthy environment for local communities, these very dynamics had severe detrimental effects on populations most reliant on forest land for their livelihoods.",
+    :rank 1}
+   {:study "Zaehringer, 2018",
+    :explanation
+    "PA has inevitably led to Malagasy farmers and families losing land and resource access to the vast protected areas",
+    :rank 2}]}
+ {:link-description
+  "Whilst surge in cash crop prices is advantageous for people engaged in commercila agroculture,  this dynamic has a negative impact  on the households not engaged in cash crop production ",
+  :link-name "Link_18",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Llopis, 2020",
+    :explanation
+    "The vanilla price increase had a positive influence on those individuals engaged in cash crop production, which, through increased earnings, improved their ability to meet material needs and plan their life, while also increasing their social status, negative side : cost of living, influence on security /  Whilst the ongoing surge in cash crop prices allowes to better satisfiy some material and status well-being components for people engaged in commercila agroculture,  this dynamic had a strong negative impact on social relations, security, and inflation for the households not engaged in cash crop production ",
+    :rank 1}]}
+ {:link-description
+  "Tree composition/structure of trees influences biodiversity",
+  :link-name "Link_19",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Raveloaritiana, 2021",
+    :explanation
+    "Canopy closure reduces native and exotic species richness",
+    :rank 1}]}
+ {:link-description
+  "Shifting cultivation has a big role as a food security safety",
+  :link-name "Link_20",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Llopis, 2020",
+    :explanation
+    "The role of shifting cultivation as a food security safety net in the face of the price volatility of cash crops has caused it's increase",
+    :rank 1}]}
+ {:link-description
+  "Herbacious biodiversity has a strong impact on animal biodiversity",
+  :link-name "Link_21",
+  :out nil,
+  :effect nil,
+  :in nil,
+  :studies
+  [{:study "Soazafy, 2021",
+    :explanation
+    "Even small threats to plant diversity can have direct effects on community diversity, structure, and function of mammals and birds ",
+    :rank 1}]}]
