@@ -69,3 +69,37 @@
          children)
    [:footer footer
     [:cite cite]]])
+
+(sort {:lg "text-lg",
+       :sm "text-sm",
+       :8xl "text-8xl",
+       :6xl "text-6xl",
+       :xs "text-xs",
+       :3xl "text-3xl",
+       :4xl "text-4xl",
+       :2xl "text-2xl",
+       :9xl "text-9xl",
+       :7xl "text-7xl",
+       :xl "text-xl",
+       :base "text-base",
+       :5xl "text-5xl"})
+
+(def size->class {:xs "text-xs"
+                  :sm "text-sm"
+                  :base "text-base"
+                  :lg "text-lg"
+                  :xl "text-xl"
+                  :2xl "text-2xl"
+                  :3xl "text-3xl"
+                  :4xl "text-4xl"
+                  :5xl "text-5xl"
+                  :6xl "text-6xl"
+                  :7xl "text-7xl"
+                  :8xl "text-8xl"
+                  :9xl "text-9xl"})
+
+(defn icon [{:keys [name size] :as m}]
+  [:span (update m :class (fnil into [])
+                 ["material-icons"  "leadine-none"
+                  (size->class size "text-base")])
+   name])

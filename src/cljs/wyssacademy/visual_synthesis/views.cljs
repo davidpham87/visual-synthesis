@@ -10,6 +10,7 @@
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
    [wyssacademy.visual-synthesis.components.table :as wvct]
+   [wyssacademy.visual-synthesis.components.typography :refer (icon)]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
    [wyssacademy.visual-synthesis.landscape :as wvl]
@@ -76,14 +77,11 @@
 (defn details []
   [:div.w-full
    [:> card {:class ["h-full"]}
-    [:> card-header {:size :sm :color :cyan}
-     [:h2.text-3xl "Detail"]]
+    [:> card-header {:size :sm :color :cyan :icon-only true}
+     [icon {:size :9xl :name "view_list"}]]
     [:> card-body {:class ["h-full"]}
-     [:div "Details"]
-     [wvcl/list
-      [wvcl/list-item "Hello"]
-      [wvcl/list-item "World"]]
-     [:> button {:color :red} "Details"]]]])
+     [:div "Details with studies for the interactions"]
+     [:> button {:color :red} "Source"]]]])
 
 (def images
   {:biodiversity
