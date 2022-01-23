@@ -1,5 +1,6 @@
 (ns wyssacademy.visual-synthesis.subs
   (:require
+   [wyssacademy.visual-synthesis.dev :as dev]
    [re-frame.core :refer (reg-sub)]))
 
 (reg-sub
@@ -13,3 +14,17 @@
 (reg-sub
  ::ds
  (fn [db _] (:ds db)))
+
+(reg-sub
+ ::data
+ (fn [db _] (:data db {})))
+
+(reg-sub
+ ::interactions
+ :<- [::data]
+ (fn [m _] (:interactions m)))
+
+
+(comment
+  (dev/log [::interactions])
+  )

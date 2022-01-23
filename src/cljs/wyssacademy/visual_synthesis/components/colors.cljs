@@ -1,0 +1,23 @@
+(ns wyssacademy.visual-synthesis.components.colors)
+
+(def colors
+  {:amber "text-amber-700"
+   :blue "text-blue-700"
+   :blue-gray "text-blue-gray-700"
+   :brown "text-brown-700"
+   :cyan "text-cyan-700"
+   :deep-orange "text-deep-orange-700"
+   :deep-purple "text-deep-purple-700"
+   :gray "text-gray-700"
+   :green "text-green-700"
+   :indigo "text-indigo-700"
+   :light-blue "text-light-blue-700"
+   :light-green "text-light-green-700"
+   :lime "text-lime-700"
+   :orange "text-orange-700"
+   :pink "text-pink-700"
+   :purple "text-purple-700"
+   :red "text-red-700"
+   :teal "text-teal-700"
+   :white "text-gray-200"
+   :yellow "text-yellow-600"})

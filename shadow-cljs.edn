@@ -28,7 +28,7 @@
       re-frame-flow.trace.dispatch-enabled? true}}}
 
    :release
-   {:output-dir "output/visual_synthesis/js"
+   {:output-dir "output/visual-synthesis/js"
     :compiler-options
     {:output-feature-set :es6
      :infer-externs :auto

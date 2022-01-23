@@ -1,4 +1,4 @@
-{:paths ["src/cljs" "src/cljc"]
+{:paths ["src/cljs" "src/cljc" "src/clj"]
 
  :jvm-opts ["-Xmx1G"]
 
