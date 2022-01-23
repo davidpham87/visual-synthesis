@@ -5,3 +5,8 @@
 body {
     overflow-x: hidden
 }
+
+.react-flow__arrowhead > polyline {
+    stroke: #fff1f2;
+    fill: #fff1f2;
+}

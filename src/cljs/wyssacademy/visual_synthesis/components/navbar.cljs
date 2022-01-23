@@ -18,5 +18,7 @@
       [:div {:class "flex flex-col z-50 lg:flex-row lg:items-center"}
        [:> mt-nav-link {:ripple "light"}
         [link "Visual Synthesis"]]
-       [:> mt-nav-link { :ripple "light"}
-        [link  "Intro"]]]]]]])
+       [:> mt-nav-link {:ripple "light"}
+        [link  "Intro"]]
+       [:> mt-nav-link {:ripple "light"}
+        [link  "About"]]]]]]])

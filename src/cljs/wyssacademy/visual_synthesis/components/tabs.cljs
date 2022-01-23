@@ -53,7 +53,7 @@
                               "text-white" "transition-all" "duration-300"]
                        active? (into ["bg-white" "bg-opacity-20"])
                        true identity)}
-                    (merge {:role :tablist} m))]
+                    (merge {:role :tablist} (dissoc m :active?)))]
     children)])
 
 (defn tabs [{:keys [choices id]} & children]
@@ -63,12 +63,13 @@
        [tab
         ^{:key @active}
         [tab-list {:class ["bg-teal-700" "shadow-lg-teal"]}
-         (for [{:keys [key value label] :as c} choices
-               :let [tab-key (or (:id c) key value)]]
-           ^{:key [tab-key]}
-           [tab-item {:active? (= tab-key @active)
-                      :on-click #(rf/dispatch [::set-tab id tab-key])}
-            label])]]
+         (into [:<>]
+               (for [{:keys [key value label] :as c} choices
+                     :let [tab-key (or (:id c) key value)]]
+                 ^{:key [tab-key]}
+                 [tab-item {:active? (= tab-key @active)
+                            :on-click #(rf/dispatch [::set-tab id tab-key])}
+                  label]))]]
        children))))
 
 (comment

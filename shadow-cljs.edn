@@ -33,8 +33,7 @@
     {:output-feature-set :es6
      :infer-externs :auto
      :optimizations :advanced
-     :externs ["externs/material-ui.ext.js"
-               "datascript/externs.js"]}}
+     :externs ["datascript/externs.js"]}}
 
    :devtools
    {:browser-inject :main

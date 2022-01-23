@@ -1,5 +1,6 @@
 (ns wyssacademy.visual-synthesis.db
   (:require
+   [reagent.core :as reagent]
    [datascript.core :as d]))
 
 (def schema
@@ -12,6 +13,8 @@
 (def default-db
   {:project "visual-synthesis"
    :ds {:interaction empty-ds}
+   :wyssacademy.visual-synthesis.components.tabs/tab
+   {:wyssacademy.visual-synthesis.views/info :landscape-elements}
    :user-input {}
    :ui-states {}})
 
@@ -62,6 +65,17 @@
 (def categories-keys (mapv :key categories))
 (def categories-map (reduce (fn [m {:keys [key label]}]
                               (assoc m key label)) {} categories))
+
+(def categories-react-flow
+  (mapv (fn [m] {:id (name (or (:key m) "unfounded"))
+                 :type :image
+                 :data {:key (:key m)
+                        :src (-> m :image :src)
+                        :zoom (-> m :image :style :zoom)}
+                 :position {:x (+ 20 (rand-int 800))
+                            :y (+ 200 (rand-int 200))}})
+        categories))
+
 
 (comment
   (count categories)

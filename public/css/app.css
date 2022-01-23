@@ -623,6 +623,9 @@ select {
     max-width: 1536px;
   }
 }
+.invisible {
+  visibility: hidden;
+}
 .fixed {
   position: fixed;
 }
@@ -638,10 +641,6 @@ select {
 .z-50 {
   z-index: 50;
 }
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
 .-mx-3 {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -653,6 +652,10 @@ select {
 .-my-2 {
   margin-top: -0.5rem;
   margin-bottom: -0.5rem;
+}
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -693,6 +696,9 @@ select {
 .list-item {
   display: list-item;
 }
+.hidden {
+  display: none;
+}
 .h-full {
   height: 100%;
 }
@@ -701,9 +707,6 @@ select {
 }
 .h-36 {
   height: 9rem;
-}
-.max-h-full {
-  max-height: 100%;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -726,14 +729,11 @@ select {
 .max-w-full {
   max-width: 100%;
 }
-.flex-auto {
-  flex: 1 1 auto;
-}
 .flex-1 {
   flex: 1 1 0%;
 }
-.flex-grow {
-  flex-grow: 1;
+.flex-auto {
+  flex: 1 1 auto;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -743,9 +743,6 @@ select {
 }
 .flex-col {
   flex-direction: column;
-}
-.flex-wrap {
-  flex-wrap: wrap;
 }
 .items-end {
   align-items: flex-end;
@@ -848,10 +845,6 @@ select {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -901,13 +894,13 @@ select {
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -1059,6 +1052,11 @@ body {
     overflow-x: hidden
 }
 
+.react-flow__arrowhead > polyline {
+    stroke: #fff1f2;
+    fill: #fff1f2;
+}
+
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1076,9 +1074,17 @@ body {
 
 @media (min-width: 640px) {
 
+  .sm\:invisible {
+    visibility: hidden;
+  }
+
   .sm\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:flex-wrap {
@@ -1097,12 +1103,12 @@ body {
 
 @media (min-width: 768px) {
 
-  .md\:flex-wrap {
-    flex-wrap: wrap;
+  .md\:items-end {
+    align-items: flex-end;
   }
 
-  .md\:flex-nowrap {
-    flex-wrap: nowrap;
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:px-10 {
@@ -1112,6 +1118,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:visible {
+    visibility: visible;
+  }
 
   .lg\:-mx-8 {
     margin-left: -2rem;
@@ -1138,7 +1148,18 @@ body {
 
 @media (min-width: 1280px) {
 
+  .xl\:visible {
+    visibility: visible;
+  }
+
   .xl\:grid {
     display: grid;
+  }
+}
+
+@media (min-width: 1536px) {
+
+  .\32xl\:visible {
+    visibility: visible;
   }
 }
