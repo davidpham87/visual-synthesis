@@ -19,4 +19,5 @@ node_modules/*
 .shadow-cljs/*
 public/js/*
 public/css/app.css
-output/js/
+output/visual-synthesis/js/
+output/visual-synthesis/css/
