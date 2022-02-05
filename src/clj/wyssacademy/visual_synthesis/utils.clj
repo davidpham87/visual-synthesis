@@ -2,7 +2,6 @@
 
 (defn ->component [f]
   (fn [m & rest]
-    (tap> {:component [m rest]})
     (if (map? m)
       (apply f m rest)
       (apply f {} (cons m rest)))))

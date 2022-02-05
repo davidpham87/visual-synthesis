@@ -15,7 +15,7 @@
    [:> mt-navbar-container
     [:> mt-navbar-wrapper
      [:> mt-nav
-      [:div {:class "flex flex-col z-50 lg:flex-row lg:items-center"}
+      [:div {:class [:flex :z-50 :lg:items-center]}
        [:> mt-nav-link {:ripple "light"}
         [link "Visual Synthesis"]]
        [:> mt-nav-link {:ripple "light"}

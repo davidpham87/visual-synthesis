@@ -10,8 +10,8 @@
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
    [wyssacademy.visual-synthesis.components.table :as wvct]
-   [wyssacademy.visual-synthesis.components.typography :refer (icon)]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
+   [wyssacademy.visual-synthesis.components.typography :refer (icon)]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
    [wyssacademy.visual-synthesis.landscape :as wvl]
    [wyssacademy.visual-synthesis.subs :as subs]))
@@ -96,61 +96,8 @@
    :water-body  {:src "img/water_body.png"
                  :style {:top "56%" :left "50%"}}})
 
-#_(defn landscape [] [:div "Landscape"])
-#_(defn landscape []
-  (let [interactions-map (subscribe [::subs/interactions-by-origin [:in]])]
-    (fn []
-      [:> react-archer/ArcherContainer {:stroke-color :red}
-       [:div.relative.bg-cover.bg-center
-        {:style {:zoom 1.2
-                 :width 1027 :height 500
-                 :background-image "url(img/empty_lanscape.png)"}}
-        (for [{:keys [key image]} categories
-              :let [relations
-                    (mapv (comp (fn [k] {:target-id (str k)}) :in) (get interactions-map key))]]
-          ^{:key key}
-          [:> react-archer/ArcherElement {:id (str key)
-                                          :relations relations}
-           [:img.absolute image]])]])))
-
 (defn landscape []
   [wyssacademy.visual-synthesis.landscape/view])
-
-#_(defn landscape []
-  (let [root-style {:display "flex", :justifyContent "center"}
-        row-style {:margin "200px 0", :display "flex", :justify-content "space-between"}
-        box-style {:padding "10px", :border "1px solid black"}]
-    [:div {:style {:height "500px", :margin "50px"}}
-     [:> react-archer/ArcherContainer {:strokeColor "red"}
-      [:div {:style root-style}
-        [:> react-archer/ArcherElement {:id "root"
-                                        :relations
-                                        [{:target-id "element2",
-                                          :target-anchor "top",
-                                          :source-anchor "bottom",
-                                          :style {:stroke-dasharray "5,5"}}]}
-         [:div {:style box-style} "Root"]]]
-       [:div {:style row-style}
-        [:> react-archer/ArcherElement
-         {:id "element2"
-          :relations
-          [{:target-id "element3",
-            :target-anchor "left",
-            :source-anchor "right",
-            :style {:stroke-color "blue", :stroke-width 1},
-            :label (reagent/as-element [:div {:style {:margin-top "-20px"}} "Arrow 2"])}]}
-         [:div {:style box-style} "Element 2"]]
-        [:> react-archer/ArcherElement {:id "element3"}
-         [:div {:style box-style} "Element 3"]]
-        [:> react-archer/ArcherElement
-         {:id "element4"
-          :relations
-          [{:target-id "root",
-            :target-anchor "right",
-            :source-anchor "left",
-            :label "Arrow 3"}]}
-         [:div {:style box-style} "Element 4"]]]]])
-  )
 
 (defn app []
   [:main.w-screen.min-h-screen.overflow-x-hidden
