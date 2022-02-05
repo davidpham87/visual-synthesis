@@ -3,15 +3,10 @@
    [ajax.core :as ajax]
    [ajax.edn]
    [camel-snake-kebab.core :as csk]
-   [camel-snake-kebab.extras :as cske]
-   [cljs-bean.core :refer (->clj)]
-   [clojure.set :as set]
    [clojure.string :as str]
-   [datascript.core :as d]
    [day8.re-frame.http-fx]
-   [re-frame.core :as rf :refer (reg-event-fx reg-event-db)]
-   [wyssacademy.visual-synthesis.db :as wvd :refer (default-db empty-ds)]
-   [wyssacademy.visual-synthesis.dev :as dev]
+   [re-frame.core :as rf :refer (reg-event-fx)]
+   [wyssacademy.visual-synthesis.db :as wvd]
    [wyssacademy.visual-synthesis.dev :as dev]))
 
 
@@ -85,6 +80,11 @@
  (fn [_ _]
    {:db wyssacademy.visual-synthesis.db/default-db
     :fx [[:dispatch [::retrieve-interactions]]]}))
+
+(reg-event-fx
+ ::set-ui-states
+ (fn [{db :db} [_ key value]]
+   {:db (assoc-in db [:ui-states key] value)}))
 
 (comment
   (rf/dispatch [::success]))

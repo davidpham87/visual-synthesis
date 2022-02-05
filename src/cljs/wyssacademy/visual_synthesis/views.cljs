@@ -1,18 +1,11 @@
 (ns wyssacademy.visual-synthesis.views
   (:require
-   ["@material-tailwind/react/Button$default" :as button]
-   ["@material-tailwind/react/Card$default" :as card]
-   ["@material-tailwind/react/CardBody$default" :as card-body]
-   ["@material-tailwind/react/CardHeader$default" :as card-header]
-   ["react-archer" :as react-archer]
-   [re-frame.core :as rf :refer (dispatch subscribe)]
-   [reagent.core :as reagent]
+   [re-frame.core :as rf :refer (subscribe)]
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
-   [wyssacademy.visual-synthesis.components.table :as wvct]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
-   [wyssacademy.visual-synthesis.components.typography :refer (icon)]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
+   [wyssacademy.visual-synthesis.details :refer (details)]
    [wyssacademy.visual-synthesis.landscape :as wvl]
    [wyssacademy.visual-synthesis.subs :as subs]))
 
@@ -73,15 +66,6 @@
          (case @tab-view
            :interactions [interactions-list @interactions]
            [landscape-elements])]]])))
-
-(defn details []
-  [:div.w-full
-   [:> card {:class ["h-full"]}
-    [:> card-header {:size :sm :color :cyan :icon-only true}
-     [icon {:size :9xl :name "view_list"}]]
-    [:> card-body {:class ["h-full"]}
-     [:div "Details with studies for the interactions"]
-     [:> button {:color :red} "Source"]]]])
 
 (def images
   {:biodiversity
