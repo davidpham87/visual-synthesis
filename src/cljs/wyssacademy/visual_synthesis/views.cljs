@@ -55,7 +55,7 @@
   (let [interactions (subscribe [::subs/interactions])
         tab-view (subscribe [::tabs-ns/tab ::info])]
     (fn []
-      [:div.flex.flex-1 {:style {:flex-basis "100%"}}
+      [:div.flex
        ^{:key @tab-view}
        [tabs {:id ::info
               :choices
@@ -86,13 +86,15 @@
 (defn app []
   [:main.w-screen.min-h-screen.overflow-x-hidden
    [header]
-   [:div.md:px-10
+   [:div.px-5
     [:section
+     [:div.flex]
      [:div.min-h-screen
-      [:div.flex.items-strech.w-full.gap-10.h-full.mb-10.lg:flex-nowrap.sm:flex-wrap
-       [:div {:class ["w-full xl:min-w-96"]
-              :style {:height 600}}
-        [landscape]]
-       [infos]]
-      [details]]]]
+      [:div.flex.items-strech.h-full.flex-wrap.justify-between
+       [:div.mb-10 {:class ["w-auto"] :style {:min-height 600}} [landscape]]
+       [:div.pr-2.flex-grow {:class ["md:basis-full" "lg:basis-1/2"
+                                     "xl:basis-1/4" "xl:pl-4" "xl:w-full"]}
+        [infos]]
+       [:div.pl-2.flex-grow {:class ["md:basis-full" "lg:basis-1/2"]}
+        [details]]]]]]
    [footer]])

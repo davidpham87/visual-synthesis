@@ -27,8 +27,8 @@
        [:> button {:color :red} "Source"]])))
 
 (defn details []
-  [:div.w-full
-   [:> card {:class ["h-full"]}
+  [:div.pt-7
+   [:> card {:class ["h-full" "w-full"]}
     [:> card-header {:size :sm :color :cyan :icon-only true}
      [icon {:size :9xl :name "view_list"}]]
     [detail-content]]])
