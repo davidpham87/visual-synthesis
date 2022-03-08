@@ -12,6 +12,12 @@
  (fn [db _] (:ui-states db)))
 
 (reg-sub
+ ::ui-states-value
+ :<- [::ui-states]
+ (fn [m [_ k]]
+   (do (get m k))))
+
+(reg-sub
  ::ds
  (fn [db _] (:ds db)))
 
@@ -30,6 +36,13 @@
  (fn [ms [_ ks]]
    (reduce-kv (fn [m k ms] (assoc m k (mapv #(select-keys % ks) ms)))
               {} (group-by :out ms))))
+
+(reg-sub
+ ::interactions-by-destination
+ :<- [::interactions]
+ (fn [ms [_ ks]]
+   (reduce-kv (fn [m k ms] (assoc m k (mapv #(select-keys % ks) ms)))
+              {} (group-by :in ms))))
 
 (defn kw->str [id]
   (let [id (or id "unfounded")]

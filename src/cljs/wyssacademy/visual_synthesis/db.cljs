@@ -31,36 +31,85 @@
                        :style {:top "56%" :left "50%"}}})
 
 (def categories
-  (mapv #(-> %
-             (assoc :image (get images (rand-nth (keys images))))
-             (assoc-in [:image :style] {:top (str (+ 40 (rand-int 25)) "%")
-                                        :left (str (rand-int 90) "%")
-                                        :zoom (+ 0.25 (* 0.5 (rand)))}))
-       [{:key :unprotected-old-growth-forest, :label "Unprotected old-growth forest"}
-        {:key :protected-old-growth-forest, :label "Protected old-growth forest"}
-        {:key :forest-fragment, :label "Forest fragment "}
-        {:key :forest-derived-vanilla-agroforest,
-         :label "Forest-derived vanilla agroforest"}
-        {:key :shifting-cultivation, :label "Shifting cultivation"}
-        {:key :fallow-derived-vanilla-agroforest,
-         :label "Fallow-derived vanilla agroforest"}
-        {:key :irrigated-rice-paddy, :label "Irrigated rice paddy"}
-        {:key :clove-based-agroforest, :label "Clove-based agroforest"}
-        {:key :artisanal-mines, :label "Artisanal mines"}
-        {:key :pasture, :label "Pasture"}
-        {:key :waterbodies, :label "Waterbodies"}
-        {:key :wellbeing, :label "Wellbeing"}
-        {:key :biodiversity, :label "Biodiversity"}
-        {:key :cultural-ecosystem-services, :label "Cultural ecosystem services"}
-        {:key :regulating-ecosystem-services, :label "Regulating ecosystem services"}
-        {:key :use-of-provisioning-ecosystem-services,
-         :label "Use of provisioning ecosystem services"}
-        {:key :commercial-agriculture, :label "Commercial agriculture"}
-        {:key :off-land-income, :label "Off-land income"}
-        {:key :subsistence-agriculture, :label "Subsistence agriculture"}
-        {:key :out-of-land-influences, :label "Out-of-land influences"}]))
+  (mapv
+   (fn [m]
+     (-> m
+         (assoc :image (merge (get images (rand-nth (keys images))) (:image m)))
+         (assoc-in [:image :style]
+                   (merge {:top (str (+ 40 (rand-int 25)) "%")
+                           :left (str (rand-int 90) "%")
+                           :zoom (+ 0.25 (* 0.5 (rand)))}
+                          (get-in m [:image :style])))))
+   [{:key :unprotected-old-growth-forest, :label "Unprotected old-growth forest"
+     :image (:old-growth-forest images)
+     :position {:x 340 :y 85}}
 
+    {:key :protected-old-growth-forest, :label "Protected old-growth forest"
+     :image (:old-growth-forest images)
+     :position {:x 620 :y 180}}
 
+    {:key :forest-fragment, :label "Forest fragment"
+     :image (:forest-fragment images)
+     :position {:x 380 :y 500}}
+
+    {:key :forest-derived-vanilla-agroforest,
+     :label "Forest-derived vanilla agroforest"
+     :image (:forest-fragment images)
+     :position {:x -10 :y 165}}
+
+    {:key :shifting-cultivation, :label "Shifting cultivation"}
+
+    {:key :fallow-derived-vanilla-agroforest,
+     :label "Fallow-derived vanilla agroforest"
+     :image (:forest-fragment images)
+     :position {:x 800 :y 220}}
+
+    {:key :irrigated-rice-paddy, :label "Irrigated rice paddy"
+     :image (:rice-paddy images)
+     :position {:x 320 :y 250}}
+
+    {:key :clove-based-agroforest, :label "Clove-based agroforest"
+     :image (:old-growth-forest images)
+     :position {:x 250 :y 150}}
+
+    {:key :artisanal-mines, :label "Artisanal mines"
+     :image (:biodiversity images)
+     :position {:x 740 :y 500}}
+
+    {:key :pasture, :label "Pasture"}
+
+    {:key :waterbodies, :label "Waterbodies"
+     :image (:water-body images)
+     :position {:x 520 :y 500}}
+
+    {:key :wellbeing, :label "Wellbeing"
+     :image (:water-body images)
+     :position {:x 850 :y 400}}
+
+    {:key :biodiversity, :label "Biodiversity"
+     :image (:biodiversity images)
+     :position {:x 800 :y 320}}
+
+    {:key :cultural-ecosystem-services,
+     :label "Cultural ecosystem services"}
+
+    {:key :regulating-ecosystem-services,
+     :label "Regulating ecosystem services"}
+
+    {:key :use-of-provisioning-ecosystem-services,
+     :label "Use of provisioning ecosystem services"}
+
+    {:key :commercial-agriculture,
+     :label "Commercial agriculture"}
+
+    {:key :off-land-income,
+     :label "Off-land income"}
+
+    {:key :subsistence-agriculture,
+     :label "Subsistence agriculture"}
+
+    {:key :out-of-land-influences,
+     :label "Out-of-land influences"}]))
 
 (def categories-keys (mapv :key categories))
 (def categories-map (reduce (fn [m {:keys [key label]}]
@@ -71,9 +120,10 @@
                  :type :image
                  :data {:key (:key m)
                         :src (-> m :image :src)
-                        :zoom (-> m :image :style :zoom)}
-                 :position {:x (+ 20 (rand-int 800))
-                            :y (+ 200 (rand-int 200))}})
+                        :zoom 0.65}
+                 :position (or (:position m)
+                               {:x (+ 20 (rand-int 800))
+                                :y (+ 200 (rand-int 200))})})
         categories))
 
 
