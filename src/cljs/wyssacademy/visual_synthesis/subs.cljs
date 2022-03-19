@@ -28,7 +28,19 @@
 (reg-sub
  ::interactions
  :<- [::data]
- (fn [m _] (:interactions m)))
+ (fn [m _]
+   (:interactions m)))
+
+(reg-sub
+ ::interactions-list-filtered
+ :<- [::interactions]
+ :<- [::ui-states-value :selected-source]
+ :<- [::ui-states-value :selected-destination]
+ (fn [[ms s d]]
+   (cond
+     s (filterv (fn [{:keys [out]}] (= out s)) ms)
+     d (filterv (fn [{:keys [in]}] (= in d)) ms)
+     :else (vec ms))))
 
 (reg-sub
  ::interactions-by-origin
