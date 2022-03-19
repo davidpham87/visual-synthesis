@@ -38,14 +38,15 @@
                                  (#{source target} (name (or @selected-node ""))))
                                @links)
                        @links)
-            nodes    (if @selected-node
-                       (let [xf       (comp (map (fn [{:keys [source target]}]
-                                                   [(keyword source) (keyword target)]))
-                                            cat)
-                             node-ids (into #{} xf ls)]
-                         (filterv (fn [{{key :key} :data}] (contains? node-ids key))
-                                  db/categories-react-flow))
-                       db/categories-react-flow)
+            nodes    (-> (if @selected-node
+                           (let [xf       (comp (map (fn [{:keys [source target]}]
+                                                       [(keyword source) (keyword target)]))
+                                                cat)
+                                 node-ids (into #{} xf ls)]
+                             (filterv (fn [{{key :key} :data}] (contains? node-ids key))
+                                      db/categories-react-flow))
+                           db/categories-react-flow)
+                         (as-> $ (if-not (seq $) db/categories-react-flow $)))
             elements (into nodes ls)]
         ^{:key (str ls)}
         [:div
