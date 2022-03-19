@@ -17,6 +17,8 @@
 
 (defn landscape-component [data]
   [:div {:style {:padding 0 :margin 0}
+         :on-mouse-enter #(rf/dispatch [::events/set-hover-landscape (keyword (:key data))])
+         :on-mouse-leave #(rf/dispatch [::events/unset-hover-landscape])
          :on-click #(rf/dispatch [::events/set-ui-states :selected-landscape
                                   (keyword (:key data))])}
    [handle {:type :target
@@ -28,36 +30,56 @@
             :position :top}]])
 
 (defn view []
-  (let [links (subscribe [::subs/interactions-landscape])]
+  (let [links         (subscribe [::subs/interactions-landscape])
+        selected-node (subscribe [::subs/ui-states-value :selected-landscape])]
     (fn []
-      ^{:key (str @links)}
-      [:div
-       {:style {:width 960 :height 680
-                :background-image "url(img/empty_land.png)"
-                :background-size :contain
-                :background-repeat :no-repeat
-                :position :relative}}
-       [:div {:style {:width 960 :height 680 :position :absolute}}
-        [:img {:src "img/empty_land_text.png"}]]
-       [react-flow-pro
-        [react-flow
-         {:nodes-draggable false
-          :node-types
-          #js
-          {"image"
-           (r/reactify-component
-            (fn [props]
-              (println props)
-              (let [data (->clj (:data props))]
-                [landscape-component data])))}
-          :zoom-on-scroll false
-          :zoom-on-pinch false
-          :elements (into db/categories-react-flow @links)}
-         #_[controls]]]
-       ])))
+      (let [ls       (if @selected-node
+                       (filter (fn [{:keys [source target]}]
+                                 (#{source target} (name (or @selected-node ""))))
+                               @links)
+                       @links)
+            nodes    (if @selected-node
+                       (let [xf       (comp (map (fn [{:keys [source target]}]
+                                                   [(keyword source) (keyword target)]))
+                                            cat)
+                             node-ids (into #{} xf ls)]
+                         (filterv (fn [{{key :key} :data}] (contains? node-ids key))
+                                  db/categories-react-flow))
+                       db/categories-react-flow)
+            elements (into nodes ls)]
+        ^{:key (str ls)}
+        [:div
+         {:style          {:width                 960                           :height 680
+                           :background-image      "url(img/empty_land.png)"
+                           :background-size       :contain
+                           :background-repeat     :no-repeat
+                           :background-color      "rgba(0,0,0,.20)"
+                           :background-blend-mode (when @selected-node :darken)
+                           :position              :relative}
+          #_#_:on-mouse-leave #(rf/dispatch [::events/unset-hover-landscape])}
+         [:div {:style {:width                 960 :height 680 :position :absolute
+                        :background-blend-mode (when @selected-node :darken)}}
+          [:img {:src "img/empty_land_text.png"}]]
+         [react-flow-pro
+          [react-flow
+           {:nodes-draggable false
+            :node-types
+            #js
+            {"image"
+             (r/reactify-component
+              (fn [props]
+                (println props)
+                (let [data (->clj (:data props))]
+                  [landscape-component data])))}
+            :zoom-on-scroll  false
+            :zoom-on-pinch   false
+            :elements        elements}
+           #_[controls]]]
+         ]))))
 
 
 (comment
   (into db/categories-react-flow @(subscribe [::subs/interactions-landscape]))
   (println Position)
+  @(subscribe [::subs/interactions-landscape])
   )

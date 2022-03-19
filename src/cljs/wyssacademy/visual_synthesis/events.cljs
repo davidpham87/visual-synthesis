@@ -86,5 +86,15 @@
  (fn [{db :db} [_ key value]]
    {:db (assoc-in db [:ui-states key] value)}))
 
+(reg-event-fx
+ ::set-hover-landscape
+ (fn [_ [_ value]]
+   {:fx [[:dispatch [::set-ui-states :selected-landscape value]]]}))
+
+(reg-event-fx
+ ::unset-hover-landscape
+ (fn [_ _]
+   {:fx [[:dispatch [::set-ui-states :selected-landscape nil]]]}))
+
 (comment
   (rf/dispatch [::success]))
