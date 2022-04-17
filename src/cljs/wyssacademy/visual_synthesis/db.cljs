@@ -109,7 +109,7 @@
 
     {:key :clove-based-agroforest, :label "Clove-based agroforest"
      :image (:clove-based-agroforest images)
-     :position {:x 100 :y 90}}
+     :position {:x 20 :y 70}}
 
     {:key :commercial-agriculture,
      :label "Commercial agriculture"
