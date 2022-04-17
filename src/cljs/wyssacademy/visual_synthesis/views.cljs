@@ -105,19 +105,6 @@
            :details [details]
            [landscape-elements])]]])))
 
-(def images
-  {:biodiversity
-   {:src "img/biodiversity.png" :style {:top "40%" :right "-5%"}}
-   :forest-fragment
-   {:src "img/forest_fragment.png" :style {:top "50%" :left "10%"}}
-   :old-growth-forest
-   {:src "img/old_growth_forest.png"
-    :style {:top "60%" :left "-8%"}}
-   :rice-paddy {:src "img/rice_paddy.png"
-                :style {:top "65%" :left "35%"}}
-   :water-body  {:src "img/water_body.png"
-                 :style {:top "56%" :left "50%"}}})
-
 (defn landscape []
   [wyssacademy.visual-synthesis.landscape/view])
 

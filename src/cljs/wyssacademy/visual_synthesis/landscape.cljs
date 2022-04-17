@@ -50,15 +50,17 @@
             elements (into nodes ls)]
         ^{:key (str ls)}
         [:div
-         {:style          {:width                 960                           :height 680
-                           :background-image      "url(img/empty_land.png)"
-                           :background-size       :contain
-                           :background-repeat     :no-repeat
-                           :background-color      "rgba(0,0,0,.20)"
-                           :background-blend-mode (when @selected-node :darken)
-                           :position              :relative}
+         {:style              {:width                 1280
+                               :height                720
+                               :background-image      "url(img/landscape-16-9.webp)"
+                               :background-size       :contain
+                               :background-repeat     :no-repeat
+                               :background-color      "rgba(0,0,0,.20)"
+                               :background-blend-mode (when @selected-node :darken)
+                               :position              :relative}
           #_#_:on-mouse-leave #(rf/dispatch [::events/unset-hover-landscape])}
-         [:div {:style {:width                 960 :height 680 :position :absolute
+         #_[:div {:style {:width 1280 :height 720
+                        :position :absolute
                         :background-blend-mode (when @selected-node :darken)}}
           [:img {:src "img/empty_land_text.png"}]]
          [react-flow-pro
