@@ -37,6 +37,9 @@
    :fallow-derived-vanilla-agroforest
    {:src "img/fallow-vanilla.webp" :style {:top "40%" :left "50%%"}}
 
+   :forest-derived-vanilla-agroforest
+   {:src "img/vanilla-forest.webp" :style {:top "40%" :left "50%%"}}
+
    :forest-fragment
    {:src "img/forest-fragment.webp" :style {:top "50%" :left "10%"}}
 
@@ -61,7 +64,8 @@
    {:src "img/protected-forest.webp" :style {:top "56%" :left "50%"}}
 
    :shifting-cultivation
-   {:src "img/shifting-cultivation.webp" :style {:top "56%" :left "50%"}}
+   {:src "img/shifting-cultivation.webp" :style {:top "56%" :left "50%"
+                                                 :zoom 0.125}}
 
    :subsistence-agriculture
    {:src "img/subsistence-agriculture.webp" :style {:top "56%" :left "50%"}}
@@ -72,14 +76,15 @@
    :regulating-ecosystem-services
    {:src "img/regulating-es.webp" :style {:top "56%" :left "50%"}}
 
-   :water-body
-   {:src "img/regulating-es.webp" :style {:top "56%" :left "50%"}}
-
    :unprotected-old-growth-forest
    {:src "img/unprotected-forest.webp" :style {:top "56%" :left "50%"}}
 
    :use-of-provisioning-ecosystem-services
    {:src "img/provision-services.webp" :style {:top "56%" :left "50%"}}
+
+   :waterbodies
+   {:src "img/water_body.png" :style {:top "56%" :left "50%"
+                                      :zoom 0.5}}
 
    :wellbeing
    {:src "img/wellbeing.webp" :style {:top "56%" :left "50%" :zoom 0.275}}})
@@ -96,15 +101,15 @@
                           (get-in m [:image :style])))))
    [{:key :artisanal-mines, :label "Artisanal mines"
      :image (:artisanal-mines images)
-     :position {:x 610 :y 500}}
+     :position {:x 630 :y 315}}
 
     {:key :biodiversity, :label "Biodiversity"
      :image (:biodiversity images)
-     :position {:x 710 :y 125}}
+     :position {:x 680 :y 110}}
 
     {:key :clove-based-agroforest, :label "Clove-based agroforest"
      :image (:clove-based-agroforest images)
-     :position {:x 10 :y 110}}
+     :position {:x 100 :y 90}}
 
     {:key :commercial-agriculture,
      :label "Commercial agriculture"
@@ -114,7 +119,7 @@
     {:key :cultural-ecosystem-services,
      :label "Cultural ecosystem services"
      :image (:cultural-ecosystem-services images)
-     :position {:x 740 :y 100}}
+     :position {:x 1080 :y 100}}
 
     {:key :fallow-derived-vanilla-agroforest,
      :label "Fallow-derived vanilla agroforest"
@@ -123,8 +128,8 @@
 
     {:key :forest-derived-vanilla-agroforest,
      :label "Forest-derived vanilla agroforest"
-     :image (:forest-fragment images)
-     :position {:x -10 :y 165}}
+     :image (:forest-derived-vanilla-agroforest images)
+     :position {:x 200 :y 90}}
 
     {:key :forest-fragment, :label "Forest fragment"
      :image (:forest-fragment images)
@@ -143,46 +148,36 @@
      :image (:pasture images)
      :position {:x 1080 :y 550}}
 
-    {:key :subsistence-agriculture,
-     :label "Subsistence agriculture"
-     :image (:subsistence-agriculture images)
-     :position {:x 740 :y 500}}
-
-    {:key :unprotected-old-growth-forest, :label "Unprotected old-growth forest"
-     :image (:unprotected-old-growth-forest images)
-     :position {:x 340 :y 85}}
-
     {:key :protected-old-growth-forest, :label "Protected old-growth forest"
      :image (:protected-old-growth-forest images)
      :position {:x 620 :y 180}}
 
-    {:key :shifting-cultivation, :label "Shifting cultivation"
-     :image (:shifting-cultivation images)
-     :position {:x -10 :y 165}}
-
-
-
-    {:key :waterbodies, :label "Waterbodies"
-     :image (:water-body images)
-     :position {:x 520 :y 500}}
-
-
-
     {:key :regulating-ecosystem-services,
      :label "Regulating ecosystem services"
      :image (:regulating-ecosystem-services images)
-     :position {:x 740 :y 500}}
+     :position {:x 30 :y 500}}
+
+    {:key :shifting-cultivation, :label "Shifting cultivation"
+     :image (:shifting-cultivation images)
+     :position {:x 10 :y 210}}
+
+    {:key :subsistence-agriculture,
+     :label "Subsistence agriculture"
+     :image (:subsistence-agriculture images)
+     :position {:x 10 :y 350}}
+
+    {:key :unprotected-old-growth-forest, :label "Unprotected old-growth forest"
+     :image (:unprotected-old-growth-forest images)
+     :position {:x 800 :y 180}}
+
+    {:key :waterbodies, :label "Waterbodies"
+     :image (:waterbodies images)
+     :position {:x 390 :y 80}}
 
     {:key :use-of-provisioning-ecosystem-services,
      :label "Use of provisioning ecosystem services"
      :image (:use-of-provisioning-ecosystem-services images)
-     :position {:x 740 :y 500}}
-
-
-
-
-
-
+     :position {:x 990 :y 265}}
 
     {:key :out-of-land-influences,
      :label "Out-of-land influences"
