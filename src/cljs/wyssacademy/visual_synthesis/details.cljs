@@ -54,12 +54,12 @@
               {:style {:height (if (contains? @show-source? (:study m)) "100%" 0)}}
               (when (contains? @show-source? (:study m))
                 (let [{:keys [url title authors year journal doi abstract]} (get @studies (:study m))]
-                  [:div.text-gray-700
+                  [:div.text-gray-700.w-full
                    [:p.mt-2.mb-2 authors]
                    [:p.mb-2 "\"" title "\","]
                    [:p.mb-2 [:em journal] " (" year ")"]
                    [:div.mb-2 doi]
-                   [:a.text-blue-400.mb-2 {:href url :target "_blank"} url]
+                   [:p [:a.text-blue-400.mb-2 {:href url :target "_blank"} "Link"]]
                    [:p.text-justify.mb-4.mt-4.pl-2.pr-2.text-gray-500 abstract]]))]]]))])))
 
 (defn detail-content []
