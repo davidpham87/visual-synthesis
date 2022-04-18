@@ -1,187 +1,746 @@
-[{:study
-  "A serious game to parameterize Bayesian networks: Validation in a case study in northeastern Madagascar",
-  :study-id "Celio, 2019",
-  :study-area-map "map_celio2019.jpg",
-  :journal "Environmental Modelling & Software",
-  :doi "10.1016/j.envsoft.2019.104525",
-  :year 2019,
-  :project "Telecoupling",
-  :authors
-  "Enrico Celio , R. Ntsiva N. Andriatsitohaina, Julie G. Zaehringer"}
- {:study
-  "Aboveground carbon stocks in Madagascar’s vanilla production landscape – exploring rehabilitation through agroforestry in the light of land-use history",
-  :study-id "Soazafy, 2021",
-  :journal "Applied Geography",
-  :doi "10.1016/j.gecco.2021.e01853",
-  :year 2021,
-  :project "Diversity Turn",
-  :authors
-  "Marie Rolande Soazafy, Kristina Osen, Annemarie Wurz, Estelle Raveloaritiana, Dominic Andreas Martin, Hery Lisy Tiana Ranarijaona, Dirk Holscher"}
- {:study
-  "Beyond deforestation monitoring in conservation hotspots: Analysing landscape mosaic dynamics in north-eastern Madagascar",
-  :study-id "Zaehringer, 2021a",
-  :study-area-map "map_zaehringer2021.jpg",
-  :journal "Applied Geography",
-  :doi "10.1016/j.apgeog.2015.12.009",
-  :year 2016,
-  :project "Telecoupling",
-  :authors
-  "Julie G. Zaehringer, Cornelia Hett, Bruno Ramamonjisoa, Peter Messerli "}
- {:study
-  "Bird diversity and endemism along a land?use gradient in Madagascar: The conservation value of vanilla agroforests",
-  :study-id "Martin, 2021a",
-  :journal "Biotropica",
-  :doi "10.1111/btp.12859",
-  :year 2021,
-  :project "Diversity Turn",
-  :authors
-  "Dominic Andreas Martin, Rouvah Andriafanomezantsoa, Saskia Dröge, Kristina Osen, Eric Rakotomalala, Annemarie Wurz, Aristide Andrianarimisa, Holger Kreft"}
- {:study
-  "Capabilities Under Telecoupling: Human Well-Being Between Cash Crops and Protected Areas in North-Eastern Madagascar",
-  :study-id "Llopis, 2020",
-  :journal "Frontiers in Sustainable Food Systems",
-  :doi "10.3389/fsufs.2019.00126",
-  :year 2020,
-  :project "Telecoupling",
-  :authors
-  "Jorge C. Llopis, Clara L. Diebold, Flurina Schneider, Paul C. Harimalala, Laby Patrick, Peter Messerli, Julie G. Zaehringer"}
- {:study
-  "Decreasing predation rates and shifting predator compositions along a land?use gradient in Madagascar's vanilla landscapes",
-  :study-id "Schwab, 2021",
-  :journal "Journal of Applied Ecology",
-  :doi "10.1111/1365-2664.13766",
-  :year 2021,
-  :project "Diversity Turn",
-  :authors
-  "Dominik Schwab, Annemarie Wurz, Ingo Grass, Anjaharinony A. N. A. Rakotomalala, Kristina Osen, Marie Rolande Soazafy, Dominic A. Martin, Teja Tscharntke"}
- {:study
-  "Effects of protected area establishment and cash crop price dynamics on land use transitions 1990–2017 in north-eastern Madagascar",
-  :study-id "Llopis, 2019",
-  :study-area-map "map_llopis2019.jpg",
-  :journal "Journal of Land Use Science",
-  :doi "10.1080/1747423X.2019.1625979",
-  :year 2019,
-  :project "Telecoupling",
-  :authors
-  "Jorge C. Llopis, Paul C. Harimalala, Roger Bär, Andreas Heinimann, Zo Hasina Rabemananjara, Julie G. Zaehringe"}
- {:study
-  "Exploring farmers' agrobiodiversity management practices and knowledge in clove agroforests of Madagascar",
-  :study-id "Mariel, 2021",
-  :journal "People and Nature",
-  :doi "10.1002/pan3.10238",
-  :year 2021,
-  :project "Other",
-  :authors
-  "Juliette Mariel, Stéphanie M. Carrière, Eric Penot, Pascal Danthu, Verohanitra Rafidison, Vanesse Labeyrie"}
- {:study
-  "Identifying agents of change for sustainable land governance",
-  :study-id "Andriamihaja, 2021",
-  :study-area-map "map_andriamihaja2021.jpg",
-  :journal "Land Use Policy",
-  :doi "10.1016/j.landusepol.2020.104882",
-  :year 2021,
-  :project "Telecoupling",
-  :authors
-  "O. Ravaka Andriamihaja, Florence Metz , Julie G. Zaehringer , Manuel Fischer, Peter Messerli,"}
- {:study
-  "Land Competition under Telecoupling: Distant Actors’ Environmental versus Economic Claims on Land in North-Eastern Madagascar",
-  :study-id "Andriamihaja, 2019",
-  :study-area-map "map_andriamihaja2019.jpg",
-  :journal "Sustainability",
-  :doi "10.3390/su11030851",
-  :year 2019,
-  :project "Telecoupling",
-  :authors
-  "O. Ravaka Andriamihaja, Florence Metz, Julie G. Zaehringer, Manuel Fischer, Peter Messerli"}
- {:study
-  "Land?use history determines stand structure and tree diversity in vanilla agroforests of northeastern Madagascar",
-  :study-id "Osen, 2021",
-  :journal "Applied Vegetation Science",
-  :doi "10.1111/avsc.12563",
-  :year 2021,
-  :project "Diversity Turn",
-  :authors
-  "Kristina Osen, Marie Rolande Soazafy, Dominic Andreas Martin, Annemarie Wurz, Adriane März, Hery Lisy Tiana Ranarijaona, Dirk Hölscher"}
- {:study
-  "Land?use intensification increases richness of native and exotic herbaceous plants, but not endemics, in Malagasy vanilla landscapes",
-  :study-id "Raveloaritiana, 2021",
-  :journal "Diversity and Distributions",
-  :doi "10.1111/ddi.13226",
-  :year 2021,
-  :project "Diversity Turn",
-  :authors
-  "Estelle Raveloaritiana, Annemarie Wurz, Ingo Grass, Kristina Osen, Marie Rolande Soazafy, Dominic A. Martin, Lucien Faliniaina, Nantenaina H. Rakotomalala, Maria S. Vorontsova, Teja Tscharntke, Bakolimalala Rakouth"}
- {:study
-  "Listening to a changing landscape: Acoustic indices reflect bird species richness and plot-scale vegetation structure across different land-use types in north-eastern Madagascar",
-  :study-id "Dröge, 2021",
-  :journal "Ecological Indicators",
-  :doi "10.1016/j.ecolind.2020.106929",
-  :year 2021,
-  :project "Diversity Turn",
-  :authors
-  "Saskia Droge, Dominic Andreas Martin, Rouvah Andriafanomezantsoa, Zuzana Burivalova, Thio Rosin Fulgence, Kristina Osen, Eric Rakotomalala, Dominik Schwab, Annemarie Wurz, Torsten Richter, Holger Kreft"}
- {:study
-  "Remote sensing combined with social-ecological data: The importance of diverse land uses for ecosystem service provision in north-eastern Madagascar",
-  :study-id "Zaehringer, 2021b",
-  :journal "Ecosystem Services",
-  :doi "10.1016/j.ecoser.2017.04.004",
-  :year 2017,
-  :project "Telecoupling",
-  :authors
-  "J.G. Zaehringer, G. Schwilch, O.R. Andriamihaja, B. Ramamonjisoa, P. Messerli"}
- {:study
-  "Revealing Regional Deforestation Dynamics in North-Eastern Madagascar—Insights from Multi-Temporal Land Cover Change Analysis",
-  :study-id "Zaehringer, 2015",
-  :study-area-map "map_zaehringer2015.jpg",
-  :journal "Land",
-  :doi "10.3390/land4020454",
-  :year 2015,
-  :project "Telecoupling",
-  :authors "Julie G. Zaehringer, Sandra Eckert, Peter Messerli"}
- {:study
-  "Shade-Tree Rehabilitation in Vanilla Agroforests is Yield Neutral and May Translate into Landscape-Scale Canopy Cover Gains",
-  :study-id "Martin, 2021b",
+[{:read "1",
+  :excluded 0,
+  :abstract
+  "Agroforestry can contribute to an increase in tree cover in historically forested tropical landscapes with associated gains in biodiversity and ecosystem functioning, but only if established on open land instead of underneath a forest canopy. However, declines in yields with increasing shade are common across agroforestry crops, driving shade-tree removal in forest-derived agroforests and hindering tree regrowth in open-land-derived agroforests. To understand trajectories of change in tree cover in forest- and open-land-derived agroforests, and the impacts of tree cover on vanilla yields, we studied 209 vanilla agroforests along an 88-year chronosequence in Madagascar. Additionally, we used remotely sensed canopy cover data to investigate tree cover change in the agricultural landscape. We found yields to vary widely but independently of canopy cover and land-use history (forest- vs. open-land-derived), averaging at 154.6 kg ha               −1                year               −1               (SD = 186.9). Furthermore, we found that forest- and open-land-derived vanilla agroforests gained canopy cover over time, but that only open-land-derived agroforests gained canopy height. Canopy cover increased also at the landscape scale: areas in the agricultural landscape with medium initial canopy cover gained 6.4% canopy cover over 10 years, but canopy cover decreased in areas with high initial canopy cover. These opposing trends suggest tree cover rehabilitation across areas covered by vanilla agroforests, whereas remnant forest fragments in the agricultural landscape were transformed or degraded. Our results indicate that yield-neutral tree rehabilitation through open-land-derived agroforestry could, if coupled with effective forest protection, provide benefits for both ecosystem functions and agricultural production in a smallholder-dominated agricultural landscape.",
   :journal "Ecosystems",
   :doi "10.1007/s10021-020-00586-5",
+  :title
+  "Shade-Tree Rehabilitation in Vanilla Agroforests is Yield Neutral and May Translate into Landscape-Scale Canopy Cover Gains",
   :year 2021,
-  :project "Diversity Turn",
+  :project "DT",
+  :added-later 0,
+  :url "https://link.springer.com/10.1007/s10021-020-00586-5",
+  :code "martin_2021_a",
+  :methods-summary "WORK IN PROGRESS",
   :authors
-  "Dominic Andreas Martin, Annemarie Wurz, Kristina Osen, Ingo Grass, Dirk Hölscher, Thorien Rabemanantsoa, Teja Tscharntke, Holger Kreft"}
- {:study "Spider traps amphibian in northeastern Madagascar",
-  :study-id "Fulgulence, 2021",
+  "Martin, Dominic Andreas; Wurz, Annemarie; Osen, Kristina; Grass, Ingo; Hölscher, Dirk; Rabemanantsoa, Thorien; Tscharntke, Teja; Kreft, Holger"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "The management of multi-use landscapes is challenging, but essential when aiming at preserving the potential for ecosystem service provision. Land-use decisions lay at the center of this challenge. While land-use decision models may help to transparently grasp land-use decisions, the parameterization of such models is difficult as human decision-making is often not rational. We show here how we used a serious game to parameterize a Bayesian network-based land-use decision model. To elicit validation, game outputs are transformed to condi­ tional probabilities and compared to conditional probabilities parameterized via a questionnaire and workshop exercises. The analysis of four types of validity shows encouraging results for criterion, respondent-related and practice-related validation. However, content validation (sensitivity analysis) was disappointing initially. We discuss how the success in validation quality may be related to the design of the game and conclude that the transfer from a game to Bayesian networks could improve the parameterization quality.",
+  :journal "Environmental Modelling & Software",
+  :doi "10.1016/j.envsoft.2019.104525",
+  :title
+  "A serious game to parameterize Bayesian networks: Validation in a case study in northeastern Madagascar",
+  :year 2019,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S1364815218302421",
+  :code "celio_2019",
+  :authors
+  "Celio, Enrico; Andriatsitohaina, R. Ntsiva N.; Zaehringer, Julie G."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "The SAVA region in north-eastern Madagascar is the global centre of vanilla production. Here, around 70,000 farmers are estimated to produce 70-80% of all global bourbon vanilla. Yet, little is known about the farming population, their livelihoods, and the impact of vanilla cultivation on biodiversity. This publication presents the results of the Diversity Turn Baseline Survey (DTBS) that was conducted in 2017. The survey provides baseline data on the socio-economic characteristics and living conditions of the local population, and farming of vanilla as well as the most important other crops (n=1,800 households). As international demand for natural vanilla has increased considerably, special emphasis is placed on the vertical integration of vanilla farmers into the global vanilla value chain. This integration is increasingly accomplished through contract farming arrangements between vanilla farmers, collectors and exporters. After a first rise in vanilla prices in 2015, the current vanilla boom took off in 2016 and was still in full swing in 2017. Consequently, the start of the price boom coincides with this survey and its retrospective questions often address the situation in 2016. The large majority of the surveyed households (HHs) in the study region practice vanilla farming (83%). Of these, only 15% conclude formal contracts while the majority of farmers (63%) sell their vanilla in informal spot markets often depending on several middlemen. Our data show that the socio-economic situation of smallholder vanilla farmers has recently improved when considering vanilla prices received, education, access to electricity and ownership of assets. However, under the high vanilla prices, theft and crime are now key constraints for vanilla farmers. In addition to descriptive statistics, this publication compares selected data between male- and female-headed HHs, poor and non-poor HHs, and HHs with- and without contracts. Members of female-headed HHs have significantly lower education, lower labour availability, smaller fields and lower vanilla harvests than male-headed HHs. HHs with contracts possess more assets, are better educated, have higher labour availability, larger vanilla plots, and larger vanilla harvests than HHs without contracts. The DTBS confirms a number of benefits for smallholders who conclude contracts with vanilla exporters or collectors. Among these benefits are the significantly higher vanilla prices even during market peaks. However, the distribution of HHs with or without contracts is skewed indicating entry barriers for certain groups of smallholders. For example, female-headed HHs were significantly less likely to have a contract than male-headed HHs, and it appears that HHs with a contract had already been less poor than HHs without a contract prior to entering contract arrangements.",
+  :journal
+  "Discussion Paper Department of Agricultural \nEconomics and Rural Development University of Goettingen",
+  :doi "10.13140/RG.2.2.22059.80163",
+  :title
+  "Socio-economic, land use and value chain perspectives on vanilla farming in the SAVA Region (north-eastern Madagascar): The Diversity Turn Baseline Study (DTBS)",
+  :year 2018,
+  :project "DT",
+  :added-later 0,
+  :code "haenke_2018",
+  :authors
+  "Hänke, Hendrik; Barkmann, Jan; Blum, Lloyd; Franke, Yvonne; Martin, Dominic A; Niens, Janna; Osen, Kristina; Uruena, Viviana; Annette, S; Wurz, Annemarie"}
+ {:read "DELETE?",
+  :excluded 1,
+  :abstract
+  "Predation can take unexpected turns. For instance, various invertebrate species—most commonly spiders—may prey on vertebrates. Here, we report one observation of a spider (Sparassidae, Damastes sp.) feeding on an amphibian (Hyperoliidae, Heterixalus andrakata) inside a retreat in northeastern Madagascar. To our knowledge, this is the second report of vertebrate predation by spiders in Madagascar. Three additional observations of retreats built by the same spider species show that the spiders built similar retreats and were hiding at the rear end of the retreat. The retreats were built by weaving two green leaves together which were still attached to the tree. We speculate from the observations, that the retreat serves as a targeted trap that deceives frogs seeking shelter during daytime.",
   :journal "Ecology and Evolution",
   :doi "10.1002/ece3.7102",
+  :title "Spider traps amphibian in northeastern Madagascar",
   :year 2021,
-  :project "Diversity Turn",
+  :project "DT",
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1002/ece3.7102",
+  :code "fulgence_2021",
   :authors
-  "Thio Rosin Fulgence, Dominic Andreas Martin, Holger Kreft, Fanomezana Mihaja Ratsoavina, Aristide Andrianarimisa"}
- {:study
-  "The Persistence of Self-Provisioning Among Smallholder Farmers in Northeast Madagascar",
-  :study-id "Turner, 2015",
+  "Fulgence, Thio Rosin; Martin, Dominic Andreas; Kreft, Holger; Ratsoavina, Fanomezana Mihaja; Andrianarimisa, Aristide"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "In the Andapa region of northeast Madagascar, smallholders cultivating swidden hill rice (tavy) for subsistence are pressing against neighboring nature reserves. A dominant policy approach to reducing this pressure requires that smallholders abandon tavy and purchase rice from proceeds obtained from their environmentally sustainable commercial crops, vanilla and coffee. Economic liberalization policies have succeeded in stimulating the expansion of these commercial crops, but have failed to reduce tavy production. We ask why this dual (subsistence and commercial) production system persists. We test two explanatory views: that either market imperfections deny farmers full entry into the market, or that internal production goals or socio-cultural norms create barriers to full market participation. Results support the latter view, although not for reasons that have been associated with this view in past studies. We propose a new factor that may serve as a barrier to full-market immersion among Andapa tavy farmers, the social relations of property.",
   :journal "Human Ecology",
   :doi "10.1007/s10745-015-9791-8",
+  :title
+  "The Persistence of Self-Provisioning Among Smallholder Farmers in Northeast Madagascar",
   :year 2015,
-  :project "Other",
-  :authors "Rheyna Laney, B. L. Turner"}
- {:study
-  "Year-to-year ecosystem services supply in conservation contexts in north-eastern Madagascar: Trade-offs between global demands and local needs",
-  :study-id "Llopis, 2021",
-  :study-area-map "map_llopis2021.jpg",
+  :added-later 0,
+  :url "https://link.springer.com/10.1007/s10745-015-9791-8",
+  :code "laney_2015",
+  :authors "Laney, Rheyna; Turner, B. L."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "In the imagination of people worldwide, the island of Madagascar issynonymous with beautiful rainforests and exotic animals, like lemurs,found nowhere else. Often absent from this foreign view, however, arethe island’s human inhabitants – the Malagasy people. Largely reliant onsmall-scale agriculture, they depend on land access to survive. With fewagricultural inputs and little technology available, shifting cultivation is awell-adapted, rational land use practised by many Malagasy to grow staplecrops. But as various factors – demographic, market-based, etc. – put thewhole land use system under pressure, shifting cultivators are forced toexpand their farming into remaining forests. This causes conflict with thosewho want to conserve Madagascar’s forests and biodiversity as a globalgood. To date, no environmentally just and equitable solutions have beenfound that ensure conservation of the region’s extraordinary biodiversitywhile enabling local land users to escape poverty and food insecurity.",
+  :journal "CDE Policy Brief",
+  :title
+  "Conservation versus local livelihoods? Sustainable development challenges in Madagascar",
+  :year 2018,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://issuu.com/cde.unibe.ch/docs/12_cde_pb_madagascar_conservation_e",
+  :code "zaehringer_2018",
+  :authors "Zaehringer, JG"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Forests and tree-dominated land uses store large amounts of carbon stocks in plant biomass. However, anthropogenic changes in land use and land cover decrease tree cover and associated carbon stocks. Agroforestry has the potential to maintain or restore carbon in plant biomass but the amount will be influenced by various factors that may include land-use history and management practices. However, few studies explicitly address how these factors determine aboveground carbon stocks. Therefore, our study estimates aboveground carbon stocks in different land-use types, across stem diameters and geographic origin of tree species, and its structural controls. We particularly focus on the importance of land-use history in agroforestry systems. We conducted the study in the mosaic landscape of north-eastern Madagascar in old-growth forests, forest fragments, woody fallows, and vanilla agroforests. The agroforests differed in land-use history and were either directly derived from a forest or a woody fallow after slash-and-burn shifting cultivation. Aboveground carbon stocks were highest in old-growth forests and lowest in woody fallows. Within vanilla agroforests, aboveground carbon stocks were highly variable: forest-derived agroforests stored significantly higher carbon stocks that were mainly stored in native and endemic species, whereas fallow-derived agroforests stored lower carbon stocks that were mainly provided by introduced species. Furthermore, aboveground carbon stocks were mainly controlled by stem density and stem diameter. In conclusion, forest-derived agroforests have the potential to maintain relatively high carbon stocks and a forest-like structure in the landscape, whereas fallow-derived agroforests contribute to converting historically forested open land into permanent tree-dominated land-use systems, thereby restoring carbon stocks. Thus, considering the land-use history of agroforests is important for conservation and restoration agendas.",
+  :journal "Global Ecology and Conservation",
+  :doi "10.1016/j.gecco.2021.e01853",
+  :title
+  "Aboveground carbon stocks in Madagascar’s vanilla production landscape – exploring rehabilitation through agroforestry in the light of land-use history",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S2351989421004030",
+  :code "soazafy_2021",
+  :methods-summary
+  "Plot data with 10 replicates, comparin 7 prevalent land-uses in the SAVA region; no data from unprotected old-growth forest but only from protected old-growth forest (Marojejy National Park)",
+  :authors
+  "Soazafy, Marie Rolande; Osen, Kristina; Wurz, Annemarie; Raveloaritiana, Estelle; Martin, Dominic Andreas; Ranarijaona, Hery Lisy Tiana; Hölscher, Dirk"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Through ongoing deforestation in the tropics, forest-related ecosystem services are declining, while ecosystem services provided by agricultural land uses are on the increase. Land system science provides a framework for analysing the links between land use change and the resulting socio-environmental trade-offs. However, the evidence base to support the navigation of such trade-offs is often lacking, as information on land use cannot directly be obtained through remote sensing and census data is often unavailable at sufficient spatial resolution. The global biodiversity hotspot of north-eastern Madagascar exemplifies these challenges. Combining land use data obtained through remote sensing with social-ecological data from a regional level household survey, we attempt to make the links between land use and ecosystem service benefits explicit. Our study confirmed that remotely sensed information on landscapes reflects households' involvement in rice production systems. We further characterized landscapes in terms of \"ecosystem service bundles\" linked to specific land uses, as well as in terms of ecosystem service benefits to households. The map of landscape types could help direct future conservation and development efforts towards places where there is potential for success. (C) 2017 Elsevier B.V. All rights reserved.",
+  :journal "Ecosystem Services",
+  :doi "10.1016/j.ecoser.2017.04.004",
+  :title
+  "Remote sensing combined with social-ecological data: The importance of diverse land uses for ecosystem service provision in north-eastern Madagascar",
+  :year 2017,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://www.sciencedirect.com/science/article/pii/S2212041617302619",
+  :code "zaehringer_2017",
+  :methods-summary
+  "Land-use type specific ecosystem service lists based from interviews in multiple landscape types. Forest category unspecific concerning the type of forest.",
+  :authors
+  "Zaehringer, JG; Schwilch, G; Andriamihaja, OR; Ramamonjisoa, B; Messerli, P"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Sustainable land governance in a telecoupled world is currently a challenge. Distant actors, institutions, and interactions shape local land uses and are assumed to affect sustainable development in critical ways as they exert new and often additional claims on land and trigger adverse local impacts like displacement. Action towards achieving the Sustainable Development Goals (SDGs) is urgently needed, as are agents of change that will initiate sustainability transformations. However, empirical studies on transformation pathways towards sustainable land governance remain scarce. Moreover, very few studies have addressed the identification of actors through whom such transformation might be achieved. To address this gap, we analysed the likelihood of actors becoming agents of change based on their aims, resources, and relational profiles in the land governance net work. Our study focused on Madagascar, a country that manifests unsustainable land governance, with distant actors increasingly influencing local land use. We combined an analysis of agency with social network analysis to disentangle attributes and the transformative potential of different actors involved in land governance in northeastern Madagascar. Our results show that actors have different combinations of aims, resources, and relational profiles. Combined analysis of their agency and social networks enabled us to identify potential agents of change and yielded options for transformation actions through which they can become operational agents of change. Our research contributes to promoting pathways to sustainability transformations where actors with various agency levels and social network assets are empowered to establish sustainable land governance. The combination of agency analysis and social network analysis is an innovative method that helps to advance sustainability science.",
+  :journal "Land Use Policy",
+  :doi "10.1016/j.landusepol.2020.104882",
+  :title
+  "Identifying agents of change for sustainable land governance",
+  :year 2021,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://www.sciencedirect.com/science/article/pii/S0264837719317314",
+  :code "andriamihaja_2021",
+  :authors
+  "Andriamihaja, OR; Metz, F; Zaehringer, JG; Fischer, M; Messerli, P"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "The Makira Natural Park (Makira) is the largest terrestrial protected area in Madagascar, supporting nearly 200,000 people living around the park, who derive a significant proportion of their animal-source foods from hunting. Makira is currently managed with three different policies: (1) traditional management with no external assistance; (2) community-based forest management (Gestion Contractualisee des Forets; GCF) with non-governmental support and externally developed policies; and (3) strict external management policies (Zone d'Occupation Controlee; ZOC), meaning a zone of controlled residence for communities inside the core protected area. Here, we longitudinally assess the impacts of these policies on wildlife hunting and consumption by using a difference-in-differences method to evaluate policy efficacy. We found that externally developed conservation policies led to drastically reduced wildlife hunting and consumption in Makira. We also found that public education in the form of environmental awareness-raising, conducted 1 year before adoption, led to a greater concealment of hunting behaviours. Overall, wildlife hunting and consumption have decreased in the Makira region since the adoption of GCF and ZOC policies and could be effective at reducing the unsustainable wildlife hunting across the Makira, particularly when supported by economic development and the creation of alternative sources of livelihood and food.",
+  :journal "Environmental Conservation",
+  :doi "10.1017/S0376892921000217",
+  :title
+  "The effect of conservation policies on wildlife hunting and consumption in north-eastern Madagascar",
+  :year 2021,
+  :added-later 0,
+  :url
+  "https://www.cambridge.org/core/journals/environmental-conservation/article/effect-of-conservation-policies-on-wildlife-hunting-and-consumption-in-northeastern-madagascar/8FCAE3D0C31AAFFFA5F365D7606F00D2",
+  :code "randriamady_2021",
+  :authors
+  "Randriamady, HJ; Park, S; Andrianarimanana, D; Berobia, A; Golden, CD"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Madagascar is one of the world's biodiversity hotspots. The island's past and current rates of deforestation and habitat disturbance threaten its plethora of endemic biodiversity. On Madagascar, tavy (slash and burn agriculture), land conversion for rice cultivation, illegal hardwood logging and bushmeat hunting are the major contributors to habitat disturbance. Understanding species-specific responses to habitat disturbance across different habitat types is crucial when designing conservation strategies. We surveyed three nocturnal lemur species in four forest types of varying habitat disturbance on the Masoala Peninsula, northeastern Madagascar. We present here updated abundance and density estimates for the Endangered Avahi mooreorum and Lepilemur scottorum, and Microcebus sp. Distance sampling surveys were conducted on 11 transects, covering a total of 33 km after repeated transect walks. We collected data on tree height, bole height, diameter at breast height, canopy cover and tree density using point-quarter sampling to characterise the four forest types (primary lowland, primary littoral, selectively logged and agricultural mosaic). Median encounter rates by forest type ranged from 1 to 1.5 individuals (ind.)/km (Microcebus sp.), 0-1 ind./km (A. mooreorum) and 0-1 ind./km (L. scottorum). Species density estimates were calculated at 232.31 ind./km(2) (Microcebus sp.) and 121.21 ind./km(2) (A. mooreorum), while no density estimate is provided for L. scottorum due to a small sample size. Microcebus sp. was most tolerant to habitat disturbance, exhibiting no significant effect of forest type on abundance. Its small body size, omnivorous diet and generalised locomotion appear to allow it to tolerate a variety of habitat disturbance. Both A. mooreorum and L. scottorum showed significant effects of forest type on their respective abundance. This study suggests that the specialist locomotion and diet of A. mooreorum and L. scottorum make them susceptible to the effects of increasing habitat disturbance.",
+  :journal "Primates",
+  :doi "10.1007/s10329-016-0552-0",
+  :title
+  "The effect of habitat disturbance on the abundance of nocturnal lemur species on the Masoala Peninsula, northeastern Madagascar",
+  :year 2017,
+  :added-later 0,
+  :url "https://link.springer.com/article/10.1007/s10329-016-0552-0",
+  :code "sawyer_2017",
+  :authors "Sawyer, RM; Fenosoa, ZSE; Andrianarimisa, A; Donati, G"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Human activities can increase or decrease risks of acquiring a zoonotic disease, notably by affecting the composition and abundance of hosts. This study investigated the links between land use and infectious disease risk in northeast Madagascar, where human subsistence activities and population growth are encroaching on native habitats and the associated biota. We collected new data on pathogenic Leptospira, which are bacteria maintained in small mammal reservoirs. Transmission can occur through close contact, but most frequently through indirect contact with water contaminated by the urine of infected hosts. The probability of infection and prevalence was compared across a gradient of natural moist evergreen forest, nearby forest fragments, flooded rice and other types of agricultural fields, and in homes in a rural village. Using these data, we tested specific hypotheses for how land use alters ecological communities and influences disease transmission. The relative abundance and proportion of exotic species was highest in the anthropogenic habitats, while the relative abundance of native species was highest in the forested habitats. Prevalence of Leptospira was significantly higher in introduced compared to endemic species. Lastly, the probability of infection with Leptospira was highest in introduced small mammal species, and lower in forest fragments compared to other habitat types. Our results highlight how human land use affects the small mammal community composition and in turn disease dynamics. Introduced species likely transmit Leptospira to native species where they co-occur, and may displace the Leptospira species naturally occurring in Madagascar. The frequent spatial overlap of people and introduced species likely also has consequences for public health.        Author summary        Many neglected tropical diseases have reservoirs in wildlife. The effects of human activities on wildlife include changes in species abundance, community composition, and the transmission dynamics of parasites. Introduced species, especially black rats (Rattus rattus) are known to transmit zoonotic diseases among wildlife species and people. Leptospira, a water-borne bacterium that infects wildlife and people, is an important pathogen in the tropics, and in Madagascar, multiple strains and hosts have been identified. We tested how land use gradients in a forest-frontier agricultural system affect the composition of small mammal communities, and in turn the prevalence of Leptospira. We investigated 11 species of small mammals, including native rodents and tenrecs, as well as introduced rodents and shrews, in old growth forest, forest fragments, agricultural fields, and in a village. Leptospira prevalence and infection risk were highest in introduced species compared to native species and lower in forest fragments. The results highlight how the introduction of non-native species affects the variation in disease prevalence in small mammals, with potential consequences for spill-over to people.",
+  :journal "PLOS Neglected Tropical Diseases",
+  :doi "10.1371/journal.pntd.0008946",
+  :title
+  "Effects of land use, habitat characteristics, and small mammal community composition on Leptospira prevalence in northeast Madagascar",
+  :year 2020,
+  :added-later 0,
+  :code "herrera_2020",
+  :authors
+  "Herrera, JP; Wickenkamp, NR; Turpin, M; Baudino, F; Tortosa, P; Goodman, SM; Soarimalala, V; Ranaivoson, TN; Nunn, CL"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "The northeastern SAVA region of Madagascar is the largest vanilla producing area in the world and is flourishing due to a large global demand for natural vanilla. Although the general socio-economic situation has regionally improved because of high vanilla prices, little is known about the nutritional status of local vanilla farmers. We used a 12-month longitudinal food survey to analyze food security, food consumption and nutrient intake of local vanilla farming households (n = 140). Food consumption data was complemented with baseline, agro-economic, longitudinal and field-plot information to determine factors influencing food security, and the contribution of protein from Animal Source Food (ASF_protein) to household nutrition using a stepwise generalized linear model. Results show a high level (74%) of food insecurity and micronutrient deficiency but an acceptable level of protein intake among surveyed households. Consumption of rice, the principal source of carbohydrates, is stable across the year. Compared to other regions in Madagascar, local diets are moderately diversified with an acceptable share of ASF_protein (about 50%). Household size (P < 0.001) and cash income from rice sales (P < 0.001) were the most important factors influencing the food security index (FSI), while cash crop income (P < 0.01) and number of income sources (P < 0.01) were more important in the explanation of the dietary share of ASF_protein. Yet, neither livestock ownership nor contracting with vanilla buyers/exporters did improve food security of the surveyed households. Households who concluded contracts were significantly less food secure than non-contracting households (P = 0.01) with seasonal fluctuations across the year. Policy implications of our findings are that, although many actors of the vanilla value chain run social and environmental programs in the SAVA region, more needs to be done to improve diet quality at household level and strengthen farmers' resilience to food insecurity.",
+  :journal "Food Security",
+  :doi "10.1007/s12571-021-01153-z",
+  :title
+  "Food security and food quality among vanilla farmers in Madagascar: the role of contract farming and livestock keeping",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url "http://link.springer.com/article/10.1007/s12571-021-01153-z",
+  :code "andriamparany_2021",
+  :authors "Andriamparany, JN; Hanke, H; Schlecht, E"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "We conducted an analysis of deforestation and forest disturbance from 2005-2011 in Masoala National Park, the largest federal protected area in Madagascar. We found that the annual rate of forest change in 2010-2011 within the park (1.27%) was considerably higher than in 2005-2008 (0.99%), and was higher than the most recently published deforestation rate for all of Madagascar. Although deforestation and disturbance immediately following the 2009 coup d’état were lower than in the other time periods analyzed, the longer-term increase in forest change over the study period corroborates recent ground-based accounts of increased illegal activities in national parks, including logging of precious hardwoods. We also analyzed forest disturbance patterns in relation to rivers and travel distance from permanent villages. Forest disturbances were significantly closer to rivers than expected by chance, and 82% of disturbance was within the mean maximum travel distance to villages surrounding the park. Both results strongly indicate that most of the mapped disturbance in the study area is anthropogenic, despite two cyclones during the study period. High-resolution forest monitoring ensures that forest change statistics accurately reflect anthropogenic disturbances and are not inflated by forest losses resulting from natural processes.",
+  :journal "Tropical Conservation Science",
+  :doi "10.1177/194008291300600101",
+  :title
+  "Mapping Recent Deforestation and Forest Disturbance in Northeastern Madagascar",
+  :year 2013,
+  :added-later 0,
+  :url "http://journals.sagepub.com/doi/10.1177/194008291300600101",
+  :code "allnutt_2013",
+  :authors
+  "Allnutt, Thomas F.; Asner, Gregory P.; Golden, Christopher D.; Powell, George V. N."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "In this article, I bring together work in political ecology and environmental anthropology to examine how smallholder farmers in Madagascar articulate and embody political and economic histories through the everyday interactions with the commodities cultivated in their fields and forests. I ask: how does the work of cultivating land connect with the art of cultivating memory? In considering this question, I draw from ethnographic research in the agrarian village of Imorona, located in Northeastern Madagascar. In Imorona, smallholder farmers turn towards the materials in their agroforestry fields to reference the more painful political epics of their collective pasts – memories that otherwise remain largely silent within everyday realms of Malagasy culture. I show how the stories people tell of their shifting relationships to commodities including rosewood, vanilla and cloves bring together political and economic 'histories writ large' with more personal and intimate 'histories writ small.' Overall, I argue that the analytical approach of a 'political ecology of memory' offers the productive capacity to look both outward towards others, and inwards towards self. In the process, it elucidates the ways that people render global histories personal.",
+  :journal "Journal of Political Ecology",
+  :doi "10.2458/v23i1.20215",
+  :title
+  "Written with seed: the political ecology of memory in Madagascar",
+  :year 2016,
+  :added-later 0,
+  :url
+  "http://journals.librarypublishing.arizona.edu/jpe/article/id/1965/",
+  :code "osterhoudt_2016",
+  :authors "Osterhoudt, Sarah"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Understanding how land-use change affects biodiversity is a fundamental step to develop effective conservation strategies in human-modified tropical landscapes. Here, we analyzed how land-use change through tropical small-scale agriculture affects endemic, exotic, and non-endemic native ant communities, focusing on vanilla landscapes in north-eastern Madagascar, a global biodiversity hotspot. First, we compared ant species richness and species composition across seven land-use types: old-growth forest, forest fragment, forest-derived vanilla agroforest, fallow-derived vanilla agroforest, woody fallow, herbaceous fallow, and rice paddy. Second, we assessed how environmental factors drive ant species richness in the agricultural matrix to identify management options that promote endemic and nonendemic native while controlling exotic ant species. We found that old-growth forest, forest fragment, and forest-derived vanilla agroforest supported the highest endemic ant species richness. Exotic ant species richness, by contrast, was lowest in old-growth forest but highest in herbaceous fallows, woody fallows, and rice paddy. Rice paddy had the lowest non-endemic native ant species richness. Ant species composition differed among land-use types, highlighting the uniqueness of old-growth forest in harboring endemic ant species which are more sensitive to disturbance. In the agricultural matrix, higher canopy closure and landscape forest cover were associated with an increase of endemic ant species richness but a decrease of exotic ant species richness. We conclude that preserving remnant forest fragments and promoting vanilla agroforests with a greater canopy closure in the agricultural matrix are important management strategies to complement the role of oldgrowth forests for endemic ant conservation in north-eastern Madagascar.",
+  :journal "Biodiversity and Conservation",
+  :doi "10.1007/s10531-021-02314-4",
+  :title
+  "Tropical land use drives endemic versus exotic ant communities in a global biodiversity hotspot",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url "https://link.springer.com/10.1007/s10531-021-02314-4",
+  :code "rakotomalala_2021",
+  :authors
+  "Rakotomalala, Anjaharinony A. N. A.; Wurz, Annemarie; Grass, Ingo; Martin, Dominic A.; Osen, Kristina; Schwab, Dominik; Soazafy, Marie Rolande; Tscharntke, Teja; Raveloson Ravaomanarivo, Lala H."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Aim: North-­eastern Madagascar is a hotspot of plant diversity, but vanilla and rice farming are driving land-­use change, including slash-­and-b­ urn management. It still remains unknown how land-­use change and land-­use history affect richness and composition of endemic, native and exotic herbaceous plant species.",
+  :journal "Diversity and Distributions",
+  :doi "10.1111/ddi.13226",
+  :title
+  "Land‐use intensification increases richness of native and exotic herbaceous plants, but not endemics, in Malagasy vanilla landscapes",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/ddi.13226",
+  :code "raveloaritiana_2021",
+  :authors
+  "Raveloaritiana, Estelle; Wurz, Annemarie; Grass, Ingo; Osen, Kristina; Soazafy, Marie Rolande; Martin, Dominic A.; Faliniaina, Lucien; Rakotomalala, Nantenaina H.; Vorontsova, Maria S.; Tscharntke, Teja; Rakouth, Bakolimalala"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Madagascar is a global biodiversity hotspot of conservation concern. The decline of natural forest habitats due to shifting cultivation has been one of the major land use changes during the last decades. We analyzed satellite images between 1990 and 2018 from northeastern Madagascar to evaluate the contribution of nine variables (e.g., topographic, demographic, forest protection) to explain past forest loss, predict future deforestation probabilities to define important areas that require further conservation attention. Forest cover declined by 21% since 1990 and the once continuous rain forest belt of the region is disrupted twice, in the center and at the southern limit of the study region. Status of forest protection and proximity to the forest edge were identified as most important predictors, but all variables contributed to explaining the observed pattern of deforestation. At least 20% of the 3136 villages in the area were established since 1990 at the expense of previously forested areas. This housing sprawl was mainly driven by accessibility, decreasing landscape connectivity. To conserve the unique biodiversity of the region, the expansion of protected forests and active reforestation measures are urgently needed. Sustainable land use planning and forest management integrating the needs of local land users and conservation priorities should be promoted. We see the highest potential for external stakeholders (e.g., national NGOs) to implement targeted interventions embedded in community-based approaches. Our land cover maps and predictive modeling highlight crucial areas that could act as stepping stone habitats for dispersing or retreating species and therefore important locations to intensify conservation measures.",
+  :journal "Biodiversity and Conservation",
+  :doi "10.1007/s10531-020-01965-z",
+  :title
+  "Identification of crucial stepping stone habitats for biodiversity conservation in northeastern Madagascar using remote sensing and comparative predictive modeling",
+  :year 2020,
+  :added-later 0,
+  :url "http://link.springer.com/10.1007/s10531-020-01965-z",
+  :code "schuessler_2020",
+  :methods-summary
+  "Plot data with 10 replicates, comparin 7 prevalent land-uses in the SAVA region; no data from unprotected old-growth forest but only from protected old-growth forest (Marojejy National Park)",
+  :authors
+  "Schüßler, Dominik; Mantilla-Contreras, Jasmin; Stadtmann, Robin; Ratsimbazafy, Jonah H.; Radespiel, Ute"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Land-use change is the main driver of deforestation and land degradation resulting in the loss of biodiversity and ecosystem functioning in north-eastern Madagascar. Vanilla, the region's main cash crop, is grown in agroforestry systems and may provide an opportunity for the conservation of biodiversity and ecosystem functioning. We used dummy caterpillars to assess predation rates and predator communities along a land-use gradient including unburned old-growth and forest fragments, herbaceous and woody fallows after shifting cultivation with fire usage, as well as rice paddies. The studied vanilla agroforests were either forest-derived or fallow-derived. Besides land-use type, we considered the effects of land-use history (unburned/burned), plot-level parameters and the landscape composition to conclude on management recommendations. Old-growth forest and forest fragments exhibited highest predation rates, which decreased with land-use intensity. Overall, predation was higher in unburned land-use types than in more open, previously burned habitats and rice paddies. High stem and vegetation densities were positively related to predation rates, but decreased with land-use intensity. High forest cover in the surrounding landscape led to higher predation rates, while local structural parameters remained more important. The predator community was arthropod-dominated across all land-use types with ants responsible for between 33% and 69% of all predation events. Overall predator composition in old-growth and forest fragments differed from all other land-use types. Predation by Gryllacrididae (Orthoptera) was lower in all land-use types, including forest-derived vanilla, than in old-growth forest and forest fragments, where they were important contributors to total predation. Vertebrate predation was low throughout. Synthesis and applications. Forested habitats feature higher predation rates and different predator compositions than other land-use systems. Maintaining or restoring tree- and understorey-rich vanilla agroforestry represents a viable tool in landscape conservation programmes as it has the potential to contribute to the conservation of predation as an important ecosystem function in both forest- and fallow-derived agroforests. However, vanilla agroforestry has limited value in conserving forest-specialized predator communities. While the establishment of tree-rich agroforests on former fallow land is favourable for conservation ecosystem functioning, further forest transformation should be avoided.",
+  :journal "Journal of Applied Ecology",
+  :doi "10.1111/1365-2664.13766",
+  :title
+  "Decreasing predation rates and shifting predator compositions along a land‐use gradient in Madagascar's vanilla landscapes",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/1365-2664.13766",
+  :code "schwab_2021",
+  :authors
+  "Schwab, Dominik; Wurz, Annemarie; Grass, Ingo; Rakotomalala, Anjaharinony A. N. A.; Osen, Kristina; Soazafy, Marie Rolande; Martin, Dominic A.; Tscharntke, Teja"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "The north-eastern escarpment of Madagascar harbours the island’s last remaining large-scale humid forest massifs surrounded by a small-scale agricultural mosaic. There is high deforestation, commonly thought to be caused by shifting cultivation practiced by local land users to produce upland rice. However, little is known about the dynamics between forest and shifting cultivation systems at a regional level. Our study presents a first attempt to quantify changes in the extent of forest and different agricultural land cover classes, and to identify the main dynamics of land cover change for two intervals, 1995–2005 and 2005–2011. Over the 16-year study period, the speed of forest loss increased, the total area of upland rice production remained almost stable, and the area of irrigated rice fields slightly increased. While our findings seem to confirm a general trend of land use intensification, deforestation through shifting cultivation is still on the rise. Deforestation mostly affects the small forest fragments interspersed in the agricultural mosaic and is slowly leading to a homogenization of the landscape. These findings have important implications for future interventions to slow forest loss in the region, as the processes of agricultural expansion through shifting cultivation versus intensified land use cannot per se be considered mutually exclusive.",
+  :journal "Land",
+  :doi "10.3390/land4020454",
+  :title
+  "Revealing Regional Deforestation Dynamics in North-Eastern Madagascar—Insights from Multi-Temporal Land Cover Change Analysis",
+  :year 2015,
+  :project "R4D",
+  :added-later 0,
+  :url "http://www.mdpi.com/2073-445X/4/2/454",
+  :code "zaehringer_2015",
+  :authors "Zaehringer, Julie; Eckert, Sandra; Messerli, Peter"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Due to its extraordinary biodiversity and rapid deforestation, north-eastern Madagascar is a conservation hotspot of global importance. Reducing shifting cultivation is a high priority for policy-makers and conservationists; however, spatially explicit evidence of shifting cultivation is lacking due to the difﬁculty of mapping it with common remote sensing methods. To overcome this challenge, we adopted a landscape mosaic approach to assess the changes between natural forests, shifting cultivation and permanent cultivation systems at the regional level from 1995 to 2011. Our study conﬁrmed that shifting cultivation is still being used to produce subsistence rice throughout the region, but there is a trend of intensiﬁcation away from shifting cultivation towards permanent rice production, especially near protected areas. While large continuous forest exists today only in the core zones of protected areas, the agricultural matrix is still dominated by a dense cover of tree crops and smaller forest fragments. We believe that this evidence makes a crucial contribution to the development of interventions to prevent further conversion of forest to agricultural land while improving local land users' well-being.",
+  :journal "Applied Geography",
+  :doi "10.1016/j.apgeog.2015.12.009",
+  :title
+  "Beyond deforestation monitoring in conservation hotspots: Analysing landscape mosaic dynamics in north-eastern Madagascar",
+  :year 2016,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S0143622815300357",
+  :code "zaehringer_2016",
+  :authors
+  "Zaehringer, Julie G.; Hett, Cornelia; Ramamonjisoa, Bruno; Messerli, Peter"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "In north-eastern Madagascar, maintenance of biodiversity competes with expansion of land for agriculture and mining. The concept of “telecoupling” provides a framework for analysis of distant actors and institutions that influence local land use decisions. However, there is a lack of knowledge regarding the extent of telecoupling of land governance in north-eastern Madagascar and a lack of evidence regarding its role in driving land use change and land competition. Using a descriptive Social Network Analysis, we disentangled distant interactions between actors in terms of flows and institutions. Our findings show that the domains of economic and environmental interactions are dominated by actors from different sectors that have claims on the same land but generally do not interact. Distant influences occurring via remote flows of goods, money, and institutions serve to reinforce local land competition. Balancing economic and environmental land claims for more sustainable regional development in north-eastern Madagascar requires collaboration between actors across sectors, scales, and domains.",
+  :journal "Sustainability",
+  :doi "10.3390/su11030851",
+  :title
+  "Land Competition under Telecoupling: Distant Actors’ Environmental versus Economic Claims on Land in North-Eastern Madagascar",
+  :year 2019,
+  :project "R4D",
+  :added-later 0,
+  :url "http://www.mdpi.com/2071-1050/11/3/851",
+  :code "andriamihaja_2019",
+  :authors
+  "Andriamihaja, O. Ravaka; Metz, Florence; Zaehringer, Julie G.; Fischer, Manuel; Messerli, Peter"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Across the Global South, wildlife is an important source of nutrition and income, particularly for rural communities. While wildlife consumption provides a valuable source of nutrition, high levels of hunting can endanger wildlife species. In the Makira region of north-eastern Madagascar, human health is threatened by food insecurity and malnutrition, and spiny tenrecs are a crucial source of subsistence bushmeat with 91% of households consuming tenrecs at least once per year. Moreover, Makira’s human populations are increasing, resulting in forest decline and degradation. In order to inform conservation and public health efforts, we investigated the inﬂuence of hunting, habitat loss and forest degradation on spiny tenrec population dynamics in the Makira region. We collected data on tenrec population densities as well as hunting and consumption by humans in 51 communities. We used these data to conduct a population viability analysis for the two most commonly hunted spiny tenrecs (Tenrec ecaudatus and Setifer setosus). We found that current harvest rates for these species are generally sustainable in the Makira region, largely due to tenrecs’ extraordinary fecundity. However, even assuming no change in current hunting rates, tenrec populations could become threatened if fecundity were to decline or background mortality to increase, both possible scenarios under future trajectories of habitat loss and degradation. We ﬁnd that any future increase in hunting-induced mortality rates for tenrecs are similarly unsustainable – and likely to occur as human populations expand and hunting areas decline. We conclude that there is a vanishing window of opportunity to sustainably manage tenrec hunting in northeastern Madagascar in order to avoid negative conservation and human health outcomes.",
+  :journal "Animal Conservation",
+  :doi "10.1111/acv.12714",
+  :title
+  "Evaluation of tenrec population viability and potential sustainable management under hunting pressure in northeastern Madagascar",
+  :year 2021,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/acv.12714",
+  :code "annapragada_2021",
+  :authors
+  "Annapragada, A.; Brook, C. E.; Luskin, M. S.; Rahariniaina, R. P.; Helin, M.; Razafinarivo, O.; Ambinintsoa Ralaiarison, R.; Randriamady, H. J.; Olson, L. E.; Goodman, S. M.; Golden, C. D."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Rosewood in Madagascar is both a lucrative timber commodity and a group of threatened and endangered tree species primarily limited to the country's last remaining northeastern forests. Since 2000, trade in rosewood has been on the rise due to escalating demand in China. Despite international conservation efforts to curtail the trade, the collapse of the Malagasy government via a military-backed coup d’etat in 2009 triggered an outbreak of illegal logging in the country's northeastern protected areas. Since the coup, thousands of shipping containers of rosewood have been exported overseas, making multimillionaires of an elite few in the northeast and profoundly reconﬁguring the country's geographies of power. Using an ethnographic approach to analyze political economic transformations, this article takes readers from the hundreds of logging camps scattered throughout the protected areas of northeastern Madagascar to the upper echelons of a rosewood political economy that spans the highest powers in the capital city. In the article, I argue that revenues generated during Madagascar's rosewood logging outbreak, combined with the country's return to electoral politics at the end of 2013, have together facilitated the political ascendancy of an elite group of rosewood traders from northeastern Madagascar. Through a process that I refer to as “rosewood democracy,” these rosewood traders have been voted into central ofﬁces in Madagascar's Fourth Republic, ultimately demonstrating how democratic institutions that are supposed to foster equality are captured to sustain long-standing patterns of inequality.",
+  :journal "Political Geography",
+  :doi "10.1016/j.polgeo.2017.06.014",
+  :title "Rosewood democracy in the political forests of Madagascar",
+  :year 2018,
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S0962629816301755",
+  :code "anonymous_2018",
+  :authors "Anonymous"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Achieving forest conservation together with poverty alleviation and equity is an unending challenge in the tropics. The Makira REDD+ pilot project located in northeastern Madagascar is a well-suited case to explore this challenge in conditions of extreme poverty and climatic vulnerability. We assessed the potential effect of project siting on the livelihoods of the local population and which households would be the most strongly impacted by conservation measures. Farmers living in hilly areas must resort to slash-and-burn agriculture (tavy) since a combination of topographic and climatic constraints, such as cyclones, makes permanent rice cultivation very difficult. These are the people who suffer most from conservation-related restriction measures. For practical reasons the project, unfortunately, did not target these farmers. The main focus was on communities with a lower cyclonic risk that are able to practice permanent rice agriculture in the lowlands. To reduce deforestation without violating the principles of equity, REDD+ projects in Madagascar need to better target populations facing high climatic risks and invest in efforts to improve the farmers’ agricultural systems.",
+  :journal "Forests",
+  :doi "10.3390/f6030748",
+  :title
+  "Achieving Conservation and Equity amidst Extreme Poverty and Climate Risk: The Makira REDD+ Project in Madagascar",
+  :year 2015,
+  :added-later 0,
+  :url "http://www.mdpi.com/1999-4907/6/3/748",
+  :code "brimont_2015",
+  :authors
+  "Brimont, Laura; Ezzine-de-Blas, Driss; Karsenty, Alain; Toulon, Angélique"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "In Madagascar, as elsewhere, decentralization and devolution of natural resource management to local, community-based natural resource management (CBNRM) institutions have been major approaches for the increased engagement of local people in conservation projects. Using virtualism, a set of theories linking abstract models to their implementation in policy, I explore the implementation of CBNRM in the periphery of the newly established Makira Natural Park in northeastern Madagascar. I show that the imposition of an ill-suited model of CBNRM led to community-based institutions becoming instruments of coercion rather than empowerment for community members. Madagascar’s CBNRM legislation implied communal land tenure arrangements, the legitimacy and comprehensibility of written contracts, and an overly onerous regulatory environment prior to decentralization - none of which held true for Makira communities. In Makira, the virtualizing vision of CBNRM led to the further marginalization of already marginal people.",
+  :journal "Human Ecology",
+  :doi "10.1007/s10745-015-9725-5",
+  :title
+  "Community Forest Management as Virtualism in Northeastern Madagascar",
+  :year 2015,
+  :added-later 0,
+  :url "http://link.springer.com/10.1007/s10745-015-9725-5",
+  :code "cullman_2015",
+  :authors "Cullman, Georgina"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "New technologies like ecoacoustic surveys promise time and cost efficiency for biodiversity assessments, serve as a basis for effective conservation policies, and are particularly appealing for remote and highly diverse tropical areas. Acoustic indices facilitate the analysis of large acoustic datasets but no consensus on their performance has been reached yet. We evaluated the efficacy of four acoustic indices (Acoustic Complexity Index, Acoustic Di­ versity Index, Acoustic Evenness Index, Acoustic Entropy) for sound data analysis and biodiversity assessments inside a national park and the agricultural mosaic landscape of north-eastern Madagascar, a global biodiversity hotspot. We used self-built sound recorders to continuously record soundscapes on 80 plots across seven land-use types (old-growth forest, forest fragment, forest–derived and fallow-derived vanilla agroforest, herbaceous and woody fallow, rice paddy) and compared index values between land–use types, assessed the correlation with bird species richness as measured by point counts, and related the acoustic indices to plot- and landscape-scale pa­ rameters. The Acoustic Diversity Index, Acoustic Evenness Index (inverse) and Acoustic Entropy were highest in old-growth forest and lowest for rice paddies and fallow land. Index values for structurally similar land-use types did not differ significantly from each other. The correlation of the three acoustic indices with bird species richness was strongest during daytime (R2 ≥ 0.30). Differences in the index values were best explained by landuse type and vegetation density. Our results showed that all investigated indices except the Acoustic Complexity Index were suitable biodiversity indicators for a tropical, agricultural landscape. Soundscape diversity was positively affected by plot-scale vegetation structure, emphasizing the importance of forests and particularly oldgrowth forest for conservation. We demonstrated that acoustic indices and sound recordings are a useful tool for assessing biodiversity in tropical agricultural mosaic landscapes. To realize the full potential of ecoacoustics in conservation, sampling guidelines and user-friendly analysis packages will be key to facilitate a wider implementation.",
+  :journal "Ecological Indicators",
+  :doi "10.1016/j.ecolind.2020.106929",
+  :title
+  "Listening to a changing landscape: Acoustic indices reflect bird species richness and plot-scale vegetation structure across different land-use types in north-eastern Madagascar",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S1470160X20308682",
+  :code "droege_2021",
+  :methods-summary
+  "Plot data with 10 replicates, comparin 7 prevalent land-uses in the SAVA region; no data from unprotected old-growth forest but only from protected old-growth forest (Marojejy National Park)",
+  :authors
+  "Dröge, Saskia; Martin, Dominic Andreas; Andriafanomezantsoa, Rouvah; Burivalova, Zuzana; Fulgence, Thio Rosin; Osen, Kristina; Rakotomalala, Eric; Schwab, Dominik; Wurz, Annemarie; Richter, Torsten; Kreft, Holger"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Madagascar is currently developing a policy and strategies to enhance the sustainable management of its natural resources, encouraged by United Nations Framework Convention on Climate Change (UNFCCC) and REDD. To set up a sustainable ﬁnancing scheme methodologies have to be provided that estimate, prevent and mitigate leakage, develop national and regional baselines, and estimate carbon beneﬁts. With this research study this challenge was tried to be addressed by analysing a lowland rainforest in the Analanjirofo region in the district of Soanierana Ivongo, North East of Madagascar. For two distinguished forest degradation stages: ‘‘low degraded forest’’ and ‘‘degraded forest’’ aboveground biomass and carbon stock was assessed. The corresponding rates of carbon within those two classes were calculated and linked to a multi-temporal set of SPOT satellite data acquired in 1991, 2004 and 2009. Deforestation and particularly degradation and the related carbon stock developments were analysed. With the assessed data for the 3 years 1991, 2004 and 2009 it was possible to model a baseline and to develop a forest prediction for 2020 for Analanjirofo region in the district of Soanierana Ivongo. These results, developed applying robust methods, may provide important spatial information regarding the priorities in planning and implementation of future REDD+ activities in the area.",
+  :journal "Forest Ecology and Management",
+  :doi "10.1016/j.foreco.2011.08.041",
+  :title
+  "Deforestation and forest degradation monitoring and assessment of biomass and carbon stock of lowland rainforest in the Analanjirofo region, Madagascar",
+  :year 2011,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S0378112711005330",
+  :code "eckert_2011",
+  :authors
+  "Eckert, Sandra; Ratsimba, Harifidy Rakoto; Rakotondrasoa, Lovanirina Olivia; Rajoelison, Lalanirina Gabrielle; Ehrensperger, Albrecht"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Human populations continue to increase and encroach on remaining natural habitats worldwide, resulting in greater numbers and larger ranges of commensal exotic carnivores such as cats and dogs. This results in increased interactions with native wildlife. In Madagascar, we know relatively little about the effects of domestic and/or feral dogs and cats on native carnivore populations. We investigated spatial interactions by combining photographic sampling across seven sites with two-species co-occurrence modeling to provide the ﬁrst assessment of the spatial co-occurrence of native and exotic carnivores in Madagascar, including an examination of habitat characteristics that explain these relationships. Our surveys from 2008 to 2013 accumulated 2991 photo-captures of native and exotic carnivores in 8854 trap nights. We found that native and exotic carnivores in rainforest habitat occur together less often than expected and that exotic carnivores may be replacing native carnivores, particularly in forest areas nearest villages. Six of the native carnivores in this study had higher site use in the absence of exotic carnivores and their species interaction factors (SIF) revealed a lack of co-occurrence (e.g. SIF < 1.0). We found that nocturnal and/or crepuscular native carnivores were less likely to co-occur with exotic carnivores. We demonstrate the effectiveness of combining photographic sampling with co-occurrence modeling to investigate the effects of exotic carnivores on an entire community of native carnivores. Our study exposes the strong negative inﬂuence of exotic carnivores, ranging from exclusion to complete replacement of native carnivores, and we urgently recommend a combination of targeted educational programs and removal programs to combat the inﬂux of exotic carnivores.",
+  :journal "Animal Conservation",
+  :doi "10.1111/acv.12233",
+  :title
+  "Patterns of spatial co-occurrence among native and exotic carnivores in north-eastern Madagascar: Spatial co-occurrence of native-exotic carnivores",
+  :year 2016,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/acv.12233",
+  :code "farris_2016",
+  :authors "Farris, Z. J.; Kelly, M. J.; Karpanty, S.; Ratelolahy, F."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Wildlife consumption can be viewed as an ecosystem provisioning service (the production of a material good through ecological functioning) because of wildlife’s ability to persist under sustainable levels of harvest. We used the case of wildlife harvest and consumption in northeastern Madagascar to identify the distribution of these services to local households and communities to further our understanding of local reliance on natural resources. We inferred these benefits from demand curves built with data on wildlife sales transactions. On average, the value of wildlife provisioning represented 57% of annual household cash income in local communities from the Makira Natural Park and Masoala National Park, and harvested areas produced an economic return of U.S.$0.42 ha−1 · year−1. Variability in value of harvested wildlife was high among communities and households with an approximate 2 orders of magnitude difference in the proportional value of wildlife to household income. The imputed price of harvested wildlife and its consumption were strongly associated (p< 0.001), and increases in price led to reduced harvest for consumption. Heightened monitoring and enforcement of hunting could increase the costs of harvesting and thus elevate the price and reduce consumption of wildlife. Increased enforcement would therefore be beneficial to biodiversity conservation but could limit local people’s food supply. Specifically, our results provide an estimate of the cost of offsetting economic losses to local populations from the enforcement of conservation policies. By explicitly estimating the welfare effects of consumed wildlife, our results may inform targeted interventions by public health and development specialists as they allocate sparse funds to support regions, households, or individuals most vulnerable to changes in access to wildlife.",
+  :journal "Conservation Biology",
+  :doi "10.1111/cobi.12174",
+  :title
+  "Economic Valuation of Subsistence Harvest of Wildlife in Madagascar",
+  :year 2014,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/cobi.12174",
+  :code "golden_2014",
+  :authors
+  "Golden, Christopher D.; Bonds, Matthew H.; Brashares, Justin S.; Rodolph Rasolofoniaina, B. J.; Kremen, Claire"}
+ {:read "DELETE?",
+  :excluded 1,
+  :abstract "",
+  :journal "International Journal of Epidemiology",
+  :doi "10.1093/ije/dyx071",
+  :title
+  "Cohort Profile: The Madagascar Health and Environmental Research (MAHERY) study in north-eastern Madagascar",
+  :year 2017,
+  :added-later 0,
+  :url "https://academic.oup.com/ije/article/46/6/1747/3868352",
+  :code "golden_2017",
+  :authors
+  "Golden, Christopher D; Anjaranirina, Evelin Jean Gasta; Fernald, Lia CH; Hartl, Daniel L; Kremen, Claire; Milner Jr, Danny A; Ralalason, Dera H; Ramihantaniarivo, Herlyne; Randriamady, Hervet; Rice, Benjamin L; Vaitla, Bapu; Volkman, Sarah K; Vonona, Miadana Arisoa; Myers, Samuel S"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Anthropologists and ecologists investigating the dialectical relationship between human environments and the cultural practices that shape and are shaped by them have been talking past each other for too long: the one looking purely at metaphor and the other purely at function. Our mixed-method data analysis set out to explore whether it was possible to determine empirically the human health and conservation value of the local Malagasy taboo system. This involved qualitative examination of the content of taboo origin stories collected through ethnographic approaches, when the story was remembered. The ethnographic substance of these stories included historicizing events, accounts of symptoms associated with breaching taboos, and incentives for abiding by taboos. We then used quantitative comparisons in an effort to understand the motivation for adhering to taboos. We provide evidence that the conservation value of taboos may be limited but that the social value of taboos may be rooted in concerted attempts to preserve a physical, spiritual, moral, and cultural immunity. Furthermore, we found that there was a sophisticated traditional etiological knowledge, based in nuanced understandings of ecology and epidemiology, which likely protects local people from zoonotic disease, allergies, and toxins. We suggest that the prohibitions mandated by the traditional taboo system against consuming particular wildlife species is a moral framework, which is driven to a significant degree by personal security and health-related incentives.",
+  :journal "Ecology and Society",
+  :doi "10.5751/ES-07590-200242",
+  :title
+  "The human health and conservation relevance of food taboos in northeastern Madagascar",
+  :year 2015,
+  :added-later 0,
+  :url "http://www.ecologyandsociety.org/vol20/iss2/art42/",
+  :code "golden_2015_a",
+  :authors "Golden, Christopher D.; Comaroff, Jean"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "In Madagascar, the constellation of taboos serves as a form of informal regulatory institution and is foundational to Malagasy culture, regardless of class, ethnic group affiliation, and educational background. Many researchers have credited rapid social change as a crucial mechanism for disturbing taboos. Others suggest that taboos are innately historical. However, very little empirical research has assessed the effects of social change on taboos or quantified the stability of taboo systems over time. Here, we use a case study of the ensemble of taboos in northeastern Madagascar, still a critical aspect of social life there, as a lens through which we investigate its degree of stability over time. Our aim was: (1) to describe the food taboos of local Malagasy living in northeastern Madagascar, and (2) to quantitatively assess the stability of these taboos to address certain claims regarding cultural erosion using an empirical, hypothesis-driven approach with rich ethnographic material to aid in interpretation. We investigated the temporal stability of taboos and local adherence to the moral framework, finding that approximately 3.0% of 4857 taboos were not adhered to at least once during the course of a 7-yr follow-up study. Additionally, we quantitatively explored the mediating effects of migration, modernization, and the spread of Western religion on number of taboos and level of adherence. We found that the presence of extralocal groups and migration did not decrease the number of taboos abided by locally, but did increase rates of nonadherence. Modernization accompanied by generational shifts tended to increase rather than erode the number of taboos, and younger individuals adhered to taboos to the same degree as older individuals. The effect of Western religion depended on the denomination, but generally reduced the number of taboos, although it did not affect adherence. The ways in which social change affects the stability of taboos are complex. Migrants tended to adhere to taboos less than long-standing inhabitants, suggesting that attachment to place is significant in maintaining adherence to taboos.",
+  :journal "Ecology and Society",
+  :doi "10.5751/ES-07589-200241",
+  :title
+  "Effects of social change on wildlife consumption taboos in northeastern Madagascar",
+  :year 2015,
+  :added-later 0,
+  :url "http://www.ecologyandsociety.org/vol20/iss2/art41/",
+  :code "golden_2015_b",
+  :authors "Golden, Christopher D.; Comaroff, Jean"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Extensive areas of forest are cleared every year to establish new agricultural land in the tropics, resulting in a catastrophic loss in habitat for the world’s primates. A prominent example of this process is Madagascar, where an increasing demand for arable land has led to the once-forested landscape to be now dominated by agricultural areas used for the cultivation of food and cash crops. Despite the prominence of these plantations throughout Madagascar, their suitability as a habitat to support endemic lemur populations remains unclear. Here, we assessed lemur presence in vanilla plantations, Madagascar’s principal export crop, within the northeastern Sava region with the use of line transects. We confirmed the presence of five lemur species, four of which were nocturnal cheirogaleids, in these vanilla plantations. Intensively farmed vanilla plantations and those in existing stands of vegetation supported at least one species of lemur. Furthermore, lemurs were significantly more likely to be present in plantations grown close or adjacent to natural forest fragments, compared to more intensively farmed, anthropogenic sites. In comparison, we observed eight lemur species in natural forest fragment sites in close proximity to the vanilla plantation sites, four of which we did not observe in any of the plantation sites. Our results provide evidence of lemurs using vanilla plantations and show that vanilla plantations may act as extensions of suitable habitat for lemurs, suggesting that they may also function as matrices between isolated forest fragments through which gene flow can occur. These are important and encouraging findings for both lemur conservation and for sustainable agroforestry undertaken by local farming communities.",
+  :journal "International Journal of Primatology",
+  :doi "10.1007/s10764-018-0022-1",
+  :title
+  "The Use of Vanilla Plantations by Lemurs: Encouraging Findings for both Lemur Conservation and Sustainable Agroforestry in the Sava Region, Northeast Madagascar",
+  :year 2018,
+  :added-later 0,
+  :url "http://link.springer.com/10.1007/s10764-018-0022-1",
+  :code "hending_2018",
+  :authors
+  "Hending, Dan; Andrianiaina, Angelo; Rakotomalala, Zafimahery; Cotton, Sam"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Agricultural landscapes provide financial livelihoods for farming communities in rural areas. However, such agroenvironments can significantly impact the local floral biodiversity and introduce harmful invasive species to the ecosystem. Despite the prominence of plantations throughout the tropics, their effects on local flora are limited to only a few specific cash crops and geographical regions. Here, we compared the species richness and structural diversity of vegetation in natural forest fragments and three types of vanilla plantation within the Sava region of north‐east Madagascar ranging from those within or adjacent to existing forests, to intensively cultivated plantations. We recorded data on plant species abundance, diameter at breast height and canopy cover within multiple sites of each habitat. We used abundance data to calculate species richness indices, and we compared these metrics between habitats. Forested habitats contained a significantly higher floral species richness, structural diversity and more endemic and regionally native species than nonforested, anthropogenic vanilla plantations. However, our results suggest that the high floral species richness and structural diversity of natural forests can be partially achieved in vanilla plantations, depending on the site's management regime; traditionally managed vanilla plantations located close to natural forests can support diverse floral communities. These encouraging findings for plant conservation and sustainable agroforestry in Madagascar suggest that that newly created vanilla plantations and already existing nonforested plantations should endeavour to follow the more traditional forested approach to enhance the future sustainability and promote floristic diversity.",
+  :journal "African Journal of Ecology",
+  :doi "10.1111/aje.12682",
+  :title
+  "Floral species richness, structural diversity and conservation value of vanilla agroecosystems in Madagascar",
+  :year 2020,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/aje.12682",
+  :code "hending_2020",
+  :authors
+  "Hending, Daniel; Andrianiaina, Angelo; Maxfield, Pete; Rakotomalala, Zafimahery; Cotton, Sam"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "We applied a participatory mapping approach supported by very highresolution satellite imagery to reconstruct spatially explicit, year-to-year land use transitions in two highly biodiverse, data-scarce forest frontier landscapes in north-eastern Madagascar. We explored these transitions in the light of major continuous trends and discrete events highlighted by local farmers as inﬂuencing their land use decisions. Our results suggest that the process of establishing protected areas ﬁrst reinforced ongoing deforestation, but later led to a signiﬁcant reduction of forest loss rates. Recent cash crop booms appear to have induced agricultural intensiﬁcation processes in our study landscapes, while also putting additional pressure on forests, as people may be encouraged to clear forest for cash crop cultivation. These ﬁndings are crucial to understanding rapid land use change processes in forest frontier contexts in the humid tropics, and especially to informing natural resource governance and development initiatives in complex mosaic landscapes.",
+  :journal "Journal of Land Use Science",
+  :doi "10.1080/1747423X.2019.1625979",
+  :title
+  "Effects of protected area establishment and cash crop price dynamics on land use transitions 1990–2017 in north-eastern Madagascar",
+  :year 2019,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://www.tandfonline.com/doi/full/10.1080/1747423X.2019.1625979",
+  :code "llopis_2019",
+  :authors
+  "Llopis, Jorge C.; Harimalala, Paul C.; Bär, Roger; Heinimann, Andreas; Rabemananjara, Zo Hasina; Zaehringer, Julie G."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Global change processes are increasing their pace and reach, leading to telecoupled situations, where distant factors come to outpace local determinants of land use change. Often, these dynamics drive agricultural intensification processes, with as yet unclear implications for the well-being of human populations living in the areas affected. This study explores how two key telecoupling dynamics affect local well-being in the biodiversity hotspot of Madagascar. It focuses on forest frontier landscapes, which are undergoing processes of agricultural intensification as a consequence of distant factors. Concretely, we look at how the recent establishment of two, largely externally funded, terrestrial protected areas, Masoala National Park and Makira Natural Park, and the ongoing price boom for two export cash crops, vanilla and clove, have influenced the well-being of local populations in the country's north-east. We present data from eight focus group discussions conducted in four villages located on the periphery of the two protected areas. Drawing on the “capabilities approach,” we identify the key components of the local understanding of well-being, lay out the interconnections between these components, and explore how the two telecoupling processes affect well-being dynamics. Our findings reveal that well-being components present bundle characteristics, where increases or decreases in one component lead to parallel increases, or decreases in a set of them. We further ascertain that telecoupling processes might lead to trade-offs between well-being components. These findings highlight the need for a holistic understanding of human well-being when planning protected areas, and when designing governance mechanisms to steer local landscapes under intense cash crop price fluctuations toward sustainable outcomes.",
+  :journal "Frontiers in Sustainable Food Systems",
+  :doi "10.3389/fsufs.2019.00126",
+  :title
+  "Capabilities Under Telecoupling: Human Well-Being Between Cash Crops and Protected Areas in North-Eastern Madagascar",
+  :year 2020,
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://www.frontiersin.org/article/10.3389/fsufs.2019.00126/full",
+  :code "llopis_2020",
+  :authors
+  "Llopis, Jorge C.; Diebold, Clara L.; Schneider, Flurina; Harimalala, Paul C.; Patrick, Laby; Messerli, Peter; Zaehringer, Julie G."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Tropical mountain forest frontier landscapes are increasingly target of protected areas (PAs) implementation, in many cases to secure the supply of globally demanded ecosystem services (ES). However, whether PAs manage to achieve their objectives is not always clear, nor are the implications of PA establishment for the supply of ES relevant for local populations. To address these knowledge gaps, we assess the year-to-year supply of six stakeholder-relevant ES across ES categories in two forest frontier, mountainous landscapes in the periphery of PAs in north-eastern Madagascar. As ES most relevant to local populations, we assess food crops production, flood control and bequest value. As globally-demanded ES, we evaluate export cash crops production, global climate regulation and existence value. Our results suggest that PA implementation managed to stem on-going losses of global climate regulation and existence value, but at the expense of also driving decreases in food crops production and bequest value supply to local populations. While our findings are encouraging for global conservation objectives, they also highlight the stark costs local populations might incur under PA establishment, and thus the need to assure that local livelihoods and well-being, including cultural dimensions, are not undermined by conservation interventions.",
   :journal "Ecosystem Services",
   :doi "10.1016/j.ecoser.2021.101249",
+  :title
+  "Year-to-year ecosystem services supply in conservation contexts in north-eastern Madagascar: Trade-offs between global demands and local needs",
   :year 2021,
-  :project "Telecoupling",
+  :project "R4D",
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S2212041621000073",
+  :code "llopis_2021",
   :authors
-  "Jorge C. Llopis, Jonas F. Chastonay, Franziska C. Birrer, Roger Bär, R. Ntsiva N. Andriatsitohaina, Peter Messerli, Andreas Heinimann, Julie G. Zaehringer"}
- {:study
-  "Conservation versus local livelihoods? Sustainable development challenges in Madagascar",
-  :study-id "Zaehringer, 2018",
+  "Llopis, Jorge C.; Chastonay, Jonas F.; Birrer, Franziska C.; Bär, Roger; Andriatsitohaina, R. Ntsiva N.; Messerli, Peter; Heinimann, Andreas; Zaehringer, Julie G."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Interactions between farmers and agrobiodiversity are key drivers of agroecosystems sustainability and of the resilience of such systems to perturbations, but research into the human/nature interactions have overlooked some important aspects of agrobiodiversity management. In particular, farmers' ecological knowledge of the spatial organisation of plant diversity remains an open question, although knowledge and practices have major implications for the efficient and sustainable use of natural resources. Our study addresses this question by analysing how farmers spatially organise plant species in agroforests based on their knowledge of species interactions and interactions with the environment. The Analanjirofo region on the north-east coast of Madagascar provides an interesting context to explore this issue in clove-based agroforests, as these systems were developed by farmers as a sustainable alternative to the traditional system of shifting rice cultivation. Using an emic approach, that is based on the farmers' perspective, and participatory mapping, we studied plant diversity and its spatial organisation in 17 clove-based agroforests and in 28 management sub-units defined by farmers in a village of Vavatenina district. The plant functions and farmers' knowledge of plant interactions with clove tree were recorded in semi-structured interviews, and the interactions were represented in a cognitive map. Farmers manage more than 50 plant species associated with diverse functions. Analysis of participatory maps identified four main types of species association as a function of the age of the clove trees and the associated plant diversity, and different spatial organisation patterns as a function of the topography and the surrounding species. Analysis of farmers' knowledge provided valuable insights into spatial organisation practices, how farmers perceive the adaptation of plant species to biophysical heterogeneity of the environment and whether they can be associated with other species. Our findings and methods pave the way for further interdisciplinary research on farmers/nature interactions to support the development of agrobiodiversity-based systems taking into account farmer and scientific knowledge and practices, especially in the tropics where the expansion of cash crops in input-intensive and mono-cropping systems has driven major disruptions to smallholder agriculture.",
+  :journal "People and Nature",
+  :doi "10.1002/pan3.10238",
+  :title
+  "Exploring farmers' agrobiodiversity management practices and knowledge in clove agroforests of Madagascar",
+  :year 2021,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1002/pan3.10238",
+  :code "mariel_2021",
+  :authors
+  "Mariel, Juliette; Carrière, Stéphanie M.; Penot, Eric; Danthu, Pascal; Rafidison, Verohanitra; Labeyrie, Vanesse"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Land-use change is the most important driver of biodiversity loss worldwide and particularly so in the tropics, where natural habitats are transformed into large-scale monocultures or heterogeneous landscape mosaics of largely unknown conservation value. Using birds as an indicator taxon, we evaluated the conservation value of a landscape mosaic in northeastern Madagascar, a biodiversity hotspot and the center of global vanilla production. We assessed bird species richness and composition by conducting point counts across seven prevalent land-use types (forest- and fallow-derived vanilla agroforests, woody and herbaceous fallow that are part of a shifting cultivation system, rice paddy, forest fragment and contiguous old-growth forest). We find that old-growth forest had the highest species richness, driven by a high share of endemics. Species richness and community composition in forestderived vanilla agroforest were similar to forest fragment, whereas fallow-derived vanilla agroforest was most comparable to woody fallow. The open land-use types herbaceous fallow and rice paddy had fewest species. Across forest fragments, vanilla agroforests, and woody fallows, endemic bird species richness was positively correlated to landscape-scale forest cover. We conclude that both fallow- and forest-derived vanilla agroforests play an important but contrasting role for bird conservation: Fallow-derived agroforests are less valuable but take fallow land out of the shifting cultivation cycle, possibly preventing further degradation. Conversely, forest-derived agroforests contribute to forest degradation but may avoid total loss of tree cover from forest fragments. Considering the land-use history of agroforests may thus be a promising avenue for future research beyond the case of vanilla.",
+  :journal "Biotropica",
+  :doi "10.1111/btp.12859",
+  :title
+  "Bird diversity and endemism along a land‐use gradient in Madagascar: The conservation value of vanilla agroforests",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/btp.12859",
+  :code "martin_2021_b",
+  :methods-summary
+  "Plot data with 10 replicates, comparin 7 prevalent land-uses in the SAVA region; no data from unprotected old-growth forest but only from protected old-growth forest (Marojejy National Park)",
+  :authors
+  "Martin, Dominic Andreas; Andriafanomezantsoa, Rouvah; Dröge, Saskia; Osen, Kristina; Rakotomalala, Eric; Wurz, Annemarie; Andrianarimisa, Aristide; Kreft, Holger"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Forest loss, fragmentation, and anthropization threaten the survival of forest species all over the world. Shifting agriculture is one of these threatening processes in Madagascar. However, when its cycle is halted and the land is left to regenerate, the resulting growth of secondary forest may provide a viable habitat for folivorous and omnivorous lemur species. We aimed to identify the response of nocturnal lemurs to different successional stages of regenerating secondary, degraded mature, and mature forest across a mosaic-type landscape. We surveyed four nocturnal lemur species (Avahi laniger, Microcebus cf. simmonsi, Allocebus trichotis, and Daubentonia madagascariensis) in four forest types of varying habitat disturbance in northeastern Madagascar. We estimated densities in mature and regenerating secondary forest for the eastern woolly lemur (Avahi laniger) and mouse lemur (Microcebus cf. simmonsi), two sympatric species with folivorous and omnivorous diets respectively. We did not estimate densities of Allocebus trichotis and Daubentonia madagascariensis owing to small sample size; however, we observed both species exclusively in mature forest. We found higher population densities of A. laniger and M. cf. simmonsi in secondary than in mature forest, showing the potential of regenerating secondary forest for lemur conservation. Several environmental factors influenced the detectability of the two lemur species. While observer and habitat type influenced detection of the eastern woolly lemur, canopy height and vine density influenced detection of mouse lemurs. Understanding how different species with different diets interact with anthropogenically impacted habitat will aid future management decisions for the conservation of primate species.",
+  :journal "International Journal of Primatology",
+  :doi "10.1007/s10764-018-0055-5",
+  :title
+  "Forest Type Influences Population Densities of Nocturnal Lemurs in Manompana, Northeastern Madagascar",
   :year 2018,
-  :project "Telecoupling",
-  :authors "Julie G. Zaehringer"}
- {:study
-  "Perspectives on vanilla farming in the SAVA Region (north-eastern Madagascar): The Diversity Turn Baseline Study (DTBS)",
-  :study-id "Hänke, 2018",
-  :project "Diversity Turn",
+  :added-later 0,
+  :url "http://link.springer.com/10.1007/s10764-018-0055-5",
+  :code "miller_2018",
   :authors
-  "Hendrik Hänke, Jan Barkmann, Lloyd Blum, Yvonne Franke, Dominic A. Martin, Janna Niens, Kristina Osen, Viviana Uruena, S. Annette Witherspoon, Annemarie Wurz"}]
+  "Miller, Alex; Mills, Harriet; Ralantoharijaona, Tantely; Volasoa, Nicole Andriaholinirina; Misandeau, Chantal; Chikhi, Lounès; Bencini, Roberta; Salmona, Jordi"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "The presence of exotic predators in ecosystems across the world is a leading driver of native species’ declines. Exotic predators largely inﬂuence native species through predation and harassment, which may cause native species to avoid them spatially. We used a camera trap dataset from seven sites in Madagascar’s largest protected area complex to investigate spatial co-occurrence patterns between three exotic predators (free-ranging domestic dogs Canis familiaris and cats Felis silvestris, and small Indian civet Viverricula indica) and native ground-dwelling forest birds (n = 5) and small mammals (n = 4). We created 216 two-species occupancy models for 27 exotic predator-native species pairings to examine how habitat, exotic predator presence or both, inﬂuenced each native species’ occupancy and/or detection. We found that native bird and small mammal occupancy and/or detection were strongly related to an exotic predator’s presence 52% of the time (i.e. 14 of 27 exotic predator-native species pairings). Six of the 14 species pairings (i.e. 43%) had non-independent co-occurrence patterns, four of which were habitatmediated. The effect of exotic predator presence on native species’ detection was largely negative, depressing native species’ detection in seven out of 12 instances (i.e. 58% of the time). The small Indian civet and free-ranging cats each strongly inﬂuenced the occupancy and/or detection of six species for a combined impact on seven native species, while domestic dogs strongly inﬂuenced two species. By including habitat covariates in two-species occupancy models, we gained deeper insight into the effect exotic predator presence has on native species’ distribution. We also note that the strong effect of exotic predator presence on our ability to detect native species can hinder the ability of researchers to provide accurate parameter estimates. We recommend future research into the synergistic effects that habitat degradation and exotic species presence has on native species.",
+  :journal "Journal of Zoology",
+  :doi "10.1111/jzo.12645",
+  :title
+  "Using camera traps to investigate spatial co‐occurrence between exotic predators and native prey species: a case study from northeastern Madagascar",
+  :year 2019,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/jzo.12645",
+  :code "murphy_2019",
+  :authors
+  "Murphy, A.; Kelly, M. J.; Karpanty, S. M.; Andrianjakarivelo, V.; Farris, Z. J."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "High-value agricultural commodities face substantial economic, environmental and social sustainability challenges. As a result, commodity industries are adopting sustainable supply- and value-chain models to make production more efﬁcient, traceable and risk-averse. These top-down models often focus on giving higher prices to smallholder producers. While an important component of sustainability, this focus on farm-gate prices has shown mixed results in part because they are less effective in highlighting the asymmetrical power relationships and the socio-economic and ecological complexity in high-value commodity production. Here, we use a novel method to measure and visualise changes in smallholder power in Madagascar’s northeast ‘vanilla triangle’—home to about 80% of the world’s high quality vanilla. Our results reveal the paradox that during the recent price surge an overall increase in smallholders’ multi-dimensional power to access economic beneﬁts was accompanied by a decrease in many other equally important measures of sustainability. This illustrates how effective models for understanding global sustainable commodity chains should incorporate smallholders' perspectives that often emphasise complexity and uncertainty, and which aims to increase power and access for producers across both high and low price points.",
+  :journal "Palgrave Communications",
+  :doi "10.1057/s41599-018-0199-0",
+  :title
+  "A new sustainability model for measuring changes in power and access in global commodity chains: through a smallholder lens",
+  :year 2019,
+  :added-later 0,
+  :url "http://www.nature.com/articles/s41599-018-0199-0",
+  :code "neimark_2019",
+  :authors
+  "Neimark, Benjamin; Osterhoudt, Sarah; Alter, Hayley; Gradinar, Adrian"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Background: Madagascar shelters over 14,000 plant species, of which 90% are endemic. Some of the plants are very important for the socio-cultural and economic potential. Tampolo forest, located in the northeastern part of Madagascar, is one of the remnant littoral forests hinged on by the adjacent local communities for their daily livelihood. However, it has considerably shrunk due to anthropogenic activities forming forest patches. Thus, documenting the useful plants in and around the forest is important for understanding the ethnobotany in this area. Methods: In this study we (1) collected and identiﬁed useful plants utilized by local communities. Voucher specimens were collected following the information given by interviewees, (2) recorded the collection activities and the consumption methods through semi-structured interviews of the local inhabitants, and (3) performed a phytochemical screening to identify the active compounds and the potential healing metabolites of the medicinal plants. Results: A total of 65 people between 25 and 75 years old were interviewed. Surveys recorded 123 species used as timber, food, or medicine. Among them, 92 were forest species and 31 were ruderal species. Medicinal plants were mostly used to cure stomach ailments (71%), fever (33.3%), and fatigue (25%) with leaves (68%) being the most used plant part. Phytochemical analyses of 20 endemic medicinal species showed the presence of compounds that could be responsible for the therapeutic effects of the plants. Conclusions: Tampolo forest proves to be an important littoral forest highly utilized by the adjacent local communities due to the presence of a high number of useful plants which are mostly endemic to the region. Hence, our investigation assessed the importance of these species in the locality and this can be used for further study on ecology, conservation, and valorization of these species.",
+  :journal "Forests",
+  :doi "10.3390/f12050566",
+  :title
+  "Ethnobotanical Survey in Tampolo Forest (Fenoarivo Atsinanana, Northeastern Madagascar)",
+  :year 2021,
+  :added-later 0,
+  :url "https://www.mdpi.com/1999-4907/12/5/566",
+  :code "onjalalaina_2021",
+  :authors
+  "Onjalalaina, Guy E.; Sattler, Carole; Razafindravao, Maelle B.; Wanga, Vincent O.; Mkala, Elijah M.; Mwihaki, John K.; Ramananirina, Besoa M. R.; Jeannoda, Vololoniaina H.; Hu, Guangwan"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Question: In human-modified tropical landscapes, agroforestry is considered a promising land use to reconcile biodiversity conservation with production goals. The role of agroforests regarding conservation may be strongly influenced by land-use history; however, few studies have explicitly investigated this. We therefore tested the importance of land-use history for habitat structure and tree diversity in vanilla agroforests situated in a human-modified tropical landscape. Location: Smallholder mosaic landscape of northeastern Madagascar. Methods: We studied tree stand structure, diversity and composition in vanilla agroforests of contrasting land-use history, old-growth forests, forest fragments and woody fallows after slash-and-burn agriculture, which all contribute to the smallholder mosaic landscape of northeastern Madagascar. The vanilla agroforests were either derived directly from forest or otherwise from woody fallows after slash-and-burn agriculture. Results: Land-use history strongly influenced tree species diversity and composition in vanilla agroforests and also affected stand structure. Forest-derived agroforests maintained high levels of tree species diversity and differed in community composition from fallow-derived agroforests, which had relatively low levels of tree diversity. Additionally, forest-derived vanilla agroforests harboured a significantly higher percentage of endemic species than fallow-derived agroforests, and forest-derived agroforests also shared many species with old-growth forests and forest fragments. Fallow-derived vanilla agroforests harboured a lower percentage of endemic species than woody fallows. Conclusion: Considering the land-use history of agroforests is important to unfold their full potential as elements in a multifunctional human-modified landscape. Forest-derived agroforests are an alternative to forest conversion through slash-and-burn agriculture and have the potential to sustain high levels of species diversity and important habitat structures. In contrast, fallow-derived agroforests regain stand structure on degraded historically forested land and thereby have the potential to increase canopy cover and connectivity at the landscape scale.",
+  :journal "Applied Vegetation Science",
+  :doi "10.1111/avsc.12563",
+  :title
+  "Land‐use history determines stand structure and tree diversity in vanilla agroforests of northeastern Madagascar",
+  :year 2021,
+  :project "DT",
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1111/avsc.12563",
+  :code "osen_2021",
+  :methods-summary
+  "Plot data with 10 replicates, comparin 7 prevalent land-uses in the SAVA region; no data from unprotected old-growth forest but only from protected old-growth forest (Marojejy National Park)",
+  :authors
+  "Osen, Kristina; Soazafy, Marie Rolande; Martin, Dominic Andreas; Wurz, Annemarie; März, Adriane; Ranarijaona, Hery Lisy Tiana; Hölscher, Dirk"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Residents of many African cities face economic uncertainty due to high rates of under- and unemployment and lack of government support. In response, many urban Africans have fortified their links to rural areas as a strategy to weather uncertainty and reduce vulnerability. Scholars have documented high rates of ownership of rural resources (e.g., land, housing, and livestock) by people living in cities as proof of the strength of rural–urban linkages in Africa. In this article, I argue that the use of rural resources to reduce urban expenditures or increase income cannot be assumed and depends on the social relationships between city and village residents. I draw on twenty-four months of ethnographic fieldwork with rural–urban migrants in northeastern Madagascar. I focus on the clove season of 2011–12, a spectacular moment in which high yields and prices created a market boom for this agricultural commodity. While many urban migrants had claimed access to clove trees, not all of these individuals were successful in actually accessing the clove crop or the income generated from its sale during the 2011–12 season. Exploring the winners and losers in this commodity boom reveals that investing in social relationships with rural family and friends has important economic consequences for urban migrants.",
+  :journal "Economic Anthropology",
+  :doi "10.1002/sea2.12130",
+  :title
+  "Matoy jirofo, masaka lavany : Rural–urban migrants' livelihood strategies through the lens of the clove commodity cycle in Madagascar",
+  :year 2019,
+  :added-later 0,
+  :url "https://onlinelibrary.wiley.com/doi/10.1002/sea2.12130",
+  :code "tilghman_2019",
+  :authors "Tilghman, Laura M."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Ending hunger and alleviating poverty are key goals for a sustainable future. Food security is a constant challenge for agrarian communities in low-income countries, especially in Madagascar. We investigated agricultural practices, household characteristics, and food security in northeast Madagascar. We tested whether agricultural practices, demographics, and socioeconomics in rural populations were related to food security. Over 70% of respondents reported times during the last three years during which food for the household was insufficient, and the most frequently reported cause was small land size (57%). The probability of food insecurity decreased with increasing vanilla yield, rice yield, and land size. There was an interaction effect between land size and household size; larger families with smaller land holdings had higher food insecurity, while larger families with larger land had lower food insecurity. Other socioeconomic and agricultural variables were not significantly related to food insecurity, including material wealth, education, crop diversity, and livestock ownership. Our results highlight the high levels of food insecurity in these communities and point to interventions that would alleviate food stress. In particular, because current crop and livestock diversity were low, agricultural diversification could improve outputs and mitigate food insecurity. Development of sustainable agricultural intensification, including improving rice and vanilla cultivation to raise yields on small land areas, would likely have positive impacts on food security and alleviating poverty. Increasing market access and off-farm income, as well as improving policies related to land tenure could also play valuable roles in mitigating challenges in food security.",
+  :journal "Food Security",
+  :doi "10.1007/s12571-021-01179-3",
+  :title
+  "Food insecurity related to agricultural practices and household characteristics in rural communities of northeast Madagascar",
+  :year 2021,
+  :added-later 0,
+  :url "https://link.springer.com/10.1007/s12571-021-01179-3",
+  :code "herrera_2021",
+  :authors
+  "Herrera, James P.; Rabezara, Jean Yves; Ravelomanantsoa, Ny Anjara Fifi; Metz, Miranda; France, Courtni; Owens, Ajilé; Pender, Michelle; Nunn, Charles L.; Kramer, Randall A."}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "As both a lucrative timber commodity and endangered species, rosewood ties the forests of Madagascar to the far ends of the globe. While the United States and Europe fund rosewood conservation, logging exports to China fuel a growing demand for classical furniture dating back to the Ming Dynasty. Conﬂicting demands for rosewood are often portrayed in terms of an East-West tension. Indeed, accounts of many global conservation resources, including ivory, rhino horn, tiger parts, and shark ﬁn, ﬁt this portrayal. In breaking with these accounts, I analyze global demands for rosewood in terms of two overlapping conservation and commodity assemblages. Both global assemblages have reterritorialized the forest of northeastern Madagascar. Via NGO oﬃces in the United States, the conservation assemblage delineates vast tracts of forest for protection and identiﬁes the communities that are to be its managers. Via rosewood importers in China, the commodity assemblage drives thousands of loggers into these protected forests in search of rosewood. Yet, rather than representing irreconcilable vantages, these global assemblages demonstrate a fundamental congruence. Both conservation and commodity assemblages blur global rationalities with situated cultural elements, creating the illusion of either a universal science uncorrupted by culture, or a cultural eminence uncorrupted by capitalism. Analyzing rosewood in terms of assemblage reveals not the stark contrast of an increasingly bifurcating global order, but rather an emergent space of global connectivity that complicates binary understandings of East and West, while simultaneously speaking to the reality of these geopolitical imaginaries.",
+  :journal "Geoforum",
+  :doi "10.1016/j.geoforum.2017.08.010",
+  :title "Rosewood occidentalism and orientalism in Madagascar",
+  :year 2017,
+  :added-later 0,
+  :url
+  "https://linkinghub.elsevier.com/retrieve/pii/S0016718517302403",
+  :code "zhu_2017",
+  :authors "Zhu, Annah"}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Large expanses of tropical rainforest have been converted into agricultural landscapes cultivated by smallholder farmers. This is also the case in north-eastern Madagascar; a region that retains significant proportions of forest cover despite slash-and-burn shifting hill rice cultivation and vanilla agroforestry expansion. The region is also a global hotspot for herpetofauna diversity, but how amphibians and reptiles are affected by land-use change remains largely unknown. Using a space-for-time study design, we compared species diversity and community composition across seven prevalent land uses: unburned (old-growth forest, forest fragment, and forest-derived vanilla agroforest) and burned (fallow-derived vanilla agroforest, woody fallow, and herbaceous fallow) land-use types, and rice paddy. We conducted six comprehensive, time-standardized searches across at least 10 replicates per land-use type and applied genetic barcoding to confirm species identification. We documented an exceptional diversity of herpetofauna (119 species; 91% endemic). Observed plot-level amphibian species richness was significantly higher in old-growth forest than in all other land-use types. Plot-level reptile species richness was significantly higher in unburned land-use types compared with burned land-use types. For both amphibians and reptiles, the less-disturbed land-use types showed more uneven communities and the species composition in old-growth forest differed significantly from all other land-use types. Amphibians had higher forest dependency (38% of species occurred exclusively in old-growth forest) than reptiles (26%). Our analyses thus revealed that the two groups respond differently to land-use change: we found less pronounced losses of reptile species richness especially in unburned agricultural habitats, suggesting that reptiles are less susceptible to land-use change than amphibians, possibly due to their ability to cope with hotter and drier microclimates. In conclusion, our findings emphasize existing conservation opportunities – especially for reptiles – in extensive agricultural landscapes while highlighting the precarious situation of amphibians in disappearing old-growth forests.",
+  :journal "Animal Conservation",
+  :doi "10.1111/acv.12760",
+  :title
+  "Differential responses of amphibians and reptiles to land-use change in the biodiversity hotspot of north-eastern Madagascar",
+  :year 2022,
+  :project "DT",
+  :added-later 1,
+  :url
+  "https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12760",
+  :code "fulgence_2022",
+  :authors
+  "Fulgence, T. R., Martin, D. A., Randriamanantena, R., Botra, R., Befidimanana, E., Osen, K., Wurz, A., Kreft, H., Andrianarimisa, A., & Ratsoavina, F. M. "}
+ {:read "1",
+  :excluded 0,
+  :abstract
+  "Sustainable land-system transformations are necessary to avert biodiversity and climate collapse. However, it remains unclear where entry points for transformations exist in complex land systems. Here, we conceptualize land systems along land-use trajectories, which allows us to identify and evaluate leverage points, i.e., entry points on the trajectory where targeted interventions have particular leverage to influence land-use decisions. We apply this framework in the biodiversity hotspot Madagascar. In the northeast, smallholder agriculture results in a land-use trajectory originating in old-growth forests and spanning from forest fragments to shifting hill rice cultivation and vanilla agroforests. Integrating interdisciplinary empirical data on seven taxa, five ecosystem services, and three measures of agricultural productivity, we assess trade-offs and cobenefits of land-use decisions at three leverage points along the trajectory. These trade-offs and cobenefits differ between leverage points: Two leverage points are situated at the conversion of old-growth forests and forest fragments to shifting cultivation and agroforestry, resulting in considerable trade-offs, especially between endemic biodiversity and agricultural productivity. Here, interventions enabling smallholders to conserve forests are necessary. This is urgent since ongoing forest loss threatens to eliminate these leverage points due to path dependency. The third leverage point allows for the restoration of land under shifting cultivation through vanilla agroforests and offers cobenefits between restoration goals and agricultural productivity. The co-occurring leverage points highlight that conservation and restoration are simultaneously necessary to avert collapse of multifunctional mosaic landscapes. Methodologically, the framework highlights the importance of considering path dependency along trajectories to achieve sustainable land-system transformations.",
+  :journal "Proceedings of the National Academy of Sciences",
+  :doi "10.1073/pnas.2107747119",
+  :title
+  "Land-use trajectories for sustainable land system transformations: Identifying leverage points in a global biodiversity hotspot",
+  :year 2022,
+  :project "DT",
+  :added-later 1,
+  :url "https://www.pnas.org/doi/full/10.1073/pnas.2107747119",
+  :code "martin_2022",
+  :authors
+  "Martin, Dominic Andreas; Andrianisaina, Fanilo; Fulgence, Thio Rosin; Osen, Kristina; Rakotomalala, Anjaharinony Andry Ny Aina; Raveloaritiana, Estelle; Soazafy, Marie Rolande; Wurz, Annemarie; Andriafanomezantsoa, Rouvah; Andriamaniraka, Harilala; Andrianarimisa, Aristide; Barkmann, Jan; Dröge, Saskia; Grass, Ingo; Guerrero-Ramirez, Nathaly; Hänke, Hendrik; Hölscher, Dirk; Rakouth, Bakolimalala; Ranarijaona, Hery Lisy Tiana; Randriamanantena, Romual; Ratsoavina, Fanomezana Mihaja; Ravaomanarivo, Lala Harivelo Raveloson; Schwab, Dominik; Tscharntke, Teja; Zemp, Delphine Clara; Kreft, Holger"}
+ {:read "1",
+  :excluded 0,
+  :abstract "",
+  :journal "People and Nature",
+  :title
+  "Complementary ecosystem services from multiple land uses highlight the value of mosaic landscapes in Madagascar",
+  :year 2022,
+  :project "DT",
+  :added-later 1,
+  :code "raveloaritiana_2022",
+  :authors
+  "Raveloaritiana, E., Wurz, A., Grass, I., Osen, K., Martin, D. A., Soazafy, M. R., Bemamy, C., Ranarijaona, H. L. T., Kreft, H., Hölscher, D., Rakouth, B., Tscharntke, T. "}]
