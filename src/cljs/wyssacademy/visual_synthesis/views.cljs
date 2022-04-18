@@ -7,10 +7,11 @@
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
-   [wyssacademy.visual-synthesis.details :refer (details)]
+   [wyssacademy.visual-synthesis.details :refer (details-summary details-links)]
    [wyssacademy.visual-synthesis.events :as events]
    [wyssacademy.visual-synthesis.landscape :as wvl]
-   [wyssacademy.visual-synthesis.subs :as subs]))
+   [wyssacademy.visual-synthesis.subs :as subs]
+   [clojure.string :as str]))
 
 (defn header []
   [:div.mb-12
@@ -58,24 +59,32 @@
         (into ^{:key @selected-destination} [wvcd/dropdown {:size :sm :color :teal :button-text "Destination"}]
               (xf :selected-destination)
               categories-sorted)
-        [:> button {:color :blue :on-click #(on-click {:key nil} :selected-source)} "Show all"]
-        ]
+        [:> button {:color :blue :on-click #(on-click {:key nil} :selected-source)} "Show all"]]
 
        [:div.overflow-y-scroll {:style {:height 500}}
         (into
          ^{:key [@selected-source @selected-destination]}
          [wvcl/list {:class [:-pl-10]}]
-         (for [m @interactions]
+         (for [m @interactions
+               :let [_ (tap> {:interactions m})]]
            ^{:key (str (:link-description m) (:out m) (:in m))}
-           [wvcl/list-item {:class    ["hover:bg-gray-50" "hover:text-black"]
-                            :on-click #(rf/dispatch [::events/set-hover-landscape (keyword (:out m))])}
+           [wvcl/list-item
+            {:class    ["hover:bg-gray-50" "hover:text-black"]
+             :on-click #(do
+                          (rf/dispatch [::events/set-hover-landscape (keyword (:out m))
+                                        (keyword (:in m))])
+                          (rf/dispatch [::tabs-ns/set-tab ::info :details-link]))}
             [:div.flex.flex-col
              [:div.flex.justify-between.text-indigo-600.items-end [:div (categories-map (:out m) (:out m))]
               [:div.text-2xl (:effect m)]]
              [:div.flex.gap-2
               [:div.text-gray-400 "influences "]
               [:div.text-teal-600 (categories-map (:in m) (:in m))]]
-             [:div.mt-2 (:link-description m)]]]))]])))
+             [:div.mt-2 (:link-description m)]
+             [:div.flex.justify-between.mt-2.text-red-400
+              [:div "Agreement between studies"]
+              [:div (when-let [s (:agreement-between-studies m)]
+                      (str/capitalize (or s " ")))]]]]))]])))
 
 (defn landscape-elements []
   [tab-content {:class ["min-w-full"]}
@@ -95,15 +104,16 @@
        ^{:key @tab-view}
        [tabs {:id ::info
               :choices
-              [{:id :landscape-elements :label "Landscape Elements"}
+              [{:id :summary :label "Summary"}
                {:id :interactions :label "Interactions"}
-               {:id :details :label "Details"}]
+               {:id :details-link :label "Details"}]
               :class [:w-full]}
         [:div.min-w-full.flex-auto
          (case @tab-view
            :interactions [interactions-list]
-           :details [details]
-           [landscape-elements])]]])))
+           :summary [details-summary]
+           :details-link [details-links]
+           [details-summary])]]])))
 
 (defn landscape []
   [wyssacademy.visual-synthesis.landscape/view])
@@ -124,4 +134,5 @@
 
 (comment
   (count @(subscribe [::subs/interactions]))
+  @(subscribe [::subs/interactions-list-filtered])
   )

@@ -1,7 +1,8 @@
 (ns wyssacademy.visual-synthesis.subs
   (:require
    [wyssacademy.visual-synthesis.dev :as dev]
-   [re-frame.core :refer (reg-sub)]))
+   [re-frame.core :refer (reg-sub)]
+   [re-frame.core :as rf]))
 
 (reg-sub
  ::user-input
@@ -24,6 +25,12 @@
 (reg-sub
  ::data
  (fn [db _] (:data db {})))
+
+(reg-sub
+ ::studies
+ :<- [::data]
+ (fn [m _]
+   (into {} (map (fn [m] [(:code m) m])) (:studies m))))
 
 (reg-sub
  ::interactions
@@ -56,27 +63,44 @@
    (reduce-kv (fn [m k ms] (assoc m k (mapv #(select-keys % ks) ms)))
               {} (group-by :in ms))))
 
+(reg-sub
+ ::interactions-by-link
+ :<- [::interactions]
+ (fn [ms [_ ks]]
+   (reduce-kv (fn [m k ms] (assoc m k (mapv #(select-keys % ks) ms)))
+              {} (group-by (juxt :out :in) ms))))
+
+
+
 (defn kw->str [id]
   (let [id (or id "unfounded")]
     (if (qualified-keyword? id)
       (str (namespace id) "/" (name id))
       (name id))))
 
-(defn ids->edge [id1 id2]
+(defn ids->edge [id1 id2 effect]
   {:id (str "e-" (kw->str id1) "+" (kw->str id2))
    :source (kw->str id1)
    :target (kw->str id2)
    :animated true
-   "arrowHeadType" "arrowclosed"
-   :style {:stroke-width 2 :stroke "#fff1f2"}})
+   ;; "arrowHeadType" "arrowclosed"
+   :style {:stroke-width 3
+           :stroke (-> {2 "#a5f531"
+                        1 "#7bb526"
+                        0 "#fff1f2"
+                        -1 "#ef8575"
+                        -2 "#f32c22"}
+                       (get effect "#fff1f2"))}})
 
 (reg-sub
  ::interactions-landscape
  :<- [::interactions]
  (fn [ms]
-   (mapv (fn [m] (ids->edge (:out m) (:in m))) ms)))
+   (mapv (fn [m] (ids->edge (:out m) (:in m) (:effect m))) ms)))
 
 (comment
   (dev/log [::interactions])
+  (dev/log [::studies])
+  (rf/clear-subscription-cache!)
   (dev/log [::interactions-by-origin [:in]])
   )
