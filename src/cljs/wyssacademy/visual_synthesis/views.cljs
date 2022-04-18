@@ -81,10 +81,11 @@
               [:div.text-gray-400 "influences "]
               [:div.text-teal-600 (categories-map (:in m) (:in m))]]
              [:div.mt-2 (:link-description m)]
-             [:div.flex.justify-between.mt-2.text-red-400
-              [:div "Agreement between studies"]
-              [:div (when-let [s (:agreement-between-studies m)]
-                      (str/capitalize (or s " ")))]]]]))]])))
+             (when (pos? (count (:studies m)))
+               [:div.flex.justify-between.mt-2.text-red-400
+                [:div "Agreement between studies (" (count (:studies m)) ")"]
+                [:div (when-let [s (:agreement-between-studies m)]
+                        (str/capitalize (or s " ")))]])]]))]])))
 
 (defn landscape-elements []
   [tab-content {:class ["min-w-full"]}
