@@ -47,13 +47,13 @@
    {:src "img/rice.webp" :style {:top "50%" :left "20%"
                                  :zoom 0.2}}
 
-   :out-of-land-influences
+   :out-of-landscape-influences
    {:src "img/out-of-land-income.webp" :style {:top "50%" :left "20%"}}
 
    :old-growth-forest
    {:src "img/old_growth_forest.png" :style {:top "60%" :left "-8%"}}
 
-   :off-land-income
+   :non-agricultural-income
    {:src "img/off-land-income.webp" :style {:top "60%" :left "-8%"
                                             :zoom 0.065}}
 
@@ -65,7 +65,7 @@
 
    :shifting-cultivation
    {:src "img/shifting-cultivation.webp" :style {:top "56%" :left "50%"
-                                                 :zoom 0.125}}
+                                                 :zoom 0.11}}
 
    :subsistence-agriculture
    {:src "img/subsistence-agriculture.webp" :style {:top "56%" :left "50%"}}
@@ -84,7 +84,7 @@
 
    :waterbodies
    {:src "img/water_body.png" :style {:top "56%" :left "50%"
-                                      :zoom 0.5}}
+                                      :zoom 0.7}}
 
    :wellbeing
    {:src "img/wellbeing.webp" :style {:top "56%" :left "50%" :zoom 0.275}}})
@@ -109,7 +109,7 @@
 
     {:key :clove-based-agroforest, :label "Clove-based agroforest"
      :image (:clove-based-agroforest images)
-     :position {:x 100 :y 90}}
+     :position {:x 0 :y 60}}
 
     {:key :commercial-agriculture,
      :label "Commercial agriculture"
@@ -121,27 +121,22 @@
      :image (:cultural-ecosystem-services images)
      :position {:x 1080 :y 100}}
 
-    {:key :fallow-derived-vanilla-agroforest,
-     :label "Fallow-derived vanilla agroforest"
-     :image (:fallow-derived-vanilla-agroforest images)
-     :position {:x 200 :y 200}}
-
     {:key :forest-derived-vanilla-agroforest,
      :label "Forest-derived vanilla agroforest"
      :image (:forest-derived-vanilla-agroforest images)
-     :position {:x 200 :y 90}}
+     :position {:x 190 :y 30}}
 
     {:key :forest-fragment, :label "Forest fragment"
      :image (:forest-fragment images)
-     :position {:x 530 :y 530}}
+     :position {:x 300 :y 530}}
 
     {:key :irrigated-rice-paddy, :label "Irrigated rice paddy"
      :image (:irrigated-rice-paddy images)
      :position {:x 740 :y 400}}
 
-    {:key :off-land-income,
-     :label "Off-land income"
-     :image (:off-land-income images)
+    {:key :non-agricultural-income,
+     :label "Non Agricultural Income"
+     :image (:non-agricultural-income images)
      :position {:x 400 :y 450}}
 
     {:key :pasture, :label "Pasture"
@@ -150,7 +145,7 @@
 
     {:key :protected-old-growth-forest, :label "Protected old-growth forest"
      :image (:protected-old-growth-forest images)
-     :position {:x 620 :y 180}}
+     :position {:x 480 :y 110}}
 
     {:key :regulating-ecosystem-services,
      :label "Regulating ecosystem services"
@@ -159,7 +154,7 @@
 
     {:key :shifting-cultivation, :label "Shifting cultivation"
      :image (:shifting-cultivation images)
-     :position {:x 10 :y 210}}
+     :position {:x 5 :y 200}}
 
     {:key :subsistence-agriculture,
      :label "Subsistence agriculture"
@@ -172,22 +167,28 @@
 
     {:key :waterbodies, :label "Waterbodies"
      :image (:waterbodies images)
-     :position {:x 390 :y 80}}
+     :position {:x 510 :y 570}}
 
     {:key :use-of-provisioning-ecosystem-services,
      :label "Use of provisioning ecosystem services"
      :image (:use-of-provisioning-ecosystem-services images)
      :position {:x 990 :y 265}}
 
-    {:key :out-of-land-influences,
-     :label "Out-of-land influences"
-     :image (:out-of-land-influences images)
+    {:key :out-of-landscape-influences,
+     :label "Out of landscape influences"
+     :image (:out-of-landscape-influences images)
      :position {:x 740 :y 500}}
 
     {:key :wellbeing,
      :label "Wellbeing"
      :image (:wellbeing images)
-     :position {:x 250 :y 190}}]))
+     :position {:x 250 :y 190}}
+
+    ;; order matter for the z position for the hover
+    {:key :fallow-derived-vanilla-agroforest,
+     :label "Fallow-derived vanilla agroforest"
+     :image (:fallow-derived-vanilla-agroforest images)
+     :position {:x 200 :y 200}}]))
 
 (def categories-keys (mapv :key categories))
 (def categories-map (reduce (fn [m {:keys [key label]}]
@@ -208,4 +209,5 @@
 (comment
   (count categories)
   (vec (sort (mapv :key categories)))
-  )
+
+)

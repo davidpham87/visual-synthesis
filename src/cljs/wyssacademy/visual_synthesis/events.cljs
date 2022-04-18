@@ -71,6 +71,12 @@
       (update :effect (fnil identity (rand-nth ["--" "-" "+" "++"])))))
 
 (reg-event-fx
+ ::retrieve-studies
+ (fn [{db :db} _]
+   {:fx [[:dispatch [::retrieve-edn {:file :studies
+                                     :uri "data/studies.edn"}]]]}))
+
+(reg-event-fx
  ::parse-interactions
  (fn [{db :db} _]
    {:db (update-in db [:data :interactions] #(mapv parse-interaction %))}))
@@ -79,7 +85,8 @@
  ::init-db
  (fn [_ _]
    {:db wyssacademy.visual-synthesis.db/default-db
-    :fx [[:dispatch [::retrieve-interactions]]]}))
+    :fx [[:dispatch [::retrieve-interactions]]
+         [:dispatch [::retrieve-studies]]]}))
 
 (reg-event-fx
  ::set-ui-states
@@ -88,13 +95,16 @@
 
 (reg-event-fx
  ::set-hover-landscape
- (fn [_ [_ value]]
-   {:fx [[:dispatch [::set-ui-states :selected-landscape value]]]}))
+ (fn [_ [_ from to]]
+   {:fx [[:dispatch [::set-ui-states :selected-landscape from]]
+         [:dispatch [::set-ui-states :selected-source from]]
+         (when to [:dispatch [::set-ui-states :selected-destination to]])]}))
 
 (reg-event-fx
  ::unset-hover-landscape
  (fn [_ _]
-   {:fx [[:dispatch [::set-ui-states :selected-landscape nil]]]}))
+   {:fx [[:dispatch [::set-ui-states :selected-landscape nil]]
+         [:dispatch [::set-ui-states :selected-destination nil]]]}))
 
 (comment
   (rf/dispatch [::success]))

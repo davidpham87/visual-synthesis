@@ -1,259 +1,1931 @@
-[{:link-description
-  "Old-growth forests have higher species richness across most taxa, and are especially important for endemic and threatened species",
-  :link-name "Link_1",
-  :out "Protected old-growth forest",
-  :effect "+",
+[{:effect 2,
+  :agreement-between-studies "high",
+  :out "Unprotected old-growth forest",
   :in "Biodiversity",
+  :link-description
+  "Old-growth forests have the highest species richness of all studied land-use types across most taxa; especially important for endemic and threatened species. However, it is currently unknown if biodiversity systematically differs between protected and unprotected old-growth forest in the region.",
   :studies
-  [{:study "Raveloaritiana, 2021",
+  [{:study "raveloaritiana_2021",
     :explanation
-    "Importance of old-growth forest for maintaining herbaceous species that are intolerant to disturbance / land-use intensification or transformation of old-growth forests into agricultural lands causes loss of herbaciousendemic species",
+    "Old-growth forest had relatively low total herbaceous plant species richness, but highest endemic richness. They also had a unique species composition.",
     :rank 1}
-   {:study "Martin, 2021a",
+   {:study "martin_2021_b",
     :explanation
-    "Old growth forest have the highest bird species diversity (overall and endemic) /  old-growth forest had many unique species and distinct community assemblages /  threatened and near-threatened species most frequently in\nold-growth forest.",
-    :rank 2}]}
- {:link-description
-  "Forest fragments have low species richness across most taxa, but remain an important habitat for endemic species and forest dependent tree species",
-  :link-name "Link_2",
-  :out nil,
-  :effect "-",
-  :in nil,
-  :studies
-  [{:study "Raveloaritiana, 2021",
-    :explanation
-    "Forest fragments had the lowest  genreal herbacious species richnes but provides important habitat  for herbaceous endemic species",
-    :rank 1}
-   {:study "Osen, 2021",
-    :explanation
-    "Forest fragments have the strongest tree diversity after old growth forest",
+    "Old-growth forest had highest bird species richness; highest proportion of endemic and threatened species.",
     :rank 2}
-   {:study "Martin, 2021b",
+   {:study "rakotomalala_2021",
     :explanation
-    "The small size, the high level of wood extraction, and abundant disturbances in studied forest fragments, caused strong losses in bird diversity compared to the contiguous old-growth  forest. ",
+    "Old-growth forest had relatively low total ant species richness, but highest endemic richness.",
+    :rank 3}
+   {:study "osen_2021",
+    :explanation
+    "Old-growth forest had significantly higher bird species richness than all other studied land-uese types and the highest proportion of endemic species.",
+    :rank 4}
+   {:study "fulgence_2021",
+    :explanation
+    "Old-growth forest had highest amphibian and reptile species richness; highest proportion of endemic species; unique amphibian species composition.",
+    :rank 5}
+   {:study "sawyer_2017",
+    :explanation
+    "Non-logged old-growth forest hae the hightest lemur species richness and abundance, followed by logged old-growth forest.",
+    :rank 6}
+   {:study "droege_2021",
+    :explanation
+    "Old-growth forest have the highest sound diversity index values - an ecological indicator - across most indices.",
+    :rank 7}
+   {:study "miller_2018",
+    :explanation
+    "Two lemur species occurred exclusivel in mature forest.",
+    :rank 8}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Unprotected old-growth forest",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Unprotected old-growth forests provide some cultural ecosystem services. They serve as a land reserves for descendents and have aesthetical and recreational value.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Forests provide land reserves for descendents, aesthetical value, recreation value.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Old-growth forests are relatively unimportant for cultural ecosystem services.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Unprotected old-growth forest",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Unprotected old-growth forests provide many regulating ecosystem services such as water regulation, local climate regulation, cyclone protection, and carbon strorage. Above-ground carbon stocks in old-growth forest are three times higher than in the land-use type ranking second, forest fragment.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Forests provide water regulation, local climate regulation, cyclone protection, carbon strorage.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Old-growth forests are the most important regional land-use type for regulating and supporting ecosystem services.",
+    :rank 2}
+   {:study "soazafy_2021",
+    :explanation
+    "Carbon stocks in protected old-growth forest are 178 mg/ha, more than three times more than in forest fragments.",
     :rank 3}]}
- {:link-description
-  "Although transforming remaining natural forests into forest-derived vanilla agroforests can already be considered unfavourable in terms of biodiversity conservation, these remain important to endemic species conservation",
-  :link-name "Link_3",
-  :out nil,
-  :effect "--",
-  :in nil,
+ {:effect 2,
+  :agreement-between-studies "medium",
+  :out "Unprotected old-growth forest",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Unprotected old-growth forests are important for many regularly used provisioning ecosystem services. These are timber and non-timber forest products such as wild foods, busmeat, honey, medicinal plants, and building materials. However, most people in the region live far away from unprotected old-growth forest, meaning they rely less on provisioning ecosystem services from those forests. The use of some provisioning ecosystem services is governed by taboos.",
   :studies
-  [{:study "Martin, 2021b",
+  [{:study "zaehringer_2017",
     :explanation
-    "Important role of forest-derived vanilla agroforests for endemic birds",
+    "Timber and non-timber forest products such as wild foods, honey, medicinal plants, building materials.",
     :rank 1}
-   {:study "Schwab, 2021",
+   {:study "raveloaritiana_2022",
     :explanation
-    "Transforming remaining natural forests into forest-derived vanilla agroforests, even without the use of fire, can already be considered unfavourable in terms of biodiversity conservation",
+    "Old-growth forests are similarly important as other land-use types for provisioning services. This is also due to their low accessibility for many households living far away from old-growth forest.",
     :rank 2}
-   {:study "f", :explanation nil, :rank 3}]}
- {:link-description
-  "Rice paddies indicate a particilularly low endemic species richness but a particularly high nativeand exotic species richness and therefor play an important role for  certain specialized wetland species",
-  :link-name "Link_4",
-  :out nil,
-  :effect "++",
-  :in nil,
-  :studies
-  [{:study "Raveloaritiana, 2021",
+   {:study "randriamady_2021",
+    :explanation "Abundant hunting in old-grwoth forest.",
+    :rank 3}
+   {:study "golden_2014",
     :explanation
-    "Rice paddies had the highest richness of native herbaceous species and different herbaceous species composition compared to any other land-use types, but lowet endemic herbacious species:  important reservoir of different native herbaceous plan",
+    "Abundant hunting in old-growth forest. Large differences in economic value of hunted animals between households and villages.",
+    :rank 4}
+   {:study "golden_2015_a",
+    :explanation
+    "The use of some provisioning ecosystem services is governed by taboos.",
+    :rank 5}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Protected old-growth forest",
+  :in "Unprotected old-growth forest",
+  :link-description
+  "Protected old-growth forest expands at the cost of unprotected old-growth forests when protected areas are established. This has recently happened at large scales with the establishment of Masoala National Park (YEAR) and Makira Natural Park (YEAR).",
+  :studies
+  [{:study "brimont_2015",
+    :explanation
+    "Describes creation of Makira Natural Park (Protected area) at the cost of unprotected old-growth forest.",
     :rank 1}
-   {:study "Martin, 2021a",
+   {:study "cullman_2015",
     :explanation
-    "Although rice paddies had the lowest bird species richness (especialy endemic), they might play an important role for certain specialized wetland species, as a total of six species were exclusively found in them",
+    "Establishment of protected area and community forest management for buffer zones in the case of Makira Natural Park.",
     :rank 2}]}
- {:link-description
-  "Old-growth forests are particularly important for the regulation of atmospheric carbon",
-  :link-name "Link_5",
-  :out nil,
-  :effect "+",
-  :in nil,
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Protected old-growth forest",
+  :in "Irrigated rice paddy",
+  :link-description
+  "Forest protection can accelearate the transition to paddy rich landscape due to the restriction of  shifting cultivation expansion into protected old-growth forest.",
   :studies
-  [{:study "Soazafy, 2021",
+  [{:study "zaehringer_2016",
     :explanation
-    "Old-growth forests provided the highest aboveground carbon stocks (ACS)",
+    "Transition to paddy rich landscape is more common close to protected areas, suggesting an induced intensification due to restriction of forest protection on shifting cultivation expansion.",
     :rank 1}]}
- {:link-description
-  "Forest-derived vanilla agroforest as human-dominated landscapes are good atmospheric carbon stock",
-  :link-name "Link_6",
-  :out nil,
-  :effect nil,
-  :in nil,
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Protected old-growth forest",
+  :in "Biodiversity",
+  :link-description
+  "Old-growth forests have the highest species richness of all studied land-use types across most taxa and are especially important for endemic and threatened species. However, it is currently unknown if biodiversity systematically differs between protected and unprotected old-growth forest in the region.",
   :studies
-  [{:study "Soazafy, 2021",
+  [{:study "raveloaritiana_2021",
     :explanation
-    "Forest-derived agroforests can play an important role to maintain ACS through large-statured native and endemic tree species / Large diameter tree in forest-derived  agroforest able a high ACS altough lower stem density / maintaining large-diameter trees or promoting their growth would lead to ACS increases in both types of agroforests / Higher ACS role than fallow derived vanilla agroforests",
+    "Old-growth forest had relatively low total herbaceous plant species richness, but highest endemic richness. They also had a unique species composition.",
     :rank 1}
-   {:study "Martin, 2021b",
+   {:study "martin_2021_b",
     :explanation
-    "Vanilla agroforests can act as permanent carbon stock reservoirs because once they are successfully established, vanilla sales provide considerable income, making it unprofitable to abandon or clear-cut the agroforests ",
-    :rank 2}]}
- {:link-description
-  "Slash-and-burn shifting cultivation for hill rice production are a major driver of deforestation and could therefore raise carbon stocks at the landscape level",
-  :link-name "Link_7",
-  :out nil,
-  :effect nil,
-  :in nil,
+    "Old-growth forest had highest bird species richness; highest proportion of endemic and threatened species.",
+    :rank 2}
+   {:study "rakotomalala_2021",
+    :explanation
+    "Old-growth forest had relatively low total ant species richness, but highest endemic richness.",
+    :rank 3}
+   {:study "osen_2021",
+    :explanation
+    "Old-growth forest had significantly higher bird species richness than all other studied land-uese types and the highest proportion of endemic species.",
+    :rank 4}
+   {:study "fulgence_2021",
+    :explanation
+    "Old-growth forest had highest amphibian and reptile species richness; highest proportion of endemic species; unique amphibian species composition.",
+    :rank 5}
+   {:study "sawyer_2017",
+    :explanation
+    "Non-logged old-growth forest hae the hightest lemur species richness and abundance, followed by logged old-growth forest.",
+    :rank 6}
+   {:study "droege_2021",
+    :explanation
+    "Old-growth forest have the highest sound diversity index values - an ecological indicator - across most indices.",
+    :rank 7}
+   {:study "miller_2018",
+    :explanation
+    "Two lemur species occurred exclusivel in mature forest.",
+    :rank 8}]}
+ {:effect 2,
+  :agreement-between-studies "medium",
+  :out "Protected old-growth forest",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Protected old-growth forests provide multiple cultural ecosystem services. They have aesthetical and recreational value. At specific places, they are also important for tourism.",
   :studies
-  [{:study "Llopis, 2020",
+  [{:study "zaehringer_2017",
     :explanation
-    "Slash-and-burn shifting cultivation for hill rice production are a major driver of deforestation",
+    "Forests provide aesthetical value and recreation value.",
     :rank 1}
-   {:study " (Mertz et al., 2009) in Zaehringer et al.",
+   {:study "raveloaritiana_2022",
     :explanation
-    "Long-fallow shifting cultivation could raise carbon stocks at the landscape level",
-    :rank 2}]}
- {:link-description
-  "Biodiversity influences aboveground carbon stocks capacities",
-  :link-name "Link_8",
-  :out nil,
-  :effect nil,
-  :in nil,
+    "Old-growth forests are relatively unimportant for cultural ecosystem services.",
+    :rank 2}
+   {:study "???",
+    :explanation "There doesn't seem to be any study on tourism…",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Protected old-growth forest",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Protected old-growth forests provide many regulating ecosystem services such as water regulation, local climate regulation, cyclone protection, and carbon strorage. Above-ground carbon stocks in old-growth forest are three times higher than in the land-use type ranking second, forest fragment.",
   :studies
-  [{:study "Soazafy, 2021",
+  [{:study "zaehringer_2017",
     :explanation
-    "Species composition, diversity, and structure result in ACS differences.",
-    :rank 1}]}
- {:link-description "Importance of trees as aboveground carbon stocks",
-  :link-name "Link_9",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Soazafy, 2021",
-    :explanation
-    "The largest share of aboveground carbon stocks (ACS) in tropical forests is contained in trees / Stem diameter and stem density had comparable effects on ACS in agroforests, whereas wood density played a minor role / Apart from their outstanding role for carbon stocks, large-sized trees within landscapes represent keystone structures and play unique ecological roles which cannot be fully compensated by younger and smaller trees, making the global decline of large-sized trees even more worrying / Variation in ACS mainly influenced by mean stem diameter and stem density per plot / the density of large trees predominantly explains ACS variation in pantropical forests ",
-    :rank 1}]}
- {:link-description
-  "Forest fragments are commonly used to harvest wood and other resources",
-  :link-name "Link_10",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Soazafy, 2021",
-    :explanation
-    "Forest fragments are commonly used to harvest wood and other resources.",
-    :rank 1}]}
- {:link-description
-  "Forest-derived vanilla as an important cash crop source",
-  :link-name "Link_11",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Soazafy, 2021",
-    :explanation "Vanilla as a major cash crop",
-    :rank 1}]}
- {:link-description
-  "Fallow-derived vanilla as an important cash crop source",
-  :link-name "Link_12",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Soazafy, 2021",
-    :explanation "Vanilla as a major cash crop",
-    :rank 1}]}
- {:link-description "Forest fragments keep predation rates high",
-  :link-name "Link_13",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Schwab, 2021",
-    :explanation
-    "Disturbance in forest fragment causes a general predation stimulation (especially ants)",
-    :rank 1}]}
- {:link-description
-  "Forest derived vanilla plots as human-modified land have the strongest potential of conserving predation as an ecosystem function",
-  :link-name "Link_14",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Schwab, 2021",
-    :explanation
-    "Forest-derived vanilla plots reduce the predation succes of arborealarthropod predators due to clearing of understorey vegetation / Vanilla agroforestry have the potential of conserving predation as an ecosystem function",
-    :rank 1}]}
- {:link-description
-  "Rice paddy indicate a particularly low predation rate",
-  :link-name "Link_15",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Schwab, 2021",
-    :explanation
-    "Rice paddy indicate a particularly low predation rate",
-    :rank 1}]}
- {:link-description "Predation is strongly influenced by tree density",
-  :link-name "Link_16",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Schwab, 2021",
-    :explanation
-    "Stem density and vegetation density are the most important local characteristics that are driving predation pressure",
-    :rank 1}]}
- {:link-description
-  "Whilst the PAs appear to have a significant positive effect on local communities well-being by helping to secure a healthy environment, these carry strong damaging impacts on populations most reliant on forest land for their livelihoods.",
-  :link-name "Link_17",
-  :out nil,
-  :effect nil,
-  :in nil,
-  :studies
-  [{:study "Llopis, 2020",
-    :explanation
-    "The only positive impact of the PAs on local well-being that participants could identify was that of providing a healthy environment / Negative impacts of PA on well-being : most relevant refers to the impact of the PA on people�s ability to secure food, difficulties in accessing land / While the PAs appeared to have had a significant positive effect in helping to secure a healthy environment for local communities, these very dynamics had severe detrimental effects on populations most reliant on forest land for their livelihoods.",
+    "Forests provide water regulation, local climate regulation, cyclone protection, carbon strorage.",
     :rank 1}
-   {:study "Zaehringer, 2018",
+   {:study "raveloaritiana_2022",
     :explanation
-    "PA has inevitably led to Malagasy farmers and families losing land and resource access to the vast protected areas",
+    "Old-growth forests are the most important regional land-use type for regulating and supporting ecosystem services.",
+    :rank 2}
+   {:study "soazafy_2021",
+    :explanation
+    "Carbon stocks in protected old-growth forest are 178 mg/ha, more than three times more than in forest fragments.",
+    :rank 3}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Protected old-growth forest",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Potected old-growth forests are important for many regularly used provisioning ecosystem services. However, their use is mostly prohibited and illegal (depending on protected area and kind of good). Used are timber and non-timber forest products such as wild foods, busmeat, honey, medicinal plants, and building materials. Hunting for bushmeat has been shown to be reduced in more strictly protected areas. Furthermore, most people in the region live far away from protected old-growth forest, meaning they rely less on provisioning ecosystem services from those forests. The use of some provisioning ecosystem services is governed by taboos.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Timber and non-timber forest products such as wild foods, honey, medicinal plants, building materials",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Old-growth forests are similarly important as other land-use types for provisioning services. This is also due to their low accessibility for many households living far away from old-growth forest.",
+    :rank 2}
+   {:study "randriamady_2021",
+    :explanation
+    "Abundant hunting; hunting reduced in more strictly protected areas.",
+    :rank 3}
+   {:study "allnutt_2013",
+    :explanation
+    "Selective logging, associated camps occur inside Masoala national parks, mostly in walking distance from villages.",
+    :rank 4}
+   {:study "annapragada_2021",
+    :explanation
+    "Tenrec hunting is common in communities close to forests.The practice is currently likely sustainable, but an increase in hunting pressure or further forest loss could make hunting unsustainable.",
+    :rank 5}
+   {:study "golden_2014",
+    :explanation
+    "Abundant hunting in old-growth forest, but less hunting in proteced old-growth forest. Large differences in economic value of hunted animals between households and villages.",
+    :rank 6}
+   {:study "onjalaina_2021",
+    :explanation
+    "Plants of a forest reserve are predominantly used for medicinal purposes, but also for timber.",
+    :rank 7}
+   {:study "golden_2015_a",
+    :explanation
+    "The use of some provisioning ecosystem services is governed by taboos.",
+    :rank 8}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Forest fragment",
+  :in "Unprotected old-growth forest",
+  :link-description
+  "Forest fragments expand at the cost of unprotected old-growth forests when they are started to be used intensively for provisioning ecosystems services in concert with land-use change, typically shifting cultivation, which fragments previously connected old-growth forests.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "The expansion of shifting cultivation at the cost of old-growth forest also creates fragmented forests.",
+    :rank 1}
+   {:study "eckert_2011",
+    :explanation
+    "Forest in the region is typically first degraded and fragmented before it is lost.",
     :rank 2}]}
- {:link-description
-  "Whilst surge in cash crop prices is advantageous for people engaged in commercila agroculture,  this dynamic has a negative impact  on the households not engaged in cash crop production ",
-  :link-name "Link_18",
-  :out nil,
-  :effect nil,
-  :in nil,
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Forest fragment",
+  :in "Protected old-growth forest",
+  :link-description
+  "Forest fragments expand at the cost of protected old-growth forests when they are started to be used intensively for provisioning ecosystems services in concert with land-use change, typically shifting cultivation, which fragments previously connected old-growth forests. However, this process is slower in protected old-growth forest compared to unprotected old-growth forest.",
   :studies
-  [{:study "Llopis, 2020",
+  [{:study "llopis_2019",
     :explanation
-    "The vanilla price increase had a positive influence on those individuals engaged in cash crop production, which, through increased earnings, improved their ability to meet material needs and plan their life, while also increasing their social status, negative side : cost of living, influence on security /  Whilst the ongoing surge in cash crop prices allowes to better satisfiy some material and status well-being components for people engaged in commercila agroculture,  this dynamic had a strong negative impact on social relations, security, and inflation for the households not engaged in cash crop production ",
+    "The expansion of shifting cultivation at the cost of old-growth forest also creates fragmented forests.",
+    :rank 1}
+   {:study "eckert_2011",
+    :explanation
+    "Forest in the region is typically first degraded and fragmented before it is lost.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Forest fragment",
+  :in "Biodiversity",
+  :link-description
+  "Forest fragments have a higher species richness than most land-use types across taxa, but are less biodiverse than old-growth forests. They are also important for endemic and threatened species.",
+  :studies
+  [{:study "raveloaritiana_2021",
+    :explanation
+    "Forest fragments had relatively low total herbaceous plant species richness, but a high share of endemic species. They also had a unique species composition.",
+    :rank 1}
+   {:study "martin_2021_b",
+    :explanation
+    "Forest fragments had less bird species richness than old-growth forests. However, endemic species made up a higher proportion of species than in other land uses outside old-growth forest (except forest-derived vanilla agroforest).",
+    :rank 2}
+   {:study "rakotomalala_2021",
+    :explanation
+    "Forest fragments had high ant species richness, including a high share of endemic species.",
+    :rank 3}
+   {:study "osen_2021",
+    :explanation
+    "Forest fragments had a higher tree species richness than all other land-uese types  except old-growth forest.",
+    :rank 4}
+   {:study "fulgence_2021",
+    :explanation
+    "Forest fragments had reptile diversity on par with old-growth forest and forest-derived vanilla agroforests, but significantly fewer amphibian species than old-growth forest.",
+    :rank 5}
+   {:study "sawyer_2017",
+    :explanation
+    "Forest in the agricultural landscape had lower lemur abundance than logged and unlogged old-growth forest, but higer abundance than agricultural land.",
+    :rank 6}
+   {:study "droege_2021",
+    :explanation
+    "Forest fragments have the second highest sound diversity values - an ecological indicator - across most indices.",
+    :rank 7}
+   {:study "hending_2018",
+    :explanation
+    "Forest fragments in the landscapes had more lemur species than vanilla plantations.",
+    :rank 8}
+   {:study "hending_2020",
+    :explanation
+    "Forest fragments had higher plant diversity than vanilla agroforests.",
+    :rank 9}
+   {:study "murphy_2019",
+    :explanation
+    "Multiple non-native predator species, which negatively affect endemic ground-dwelling birds, exhibit a positive edge effect, suggesting there impact is worse in fragmented forest.",
+    :rank 10}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Forest fragment",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Forest fragments provide multiple cultural ecosystem services. They have aesthetical and recreational value.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Forests provide aesthetical value and recreation value.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Forest fragments are the most important land-use type for cultural ecosystem services.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Forest fragment",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Forest fragments provide many regulating ecosystem services such as water regulation, local climate regulation, cyclone protection, and carbon strorage. Carbon stocks are on par with forest-derived vanilla agroforests, but much empoverished compared to old-growth forest.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Forests provide water regulation, local climate regulation, cyclone protection, carbon strorage.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Forest fragments are the second most important regional land-use type for regulating and supporting ecosystem services, after old-growth forest.",
+    :rank 2}
+   {:study "soazafy_2021",
+    :explanation
+    "Carbon stocks in forest fragment are 51 mg/ha, on par with forest-derived vanilla but more than three times lower than in old-growth forest.",
+    :rank 3}
+   {:study "eckert_2011",
+    :explanation
+    "Tranformation to degraded forest comes with losses in carbon stocks.",
+    :rank 4}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Forest fragment",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Forest fragments are important for many regularly used provisioning ecosystem services. Used are timber and non-timber forest products such as wild foods, busmeat, honey, medicinal plants, and building materials. There use is mostly legal, except for the hunting of certain taxa, such as lemurs. The use of some provisioning ecosystem services is governed by taboos.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Timber and non-timber forest products such as wild foods, honey, medicinal plants, building materials",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Old-growth forests are similarly important as other land-use types for provisioning services. This is also due to their low accessibility for many households living far away from old-growth forest.",
+    :rank 2}
+   {:study "randriamady_2021",
+    :explanation
+    "Abundant hunting for bushmeat in forest (fragments), including lemurs. Lemur hunting is illegal.",
+    :rank 3}
+   {:study "golden_2015_a",
+    :explanation
+    "The use of some provisioning ecosystem services is governed by taboos.",
+    :rank 4}]}
+ {:effect -1,
+  :agreement-between-studies "medium",
+  :out "Forest-derived vanilla agroforest",
+  :in "Unprotected old-growth forest",
+  :link-description
+  "Forest-derived vanilla agroforestry expands at the cost of unprotected old-growth forests. However, most forest-derived agroforests are established in smaller and already disturbed forest fragments, but the proportions are unknown.",
+  :studies
+  [{:study "martin_2021_a",
+    :explanation
+    "Forest-derived vanilla agroforest are established in forests.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "Around 30% of vanilla agroforests in the region are established inside forest.",
+    :rank 2}
+   {:study "llopis_2019",
+    :explanation
+    "Vanilla agroforests are expanding, to a small extend at the extend of old-growth forest.",
+    :rank 3}]}
+ {:effect 0,
+  :agreement-between-studies "medium",
+  :out "Forest-derived vanilla agroforest",
+  :in "Protected old-growth forest",
+  :link-description
+  "Forest-derived vanilla agroforestry may expand at the cost of protected old-growth forests, but it's currently unknown to what degree this threatens protected forests. It likely plays a minor role compared to other threats, particularly shifting cultivation.",
+  :studies
+  [{:study "martin_2021_a",
+    :explanation
+    "Forest-derived vanilla agroforest are established in forests.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "Around 30% of vanilla agroforests in the region are established inside forest.",
+    :rank 2}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Forest-derived vanilla agroforest",
+  :in "Forest fragment",
+  :link-description
+  "Forest-derived vanilla agroforestry is likely to expand most commonly at the cost of forest fragments, but the proportions are unknown.",
+  :studies
+  [{:study "martin_2021_a",
+    :explanation
+    "Forest-derived vanilla agroforest are established in forests.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "Around 30% of vanilla agroforests in the region are established inside forest.",
+    :rank 2}
+   {:study "llopis_2019",
+    :explanation
+    "Vanilla agroforests are expanding inside fragmented forest.",
+    :rank 3}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Forest-derived vanilla agroforest",
+  :in "Biodiversity",
+  :link-description
+  "Forest-derived vanilla agroforests have higher species richness than other agriculturally used land-use types in the region for most taxas. They also host more endemic species than other agriculturally used land-use types in the region for several taxa. However, they are significantly less diverse in bird and amphibian species richness compared to old-growth forest. The species richness in forest-derived vanilla agroforests is comparable to forest fragments for several taxa.",
+  :studies
+  [{:study "raveloaritiana_2021",
+    :explanation
+    "Forest-derived vanilla agroforests had relatively low total herbaceous plant species richness, but a high share of endemic species.",
+    :rank 1}
+   {:study "martin_2021_b",
+    :explanation
+    "Forest-derived vanilla agroforests had the second highest bird-species richness of all studied land-use types, after old-growth forest. Additionally, the had a relatively high proportion of endemic species.",
+    :rank 2}
+   {:study "rakotomalala_2021",
+    :explanation
+    "Forest-derived vanilla agroforests had high ant species richness, including a high share of endemic species. Vanilla agroforests with higher canopy cover had more endemic and fewer exotic ant species.",
+    :rank 3}
+   {:study "osen_2021",
+    :explanation
+    "Forest-derived vanilla agroforests had a high tree species richness with significantly more endemic species than all other agriculturally used land-use types.",
+    :rank 4}
+   {:study "fulgence_2022",
+    :explanation
+    "Forest-derived vanilla agroforests had reptile diversity on par with old-growth forest and forest fragments, but significantly fewer amphibian species than old-growth forest.",
+    :rank 5}
+   {:study "droege_2021",
+    :explanation
+    "Forest-derived vanilla agroforests have high sound diversity values, but lower than forests, across most indices.",
+    :rank 6}
+   {:study "hending_2018",
+    :explanation
+    "Vanilla agroforests in the landscape had fewer lemur species than forest fragments.",
+    :rank 7}
+   {:study "hending_2020",
+    :explanation
+    "Forest-derived ('traditionally managed') vanilla plantations have lower plant diversity than fallow-derived ('anthropogenic') vanilla plantations.",
+    :rank 8}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Forest-derived vanilla agroforest",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Vanilla cultivation and the following vanilla preparation and trade are an important source of regional pride in north-eastern Madagascar, representing a cultural ecosystem service. Ancestral ceremonies are occasionally held in agroforests.",
+  :studies
+  [{:study "osterhoudt_2016",
+    :explanation
+    "Vanilla cultivation and the associated vanilla preparation and trade are an important source of regional pride in north-eastern Madagascar, representing a cultural ecosystem service. Ancestral ceremonies are occasionally held in agroforests.",
     :rank 1}]}
- {:link-description
-  "Tree composition/structure of trees influences biodiversity",
-  :link-name "Link_19",
-  :out nil,
-  :effect nil,
-  :in nil,
+ {:effect 1,
+  :agreement-between-studies "medium",
+  :out "Forest-derived vanilla agroforest",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Forest-derived vanilla agroforests have the highest carbon stocks of studied agricultural land uses. Compared to forest fragments, they have similar carbon stocks, but compared to old-growth forest, carbon stocks are reduced. In surveys, people rarely mention regulating ecosystem services from agroforests.",
   :studies
-  [{:study "Raveloaritiana, 2021",
+  [{:study "zaehringer_2017",
     :explanation
-    "Canopy closure reduces native and exotic species richness",
+    "Agroforests are not commonly mentioned for providing regulating ecosystem services.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Agroforests are not commonly mentioned for providing regulating ecosystem services.",
+    :rank 2}
+   {:study "soazafy_2021",
+    :explanation
+    "Forest-derived vanilla agroforests have the highest carbon stocks of studied agricultural land uses (52 Mg/ha), on par with forest fragments, significantly lower than old-growth forests, but significantly higher than fallow-derived vanilla agroforests.",
+    :rank 3}]}
+ {:effect 1,
+  :agreement-between-studies "medium",
+  :out "Forest-derived vanilla agroforest",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Forest-derived vanilla agroforests are of minor importance for the use of provisioning ecosystem services, with other land-uses playing a more important role. One exception is the use of timber from forest-derived vanilla agroforests; however older agroforests do not have lower canopy cover than more recently established ones.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Agroforests have a limited role for provisioning ecosystem services, but are cited as a timber source.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Forest-derived agroforests are less important for provisioning ecosystem services than other land uses.",
+    :rank 2}
+   {:study "martin_2021_a",
+    :explanation
+    "Longer-established agroforests do not have lower canopy cover than more recently established ones.",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Forest-derived vanilla agroforest",
+  :in "Commercial agriculture",
+  :link-description
+  "Forest-derived vanilla agroforests are for many households, particularly in the SAVA region, their main commercial agricultural activity. 83% of households farm vanilla in a sample in the SAVA region. Vanilla is the crop grown by the highest percentage of households in many villages.",
+  :studies
+  [{:study "haenke_2018",
+    :explanation
+    "Shows that vanilla is by far the most important part of commercial agriculture in the SAVA region, with 83% of households farming vanilla.",
+    :rank 1}
+   {:study "martin_2022",
+    :explanation
+    "Vanilla agroforestry is profitable under high prices.",
+    :rank 2}
+   {:study "herrera_2021",
+    :explanation
+    "Vanilla is the crop grown by the highest percentage of households in three villages in the SAVA region.",
+    :rank 3}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Forest-derived vanilla agroforest",
+  :in "Subsistence agriculture",
+  :link-description
+  "Forest-derived vanilla agroforests play also a role for subsistence, despite being specifically managed for vanilla cash crop production. However, since most trees are forest-remnant trees and thus not particularly planted for their usefulness, there might be less subsistence agricultural production in forest-derived agroforests than in fallow-derived agroforests. ",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Agroforests provide subsistence yield, especially fruits.",
+    :rank 1}
+   {:study "osen_2021",
+    :explanation
+    "Most trees in forest-derived agroforests are forest-remnant trees and thus not particularly planted for their usefulness, so there might be less subsistence agricultural production in forest-derived agroforests than in fallow-derived agroforests. ",
+    :rank 2}
+   {:study "raveloaritiana_2022",
+    :explanation "Agroforests are a food source, particularly fruits.",
+    :rank 3}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Shifting cultivation",
+  :in "Unprotected old-growth forest",
+  :link-description
+  "Shifting cultivation expands at the cost of unprotected old-growth forest. Unlike in other tropical countries, shifting cultivation is still expanding in Madagascar and the study region.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "Shifting cultivation expands at the expense of old-growth forest, and faster so into unprotected forest.",
+    :rank 1}
+   {:study "zaehringer_2015",
+    :explanation
+    "Expanding shifting cultivation is the main driver of forest loss in the region, leading to 11% forest loss between 1995 and 2011.",
+    :rank 2}
+   {:study "schuessler_2020",
+    :explanation
+    "Expanding shifting cultivation leads to high old-growth forest  deforestation probability.",
+    :rank 3}
+   {:study "zaehringer_2016",
+    :explanation
+    "Expansion of shiftinc cultivation landscapes into former forest landscapes, faster in unproteced old-growth forest.",
+    :rank 4}
+   {:study "eckert_2011",
+    :explanation
+    "The main threat to the lowland rainforest is from subsistence agriculture through slash-and-burn activities.",
+    :rank 5}]}
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Shifting cultivation",
+  :in "Protected old-growth forest",
+  :link-description
+  "Shifting cultivation expands at the cost of portected old-growth forest, but in a slower speed compared to non-protected old-growth forest.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "Shifting cultivation expands at the expense of protected old-growth forest, but less so than at the expense of unprotected forest.",
+    :rank 1}
+   {:study "zaehringer_2015",
+    :explanation
+    "Expanding shifting cultivation is the main driver of forest loss in the region, leading to 11% forest loss between 1995 and 2011. However, deforestation happened predominantly outside the core zones of protected areas.",
+    :rank 2}
+   {:study "schuessler_2020",
+    :explanation
+    "Expanding shifting cultivation leads to old-growth forest  deforestation probability. Deforestation rates are significantly lower in protected old-growth forest.",
+    :rank 3}
+   {:study "zaehringer_2016",
+    :explanation
+    "Expansion of shiftinc cultivation landscapes into former forest landscapes, slower in proteced old-growth forest.",
+    :rank 4}
+   {:study "allnutt_2013",
+    :explanation
+    " Small-scale shifting agriculture occurs inside Masoala National Park, mostly in walking distance from villages.",
+    :rank 5}
+   {:study "eckert_2011",
+    :explanation
+    "The main threat to the lowland rainforest is from subsistence agriculture through slash-and-burn activities.",
+    :rank 6}]}
+ {:effect 0,
+  :agreement-between-studies "high",
+  :out "Shifting cultivation",
+  :in "Forest fragment",
+  :link-description
+  "Shifting cultivation creates forest fragments, by fragmenting previously connected old-growth forests. However, shifting cultivation also expands at the cost of forest fragments.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "Shifting cultivation also expands at the cost of forest fragments.",
+    :rank 1}
+   {:study "zaehringer_2015",
+    :explanation
+    "Forest fragments are the main target of agricultural expansion through shifting cultivation since they are seen as a land reserve.",
+    :rank 2}
+   {:study "schuessler_2020",
+    :explanation
+    "Expanding shifting cultivation replaces forest fragments within the agricultural landscape.",
+    :rank 3}
+   {:study "zaehringer_2016",
+    :explanation
+    "Risk of future loss of forest fragments to shifting cultivation within mosaic landscapes.",
+    :rank 4}
+   {:study "eckert_2011",
+    :explanation
+    "The main threat to the lowland rainforest is from subsistence agriculture through slash-and-burn activities.",
+    :rank 5}]}
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Shifting cultivation",
+  :in "Biodiversity",
+  :link-description
+  "Herbaceous and woody fallows within the shifting cultivation system are species poor compared to other land-use types (except irrigated paddy rice) except for non-endemic herbaceous plants. Endemic species - across taxa - are fewer compared to other land-use types, especially trees. Expanding shifting cultivation at the cost of forest would thus lead to a loss of (endemic) biodiversity.",
+  :studies
+  [{:study "raveloaritiana_2021",
+    :explanation
+    "Herbaceous and woody fallow that form part of the shifting cultivation system are rich in herbaceous plant species, but most of them are non-endemic.",
+    :rank 1}
+   {:study "martin_2021_b",
+    :explanation
+    "Herbaceous and woody fallow that form part of the shifting cultivation system were relatively poor in bird species, especially for endemic bird species.",
+    :rank 2}
+   {:study "rakotomalala_2021",
+    :explanation
+    "High ant species richness, but dominated by exotic and non-endemic speies.",
+    :rank 3}
+   {:study "osen_2021",
+    :explanation
+    "Woody fallow that form part of the shifting cultivation system had few trees and these were of few, predominantly non-endemic, species. Herbaceous fallows did not harbour trees. No trees present in herbaceous fallow.",
+    :rank 4}
+   {:study "fulgence_2022",
+    :explanation
+    "Herbaceous and woody fallow that form part of the shifting cultivation system had relatively low species richness in both amphibians and reptiles, particularly in herbaceous fallows.",
+    :rank 5}
+   {:study "droege_2021",
+    :explanation
+    "Herbaceous and woody fallow that form part of the shifting cultivation system have low sound diversity across most indices.",
+    :rank 6}
+   {:study "miller_2018",
+    :explanation
+    "Two lemur species had higher densities in regenerating secondary forest (fallows) than in mature forest, but two other lemur species occurred exclusively in forest.",
+    :rank 7}]}
+ {:effect 1,
+  :agreement-between-studies "medium",
+  :out "Shifting cultivation",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Shifting cultivation isintertwined with Malagasy beliefs about connection to the land and one’s ancestors, suggesting cultural ecosystem services.",
+  :studies
+  [{:study "celio_2019",
+    :explanation
+    "In two out of four villages, people cited shifting cultiivation as the traditional land-use practice.",
+    :rank 1}
+   {:study "zaehringer_2018",
+    :explanation
+    "Shifting cultivation isintertwined with Malagasy beliefs about connection to the land and one’s ancestors",
+    :rank 2}
+   {:study "llopis_2020",
+    :explanation
+    "Households with enough paddy rice would are happy to give up tidious shifting cultivation.",
+    :rank 3}]}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Shifting cultivation",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Shifting cultivation fallows have low above-ground carbon stocks compared to other land-use types (except rice paddy). Furthermore, as long as shifting cultivation plots are regularly burned, they can not accumulate carbon stocks in the long run.",
+  :studies
+  [{:study "soazafy_2021",
+    :explanation
+    "Shifting cultivation fallows have low above-ground carbon stocks compared to other land-use types (except rice paddy).",
     :rank 1}]}
- {:link-description
-  "Shifting cultivation has a big role as a food security safety",
-  :link-name "Link_20",
-  :out nil,
-  :effect nil,
-  :in nil,
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Shifting cultivation",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Shifting cultivation fallows are a very important source of non-timber forest products and firewood. For firewood, they represent the most important source across prevalent land-use types.",
   :studies
-  [{:study "Llopis, 2020",
+  [{:study "raveloaritiana_2022",
     :explanation
-    "The role of shifting cultivation as a food security safety net in the face of the price volatility of cash crops has caused it's increase",
+    "Shifting cultivation fallows are the they represent the most important source of firewood across prevalent land-use types.",
+    :rank 1}
+   {:study "zaehringer_2017",
+    :explanation
+    "Shifting cultivation fallows are an important source of firewood and play a minor role for other provisioning ecosystem services.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Shifting cultivation",
+  :in "Subsistence agriculture",
+  :link-description
+  "Shifting cultivation is of great importance to subsistence agriculture. In many villages, shifting cultivation is the most important source of the staple crop rice, in other villages irrigated paddy rice is more important.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "Shifting cultivation is an important source of subsistence yield for most households.",
+    :rank 1}
+   {:study "cullman_2015",
+    :explanation
+    "In one out of three villages, shifting cultivation is a more important source of subsistence rice than rice paddy.",
+    :rank 2}
+   {:study "zaehringer_2017",
+    :explanation
+    "Shifting cultivation is an important source of subsistence rice.",
+    :rank 3}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Fallow-derived vanilla agroforest",
+  :in "Shifting cultivation",
+  :link-description
+  "Fallow-derived vanilla agroforests are - by definition - expanded at the cost of (historically forested) open fallow land. In north-eastern Madagascar, fallow land forms part of a shifting cultivation system.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "Agroforests are most commonly established on fallows that form part of the shifting cultivation cycle.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "About 70% of vanilla agroforests in the region are established on fallow land that formed part of the shifting cultivation cycle.",
+    :rank 2}
+   {:study "martin_2022",
+    :explanation
+    "Fallow-derived vanilla agroforest follow upon shifting cultivation along a land-use trajectory.",
+    :rank 3}]}
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Fallow-derived vanilla agroforest",
+  :in "Biodiversity",
+  :link-description
+  "Fallow-derived vanilla agroforests are most comporable to fallow land in terms of species richness for most taxa. They are significantly less species rich than forest-derived vanillla agroforests for trees and reptiles.",
+  :studies
+  [{:study "raveloaritiana_2021",
+    :explanation
+    "Fallow-derived vanilla agroforests are rich in herbaceous plant species, but most of them are non-endemic.",
+    :rank 1}
+   {:study "martin_2021_b",
+    :explanation
+    "Fallow-derived vanilla agroforests had a similar bird diversity as woody fallows with a low proportion of endemic species.",
+    :rank 2}
+   {:study "rakotomalala_2021",
+    :explanation
+    "Fallow-derived vanilla agroforests had high ant species richness, but dominated by exotic and non-endemic speies. Vanilla agroforests with higher canopy cover had more endemic and fewer exotic ant species.",
+    :rank 3}
+   {:study "osen_2021",
+    :explanation
+    "Fallow-derived vanilla agrogorests had a species richness not significantly different to woody fallow and a smaller proportion of endemic species.",
+    :rank 4}
+   {:study "fulgence_2022",
+    :explanation
+    "Fallow-derived vanilla agroforests had significantly fewer reptile species than forest-derived ones. Low diversity of amphibians, with both taxa comparable to fallow land.",
+    :rank 5}
+   {:study "droege_2021",
+    :explanation
+    "Fallow-derived vanilla agroforests have medium sound diversity across most indices.",
+    :rank 6}
+   {:study "hending_2018",
+    :explanation
+    "Vanilla agroforests in the landscape had fewer lemur species than forest fragments.",
+    :rank 7}
+   {:study "hending_2020",
+    :explanation
+    "Fallow-derived ('anthropogenic') vanilla plantations have lower plant diversity than forest-derived ('traditionally managed') vanilla plantations.",
+    :rank 8}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Fallow-derived vanilla agroforest",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Vanilla cultivation and the following vanilla preparation and trade are an important source of regional pride in north-eastern Madagascar, representing a cultural ecosystem service. Ancestral ceremonies are occasionally held in agroforests.",
+  :studies
+  [{:study "osterhoudt_2016",
+    :explanation
+    "Vanilla cultivation and the associated vanilla preparation and trade are an important source of regional pride in north-eastern Madagascar, representing a cultural ecosystem service. Ancestral ceremonies are occasionally held in agroforests.",
     :rank 1}]}
- {:link-description
-  "Herbacious biodiversity has a strong impact on animal biodiversity",
-  :link-name "Link_21",
-  :out nil,
-  :effect nil,
-  :in nil,
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Fallow-derived vanilla agroforest",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Fallow-derived vanilla agroforests have significantly higher carbon stocks than fallow land. Given that these agroforests are by-definition established on fallow land, they thus sequester carbon. Older fallow-derived agroforests also have higher canopy cover than younger ones, further suggesting a rehabilitation opportunity for trees in fallow-derived agroforests.",
   :studies
-  [{:study "Soazafy, 2021",
+  [{:study "soazafy_2021",
     :explanation
-    "Even small threats to plant diversity can have direct effects on community diversity, structure, and function of mammals and birds ",
-    :rank 1}]}]
+    "Significantly higher carbon stocks in fallow-derived vanilla agroforests than in fallows.",
+    :rank 1}
+   {:study "martin_2021_a",
+    :explanation
+    "Older fallow-derived agroforests also have higher canopy cover than younger ones",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Fallow-derived vanilla agroforest",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Fallow-derived vanilla agroforests are an important source of timber and non-timber forest products such as medicinal plants and weaving materials.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Agroforests are an important source of firewood and timber, in addition to subsistence and cash crop yields.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Vanilla agroforests play - in addition to food crop yields - an important role for provisioning ecosystem services, from fuelwood, over medicinal plants, to weaving materials.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Fallow-derived vanilla agroforest",
+  :in "Commercial agriculture",
+  :link-description
+  "Fallow-derived vanilla agroforests are for many households, particularly in the SAVA region, their main commercial agriculture activity.",
+  :studies
+  [{:study "haenke_2018",
+    :explanation
+    "Vanilla is by far the most important part of commercial agriculture in the SAVA region.",
+    :rank 1}
+   {:study "martin_2022",
+    :explanation
+    "Vanilla agroforests yields and profits per unit area and per unit labour separated in forest-derived and vanilla-derived agroforests. Shows that vanilla agroforestry - under high prices - is highly profitable.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Fallow-derived vanilla agroforest",
+  :in "Subsistence agriculture",
+  :link-description
+  "Fallow-derived vanilla agroforests play also a role for subsistence, despite being specifically managed for vanilla production. This is particularly the case for fruits (e.g., jackfruit, mango, litchi) but also for coffee.",
+  :studies
+  [{:study "raveloaritiana_2022",
+    :explanation "Agroforests are a food source, particularly fruits.",
+    :rank 1}
+   {:study "zaehringer_2017",
+    :explanation "Agroforests are a food source, particularly fruits.",
+    :rank 2}
+   {:study "osen_2021",
+    :explanation
+    "Most trees in fallow-derived agroforests planted for their usefulness, including the planting of fruit trees which provide subsistence yields.",
+    :rank 3}]}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Irrigated rice paddy",
+  :in "Shifting cultivation",
+  :link-description
+  "On a lanscape-scale, rice-paddy rich landscapes replace shifting-cultivation-dominated landscapes in the study region, representing the most commonly occuring transition.",
+  :studies
+  [{:study "zaehringer_2016",
+    :explanation
+    "On a lanscape-scale, rice-paddy rich landscapes replace shifting-cultivation-dominated landscapes in the study region, representing the most commonly occuring transition.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Irrigated rice paddy",
+  :in "Waterbodies",
+  :link-description "Rice paddies can expand at the cost of wetlands.",
+  :studies []}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Irrigated rice paddy",
+  :in "Biodiversity",
+  :link-description
+  "Irrigated rice paddies are generally of low value for biodiversity with lower species richness than all other land-use types across taxa, especially for endemic and threatenened species. However, irrigated rice paddy have some value for certain wetland adapted bird species.",
+  :studies
+  [{:study "raveloaritiana_2021",
+    :explanation
+    "Irrigated rice paddy banks have significantly more herbaceous plant species than all other land-use types, but almost all species are non-endemic.",
+    :rank 1}
+   {:study "martin_2021_b",
+    :explanation
+    "Irrigated rice paddies are of low value to most bird species, except few wetland species that can inhabite rice paddies.",
+    :rank 2}
+   {:study "rakotomalala_2021",
+    :explanation
+    "Low ant species richness, almost exclusively exotics.",
+    :rank 3}
+   {:study "osen_2021", :explanation "No trees present.", :rank 4}
+   {:study "fulgence_2022",
+    :explanation
+    "Low species diversity for both amphibians and reptiles, but high abundance of some frog species.",
+    :rank 5}
+   {:study "droege_2021",
+    :explanation
+    "Irrigated rice paddies have low sound diversity across most indices.",
+    :rank 6}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Irrigated rice paddy",
+  :in "Cultural ecosystem services",
+  :link-description
+  "In some villages, rice paddy is considered as the 'traditional' land-use.",
+  :studies
+  [{:study "celio_2019",
+    :explanation
+    "In two out of four villages, people cited rice paddy as the traditional land-use practice.",
+    :rank 1}
+   {:study "llopis_2020",
+    :explanation
+    "Having enough subsistence rice is a key component of wellbeing, also associated to the cultural value of rice.",
+    :rank 2}]}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Irrigated rice paddy",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Irrigated rice paddies have a high abundance of non-native mammals than other land-usese, representing a risk for zoonotic diseases and thus an ecosystem disservice.",
+  :studies
+  [{:study "herrera_2020",
+    :explanation
+    "Irrigated rice paddies have a high abundance of non-native mammals than other land-usese, representing a risk for zoonotic diseases and thus an ecosystem disservice.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Irrigated rice paddy",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Irrigated rice paddies are a minor source of fodder for cattle (Zebu).",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Rice paddies are a minor source of fodder for cattle (Zebu)",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Rice paddies are a minor source of fodder for cattle (Zebu); no other provisioning services listed (except rice).",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Irrigated rice paddy",
+  :in "Commercial agriculture",
+  :link-description
+  "Rice sales from irrigated rice paddy are an important source of income for households with more-than-average irrigated rice paddy land assets. Working rice paddies is profitable per unit labour and unit land.",
+  :studies
+  [{:study "martin_2022",
+    :explanation
+    "Irrigated rice paddies are profitable per unit labour and unit land.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "Rice sales from irrigated rice paddy are an important source of income for households with more-than-average irrigated rice paddy land assets.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Irrigated rice paddy",
+  :in "Subsistence agriculture",
+  :link-description
+  "Irrigated paddy rice is of great importance to subsistence agriculture. In many villages, paddy rice is the most important source of the staple crop rice, in other villages shifting cultivation is more important. Most farmers prefer a paddy-rice-focused strategy for subsistence over a shifting-cultivation-focused strategy.",
+  :studies
+  [{:study "haenke_2018",
+    :explanation
+    "More than 60% of households cite irrigated paddy rice as the main subsistence crop.",
+    :rank 1}
+   {:study "cullman_2015",
+    :explanation
+    "In two out of three villages, irrigated rice paddy is a more important source of subsistence rice than shifting cultivation.",
+    :rank 2}
+   {:study "celio_2019",
+    :explanation
+    "Farmers prefer a rice paddy focused strategy or a mixed strategy with rice paddy (for subsistence) and agroforestry (primarily for cashcropping)",
+    :rank 3}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Clove-based agroforest",
+  :in "Shifting cultivation",
+  :link-description
+  "Clove-based agroforests predominantly expand at the cost of fallow land previously under shifting cultivation.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "Clove-based agroforestry is mainly expanded on fallows that are part of the shifting cultivation system.",
+    :rank 1}
+   {:study "mariel_2021",
+    :explanation
+    "Clove-based agroforestry is mainly expanded on fallows that are part of the shifting cultivation system.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Clove-based agroforest",
+  :in "Biodiversity",
+  :link-description
+  "Clove agroforests have a higher value for biodiversity than open land-use types, but a lower biodiversity value than forests.",
+  :studies []}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Clove-based agroforest",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Clove cultivation and trade are an important source of regional pride in north-eastern Madagascar, representing a cultural ecosystem service. Ancestral ceremonies are occasionally held in agroforests.",
+  :studies
+  [{:study "osterhoudt_2016",
+    :explanation
+    "Clove cultivation and trade are an important source of regional pride in north-eastern Madagascar, representing a cultural ecosystem service. Ancestral ceremonies are occasionally held in agroforests.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies "low",
+  :out "Clove-based agroforest",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Trees in clove-based agroforests are chosen specifically for certain regulating ecosystem services, such as erosion control. However, if asked open questions, farmers do not commonly cite provisioning ecosystem services from agroforests. Compared to forests, they likely have a reduced value for such services.",
+  :studies
+  [{:study "mariel_2021",
+    :explanation
+    "Trees in clove-based agroforests are chosen specifically for certain regulating ecosystem services, such as erosion control.",
+    :rank 1}
+   {:study "zaehringer_2017",
+    :explanation
+    "Agroforests are not commonly cited for regulating ecosystem services.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Clove-based agroforest",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Clove-based agroforests are an important source for multiple provisioning ecosystem services such as timber and  firewood.",
+  :studies
+  [{:study "mariel_2021",
+    :explanation
+    "Clove-based agroforests provide multiple provisioning ecosystem services such as timber and  firewood.",
+    :rank 1}
+   {:study "zaehringer_2017",
+    :explanation
+    "Agroforests are an important source of firewood and timber, in addition to subsistence and cash crop yields.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Clove-based agroforest",
+  :in "Commercial agriculture",
+  :link-description
+  "Clove is a key cash crop in the region, particularly in the southern part (Analanjirofo). Farmers also plant clove trees under low prices, underlying its importance in the long run. Exports of clove have increased in recent years.",
+  :studies
+  [{:study "mariel_2021",
+    :explanation "Clove is a very important cash crop in the region.",
+    :rank 1}
+   {:study "zaehringer_2017",
+    :explanation "Agroforests are a source of cash crop yields.",
+    :rank 2}
+   {:study "celio_2019",
+    :explanation
+    "Clove is a key cash crop in the region, farmers want to plant also under low prices.",
+    :rank 3}
+   {:study "tilghman_2019",
+    :explanation
+    "Increasing clove export from Madagascar in recent years.",
+    :rank 4}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Clove-based agroforest",
+  :in "Subsistence agriculture",
+  :link-description
+  "Clove agroforests commonly containg multiple fruit trees (lychee, jackfruit, avocado, coffee, and more) as well as banana plants, all playing a role for subsistence of farmers.  ",
+  :studies
+  [{:study "mariel_2021",
+    :explanation
+    "Clove agroforests commonly containg multiple fruit trees and banana plants playing a role for subsistence.",
+    :rank 1}
+   {:study "zaehringer_2017",
+    :explanation
+    "Agroforests are a source of subsistence yields, especially fruits.",
+    :rank 2}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Forest fragment",
+  :link-description
+  "Artisanal quartz mining occurs in the forests surrounding the villages, causing degradation in forest.",
+  :studies
+  [{:study "andirmihaja_2019",
+    :explanation
+    "Artisanal quartz mining occurs in fields, along the rivers, and in the forests surrounding the villages.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Waterbodies",
+  :link-description "Artisinal mines pollute waterbodies.",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Biodiversity",
+  :link-description
+  "Artisinal mines reduce biodiversity through forest disturbance",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Artisinal mines reduce regulating ecosystem services.",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Commercial agriculture",
+  :link-description
+  "Artisinal mines create competition on labour demand with commercial agriculture.",
+  :studies []}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Non-agricultural income",
+  :link-description
+  "Artisinal mining is an important source of of non-agricultural income for households at certain places within the region.",
+  :studies
+  [{:study "andriamihaja_2019",
+    :explanation
+    "Artisinal minig for quartz is a source of income for some households in one study village.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Artisanal mines",
+  :in "Subsistence agriculture",
+  :link-description
+  "Artisinal mines create competition on labour demand with subsistence agriculture.",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Shifting cultivation",
+  :link-description
+  "Pastures expands at the cost of shifting cultivation, but is not a major land-use in the region.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "Pastures expands at the cost of shifting cultivation but does not cover large areas.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Biodiversity",
+  :link-description "Pastures are of low value for biodiversity.",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Pastures provide few regulating ecosystem services.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation "Pastures provide few regulating ecosystem services.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Pastures - especially if hosting some trees - are a source of timber, firewood, fruits, and zebu fodder.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Pastures are a source of zebu fodder, fruits, and timber, and a minor source of firewood.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Pasture",
+  :in "Commercial agriculture",
+  :link-description
+  "Cattle sales, some role from clove trees as cash crop.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Clove trees inside pastures are a form of commercial agriculture.",
+    :rank 1}
+   {:study "andriamparany_2021",
+    :explanation "43% of households own cattle (Zebu)",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Subsistence agriculture",
+  :link-description
+  "Zebu's - although locally kept predominantly to work the land - are slaughtered and eaten, representing subsistence agriculture.",
+  :studies
+  [{:study "andriamparany_2021",
+    :explanation "Beef is part of the local diet.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Waterbodies",
+  :in "Irrigated rice paddy",
+  :link-description
+  "Waterbodies are essential to carry water to irrigated rice paddy, being a key enabler of productive rice production. However, broken irrigation channels or a lack of water in waterbodies is a major constraint to rice production in paddy systems.",
+  :studies []}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Waterbodies",
+  :in "Wellbeing",
+  :link-description
+  "Waterbodies are an opportunity for washing and recreation, providing a direct contribution to wellbeing.",
+  :studies []}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Waterbodies",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Water bodies are used for provisioning ecosystem services when people fish.",
+  :studies []}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Infrastructure",
+  :in "Wellbeing",
+  :link-description
+  "Infrastructure improvements - for example repaired roads - can improve the capability of people to visit friends and family, contributing to wellbeing.",
+  :studies
+  [{:study "llopis_2022",
+    :explanation
+    "The capabilities linked to seeing family members and friends has recently been improved in one village when the road was repaired.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Infrastructure",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Inrastructure promotes the extraction and sales of forest products such as timber.",
+  :studies []}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Infrastructure",
+  :in "Commercial agriculture",
+  :link-description
+  "Infrastructure facilitates market access which is important for negotiating power of smallholder farmers towards vanilla traders. Farmers in villages with poor infrastructure have higher costs to sell crops.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "Transportation costs for cash crops differ between villages, depending on their distance to the Andapa Basin.",
+    :rank 1}
+   {:study "neimark_2019",
+    :explanation
+    "Market access important for negotiating power of smallholder farmers.",
+    :rank 2}
+   {:study "andriamparany_2021",
+    :explanation
+    "Better infrastructure might be a reason for better food security in well-accessible villages.",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Infrastructure",
+  :in "Non-agricultural income",
+  :link-description
+  "Infrastructure makes it easier to generate non-agricultural income.",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Infrastructure",
+  :in "Subsistence agriculture",
+  :link-description
+  "Infrastructure may shift farming household land and time investment towards commercial agriculture and away from subsistence agriculture.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "Transportation costs for cash crops differ between villages, depending on their distance to the Andapa Basin.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Biodiversity",
+  :in "Shifting cultivation",
+  :link-description
+  "Bird infestations - where certain common bird species atack rice pre-haverst - are a problem for shifting cultivation.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "Shifting cultivation is susceptible to bird infestations.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Biodiversity",
+  :in "Biodiversity",
+  :link-description
+  "Low co-occurrence of non-native and native carnivores suggest diplacement effect to native carnivore species. In concert with hunting pressure and habitat degradation, this leads to a decline in native carnivore abundance.",
+  :studies
+  [{:study "farris_2016",
+    :explanation
+    "Low co-occurrence of non-native and native carnivores suggest diplacement effect to native carnivore species. In concert with hunting pressure and habitat degradation, this leads to a decline in native carnivore abundance.",
+    :rank 1}
+   {:study "murphy_2019",
+    :explanation
+    "The majority of ground-dwelling bird species was negatively affected by the presence of non-native carnivores.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Biodiversity",
+  :in "Cultural ecosystem services",
+  :link-description
+  "Biodiversity increases interest from tourists in the destination, increasing a cultural ecosystem service.",
+  :studies []}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Biodiversity",
+  :in "Regulating ecosystem services",
+  :link-description
+  "Land-use types with a higher diversity of predators, i.e., higher biodiversity, exhibit higher predation rates which are a regulating ecosystem service.",
+  :studies
+  [{:study "schwab_2021",
+    :explanation
+    "Land-use types with a higher diversity of predators, i.e., higher biodiversity, exhibit higher predation rates which are a regulating ecosystem service.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Biodiversity",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "A wide variety of species is being used for provisioning ecosystem services, particularly for medicinal plants. This highlights the importance of biodiversity for such services.",
+  :studies
+  [{:study "raveloaritiana_2021",
+    :explanation
+    "A high diversity of plant species is being used, particularly for medicinal purposes.",
+    :rank 1}
+   {:study "onjalalaina_2021",
+    :explanation
+    "People use a wide variety of plant species for medicinal purposes.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Cultural ecosystem services",
+  :in "Non-agricultural income",
+  :link-description
+  "The cultural ecosystem service 'tourism' provides non-agricultural income to few people at specific places.",
+  :studies []}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Forest-derived vanilla agroforest",
+  :link-description
+  "A documented regulating ecosystem services at play in forest-derived vanilla agroforests is pest control.",
+  :studies
+  [{:study "schwab_2021",
+    :explanation
+    "Predation services documented, predation rate significantly higher than in fallow-derived agroforests. Yield benefits unknown.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Forest-derived vanilla agroforest",
+  :link-description
+  "Vanilla yields are independent of canopy cover across the currently practiced management gradient.",
+  :studies
+  [{:study "martin_2021_a",
+    :explanation
+    "Vanilla yields are independent of canopy cover across the currently practiced management gradient.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Shifting cultivation",
+  :link-description
+  "A documented regulating ecosystem services at play in shifting cultivation is pest control.",
+  :studies
+  [{:study "schwab_2021",
+    :explanation
+    "Predation services documented. Yield benefits unknown.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Fallow-derived vanilla agroforest",
+  :link-description
+  "A documented regulating ecosystem services at play in fallow-derived vanilla agroforests is pest control.",
+  :studies
+  [{:study "schwab_2021",
+    :explanation
+    "Predation services documented, predation rate significantly lower than in forest-derived agroforests. Yield benefits unknown.",
+    :rank 1}
+   {:study "martin_2021_a", :explanation nil, :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Fallow-derived vanilla agroforest",
+  :link-description
+  "Vanilla yields are independent of canopy cover across the currently practiced management gradient.",
+  :studies
+  [{:study "martin_2021_a",
+    :explanation
+    "Vanilla yields are independent of canopy cover across the currently practiced management gradient.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Regulating ecosystem services",
+  :in "Irrigated rice paddy",
+  :link-description
+  "A documented regulating ecosystem services at play in rice paddies is pest control. Water regulation, a regulating ecosystem service, is important for rice paddy irrigation.",
+  :studies
+  [{:study "schwab_2021",
+    :explanation
+    "Predation services documented, predation rate lowest of all land-use types. Yield benefits unknown.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Water regulation, a regulating ecosystem service, is important for rice paddy irrigation.",
+    :rank 2}
+   {:study "zaehringer_2017",
+    :explanation
+    "Water regulation is the most important regulating ecosystem service of forests, especially in paddy and mixed-paddy landscapes.",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Clove-based agroforest",
+  :link-description "pest control",
+  :studies []}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Waterbodies",
+  :link-description
+  "Forests are a land use with a high rate of water regulation, a regulating ecosystem services, preventing floods in waterbodies. ",
+  :studies []}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Wellbeing",
+  :link-description
+  "Microclimate regulation - a key regulating ecosystem service - directly contributes to wellbeing locally.",
+  :studies []}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Regulating ecosystem services",
+  :in "Climate change",
+  :link-description
+  "Carbon sequestration, a key regulating ecosystem service, can contribute to reducing climate change. Regulating ecosystem services control the microclimate, leading to lower temperature extremes.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Regulating ecosystem services control the microclimate, leading to lower temperature extremes.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies "medium",
+  :out "Use of provisioning ecosystem services",
+  :in "Wellbeing",
+  :link-description
+  "Most goods from provisioning services are not sold but used within the household, directly contributing to wellbeing through nutrition, housing, and so on. Bushmeat plays a major role for food security in villages closw to old-growth forest, but is less important further away.",
+  :studies
+  [{:study "raveloaritiana_2022",
+    :explanation
+    "Most goods from provisioning services are not sold but used within the household.",
+    :rank 1}
+   {:study "andriamparany_2021",
+    :explanation
+    "Bushmeat plays only a minor importance for food security in sampled villages mostly far aways from old-growth forest.",
+    :rank 2}
+   {:study "llopis_2020",
+    :explanation
+    "Use of provisioning ecosystem service is essential to satisfy multiple well-being components like housing.",
+    :rank 3}
+   {:study "golden_2014",
+    :explanation
+    "Bushmeat is of great importance to nutrition, especially of children, in communities directly at the forest frontier.",
+    :rank 4}]}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Use of provisioning ecosystem services",
+  :in "Biodiversity",
+  :link-description
+  "The unsustainable use of provisioning ecosystem services leads to the loss of biodiversity. The most prominent examples in the region are rosewood extraction for export, as well as unsustainable lemur hunting. However, selective logging for timber is likely also unsustainable in many forests of the study region.",
+  :studies
+  [{:study "zhu_2017",
+    :explanation "Rosewood harvest is unsustainable.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Use of provisioning ecosystem services",
+  :in "Cultural ecosystem services",
+  :link-description "Use of local material etc. as a cultural ES?",
+  :studies []}
+ {:effect 0,
+  :agreement-between-studies "high",
+  :out "Use of provisioning ecosystem services",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Use restrictions against consuming particular wildlife species (fady) are common. These may serve as a moral framework that is motivated by personal security and health-related considerations. These traditional use restrictions could be at threat by ongoing social change and migration.",
+  :studies
+  [{:study "golden_2015_a",
+    :explanation
+    "Use restrictions against consuming particular wildlife species (fady) are common. These may serve as a moral framework that is motivated by personal security and health-related considerations.",
+    :rank 1}
+   {:study "golden_2015_b",
+    :explanation
+    "Number and adherence to taboos is independent of age, but migrants tended to adhere to taboos less than long-standing inhabitants. Western religion reduced the number of taboos but did not affect adherence.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies "high",
+  :out "Use of provisioning ecosystem services",
+  :in "Non-agricultural income",
+  :link-description
+  "Some goods from provisioning services are sold - particularly rosewood, bushmeat, timber, and charcoal, providing non-agricultural income.",
+  :studies
+  [{:study "zhu_2017",
+    :explanation "Rosewood is being shipped overseas.",
+    :rank 1}
+   {:study "raveloaritiana_2022",
+    :explanation
+    "Sales of natural products stmming from the use of provisioning ecosystem services are quite limited but differ between products.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Commercial agriculture",
+  :in "Wellbeing",
+  :link-description
+  "Income from commercial agricultural is important for economic wellbeing and is used to purchase goods that directly contribute to wellbeing, such as solar panels and tinned roofs. Households with larger income from commercial agriculture have more diverse diets. ",
+  :studies
+  [{:study "andriamparany_2021",
+    :explanation
+    "Households with larger income from commercial agriculture (vanilla / rice) have higer food security.",
+    :rank 1}
+   {:study "herrera_2021",
+    :explanation
+    "Households with larger vanilla harvest are less food insecure.",
+    :rank 2}
+   {:study "haenke_2018",
+    :explanation
+    "60% of households in the sample owned a solar panel.",
+    :rank 3}
+   {:study "schuessler_2020",
+    :explanation
+    "The proportion of houses with tinned roofs increased, likely thanks to income from commercial agriculture.",
+    :rank 4}]}
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Commercial agriculture",
+  :in "Wellbeing",
+  :link-description
+  "Increasing costs of living under high cash crop prices, negative impact on security.",
+  :studies
+  [{:study "neimark_2019",
+    :explanation
+    "Increased insecurity and theft under high vanilla prices.",
+    :rank 1}
+   {:study "llopis_2020",
+    :explanation
+    "High cost of living and inflation due to commercial agriculture, security currently hard to satisfy.",
+    :rank 2}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Commercial agriculture",
+  :in "Non-agricultural income",
+  :link-description
+  "Commercial agricultural as an enabler of non-agricultural income due to capital?",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Commercial agriculture",
+  :in "Subsistence agriculture",
+  :link-description
+  "The time invested in subsistence agriculture and the time invested in commercial agriculture stand in a direct trade-off.",
+  :studies
+  [{:study "celio_2019",
+    :explanation
+    "Farmers confirm links between commercial and subsistence agriculture labour input and productivity.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Commercial agriculture",
+  :in "Subsistence agriculture",
+  :link-description
+  "Fluctuating cash crop prices increase the need and desire for reaching staple crop (rice) subsistence.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "Fluctuating cash crop prices, and thus unreliable commercial agriculture income, could increase the need to be rice self-sufficient.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Commercial agriculture",
+  :in "Out-of-landscape influences",
+  :link-description
+  "Remmitances and food support can flow from rural family members to urban family members in need.",
+  :studies
+  [{:study "tilghman_2019",
+    :explanation
+    "Intensive exchange between rural-to-urban migrants in terms of cash and goods.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Non-agricultural income",
+  :in "Wellbeing",
+  :link-description
+  "Non-agricultural income is a source of economic wellbeing.",
+  :studies
+  [{:study "llopis_2020",
+    :explanation
+    "Non-agricultural income is a source of economic wellbeing.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Subsistence agriculture",
+  :in "Wellbeing",
+  :link-description
+  "Sufficient yields from subsistence agriculture are pivotal to nutrition and thus wellbeing. Susbsistence yields are also not expected to be shared with extended family, suggesting that meeting subsistence needs serves as a further safety net within families.",
+  :studies
+  [{:study "llopis_2020",
+    :explanation "Enough food is necessary for bodily health.",
+    :rank 1}
+   {:study "herrera_2021",
+    :explanation
+    "Households with more harvested rice are more food secure.",
+    :rank 2}
+   {:study "andriamparany_2021",
+    :explanation
+    "Rice harvest of households predicts animal source protein intake of households.",
+    :rank 3}
+   {:study "laney_2015",
+    :explanation
+    "Subsistence yields are not expeceted to be shared with extended family members, creating a safety net within families.",
+    :rank 4}]}
+ {:effect 0,
+  :agreement-between-studies "high",
+  :out "Subsistence agriculture",
+  :in "Commercial agriculture",
+  :link-description
+  "The time invested in subsistence agriculture and the time invested in commercial agriculture stand in a direct trade-off.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "There are time trade-offs between subsistence and commercial agriculture.",
+    :rank 1}
+   {:study "martin_2022",
+    :explanation
+    "Shifting cultivation is very labour intensive, leading to low profits per unit area and unit land.",
+    :rank 2}]}
+ {:effect -1,
+  :agreement-between-studies "high",
+  :out "Subsistence agriculture",
+  :in "Commercial agriculture",
+  :link-description
+  "Given problems with commercial agriculture (e.g., price instability, theft), a specialisation on commercial agriculture only is not desireable for smallholder farmers.",
+  :studies
+  [{:study "laney_2015",
+    :explanation
+    "Given problems with commercial agriculture (e.g., price instability, theft), a specialisation on commercial agriculture only is not desireable for smallholder farmers.",
+    :rank 1}
+   {:study "llopis_2019",
+    :explanation
+    "Failing commercial agriculture may push subsistence agriculture.",
+    :rank 2}
+   {:study "martin_2022",
+    :explanation
+    "Subsistence shifting cultivation is very labour intensive, leading to low profits per unit area and unit land, suggesting that other reasons than profitability motivate subsistence agriculture.",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Out-of-landscape influences",
+  :in "Protected old-growth forest",
+  :link-description
+  "Protection of olg-growth forests is decided by actors from outside the landscape, typically by national actors in collaboration with international organisations.",
+  :studies
+  [{:study "brimont_2015",
+    :explanation
+    "Establishment of Makira Natural park was promoted by out-of-landscape conservation actors.",
+    :rank 1}
+   {:study "llopis_2021",
+    :explanation
+    "Establishment of protected areas are initiated and driven by outside actors.",
+    :rank 2}
+   {:study "andriamihaja_2021",
+    :explanation
+    "Telecoupled land system, where international conservation has strong implications for local land governance and conservation through protected areas.",
+    :rank 3}
+   {:study "andriamihaja_2019",
+    :explanation
+    "Global conservation represents a major claim on land in north-eastern Madagascar, increasing land competition.",
+    :rank 4}
+   {:study "brimont_2015",
+    :explanation
+    "Global conservation funding for newly established protected areas and development action for surrouding villages.",
+    :rank 5}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Out-of-landscape influences",
+  :in "Forest-derived vanilla agroforest",
+  :link-description
+  "High vanilla prices promote the expansion of forest-derived vanilla agroforestry.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "High vanilla prices promote expansion of vanilla agroforests.",
+    :rank 1}
+   {:study "andriamihaja_2021",
+    :explanation
+    "Telecoupled land system, where integration of smallholders in global vanilla value chain has strong implications for local land governance.",
+    :rank 2}
+   {:study "andriamihaja_2019",
+    :explanation
+    "Conection of local land-users to global markets leads to telecoupled effects on local land-use practices.",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Out-of-landscape influences",
+  :in "Fallow-derived vanilla agroforest",
+  :link-description
+  "High vanilla prices promote the expansion of fallow-derived vanilla agroforestry.",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "High vanillaprirces promote expansion of vanilla agroforests.",
+    :rank 1}
+   {:study "andriamihaja_2021",
+    :explanation
+    "Telecoupled land system, where integration of smallholders in global vanilla value chain has strong implications for local land governance.",
+    :rank 2}
+   {:study "andriamihaja_2019",
+    :explanation
+    "Conection of local land-users to global markets leads to telecoupled effects on local land-use practices.",
+    :rank 3}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Out-of-landscape influences",
+  :in "Clove-based agroforest",
+  :link-description
+  "High clove prices promote expansion of clove-based agroforests, resulting in increased exports of clove from Madagascar in recent years (now exceeding 15'000 tons per year).",
+  :studies
+  [{:study "llopis_2019",
+    :explanation
+    "High clove prices promote the expansion of clove-based agroforests.",
+    :rank 1}
+   {:study "andriamihaja_2021",
+    :explanation
+    "Telecoupled land system, where integration of smallholders in global clove value chain has strong implications for local land governance.",
+    :rank 2}
+   {:study "andriamihaja_2019",
+    :explanation
+    "Conection of local land-users to global markets leads to telecoupled effects on local land-use practices.",
+    :rank 3}
+   {:study "tilghman_2019",
+    :explanation
+    "Increasing clove export from Madagascar in recent years.",
+    :rank 4}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Artisanal mines",
+  :link-description
+  "Global demand for quartz promotes artisanal quartz mining in the region.",
+  :studies
+  [{:study "andriamihaja_2019",
+    :explanation
+    "Global demand for quartz promotes artisanal quartz mining in the region.",
+    :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Infrastructure",
+  :link-description
+  "The lack of infrastructure is primarily outside the hand of local people. International conservation NGOs are engaged in education programs.",
+  :studies
+  [{:study "brimont_2015",
+    :explanation
+    "International conservation NGO are engaged in an education improvement program.",
+    :rank 1}]}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Wellbeing",
+  :link-description
+  "Poor health and education infrastructure and poor security situation is primarily outside the hand of local people, representing a negative impact on wellbeing.",
+  :studies
+  [{:study "llopis_2020",
+    :explanation
+    "Education and health rank among the most difficult-to-satisfy well-being components in current time.",
+    :rank 1}]}
+ {:effect 2,
+  :agreement-between-studies "high",
+  :out "Out-of-landscape influences",
+  :in "Use of provisioning ecosystem services",
+  :link-description
+  "Increase in rosewood demand in China led to a rush for rosewood extraction in the region's forests. Rosewood rushes were further fueled by political instability on the national Malagasy level.",
+  :studies
+  [{:study "anonymous_2018",
+    :explanation
+    "Increase in rosewood demand in China led to a rush for rosewood extraction in the region's forests. Logging booms are further linked to political crises on the national level.",
+    :rank 1}
+   {:study "zhu_2017",
+    :explanation "Rosewood is being shipped overseas.",
+    :rank 2}]}
+ {:effect 2,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Commercial agriculture",
+  :link-description
+  "International conservation NGO try to build value chains for multiple cash crop, in a bid to reduce forest-threatening subsistence shifting cultivation.",
+  :studies
+  [{:study "brimont_2015",
+    :explanation
+    "International conservation NGO try to build support for multiple cash crops, in a bid to reduce forest-threatening subsistence shifting cultivation.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Non-agricultural income",
+  :link-description
+  "Remmitances and other support from family members who have moved to the city can provide non-agricultural income to rural households.",
+  :studies
+  [{:study "tilghman_2019",
+    :explanation
+    "Intensive exchange between rural-to-urban migrants in terms of cash and goods.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Subsistence agriculture",
+  :link-description
+  "International conservation NGO run programs to increase paddy rice yields in a bid to reduce forest-threatening subsistence shifting cultivation.",
+  :studies
+  [{:study "brimont_2015",
+    :explanation
+    "International conservation NGO run programs to increase paddy rice yields in a bid to reduce forest-threatening subsistence shifting cultivation.",
+    :rank 1}]}
+ {:effect 1,
+  :agreement-between-studies nil,
+  :out "Out-of-landscape influences",
+  :in "Climate change",
+  :link-description
+  "Climate change is overwhelmingly not caused by people living in the landscape, it thus represents an out-of-landscape influence.",
+  :studies []}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Climate change",
+  :in "Forest-derived vanilla agroforest",
+  :link-description
+  "Climate change can make cyclones more common, and these negatively affect vanilla agroforests.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Protection from cyclones is a key ecosystem service, sicne cyclones negatively affect cultivations.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "Cyclone Enawo negatively affected vanilla agroforests of more than 61% of households.",
+    :rank 2}]}
+ {:effect -2,
+  :agreement-between-studies "low",
+  :out "Climate change",
+  :in "Shifting cultivation",
+  :link-description
+  "Climate change can make weather events and cyclones more common, and shifting cultivationis especially susceptible to weather events.",
+  :studies
+  [{:study "haenke_2018",
+    :explanation
+    "Cyclone Enawo negatively affected non-vanilla agricultural fields of more than 56% of households.",
+    :rank 1}
+   {:study "laney_2015",
+    :explanation
+    "Shifting cultivation is especially susceptible to weather events.",
+    :rank 2}
+   {:study "llopis_2019",
+    :explanation
+    "Cyclones may destroy cash crops, prompting people to expand shifting cultivation.",
+    :rank 3}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Climate change",
+  :in "Fallow-derived vanilla agroforest",
+  :link-description
+  "Climate change can make cyclones more common, and these negatively affect vanilla agroforests.",
+  :studies
+  [{:study "zaehringer_2017",
+    :explanation
+    "Protection from cyclones is a key ecosystem service, sicne cyclones negatively affect cultivations.",
+    :rank 1}
+   {:study "haenke_2018",
+    :explanation
+    "Cyclone Enawo negatively affected vanilla agroforests of more than 61% of households.",
+    :rank 2}]}
+ {:effect -2,
+  :agreement-between-studies nil,
+  :out "Climate change",
+  :in "Irrigated rice paddy",
+  :link-description
+  "Climate change can make cyclones more common, and these negatively affect rice paddy since cyclone-induced flooding can destroy harvests and irrigation systems.",
+  :studies
+  [{:study "haenke_2018",
+    :explanation
+    "Cyclone Enawo negatively affected non-vanilla agricultural fields of more than 56% of households.",
+    :rank 1}]}
+ {:effect -2,
+  :agreement-between-studies "high",
+  :out "Climate change",
+  :in "Clove-based agroforest",
+  :link-description
+  "Climate change can make cyclones more common, and these negatively affect clove-based agroforests since clove trees are sensitive to storm damage.",
+  :studies
+  [{:study "haenke_2018",
+    :explanation
+    "Cyclone Enawo negatively affected non-vanilla agricultural fields of more than 56% of households.",
+    :rank 1}
+   {:study "llopis_2019",
+    :explanation "Cyclones commonly fell clove trees.",
+    :rank 2}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Climate change",
+  :in "Pasture",
+  :link-description "storm damage through cyclones",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Climate change",
+  :in "Biodiversity",
+  :link-description
+  "Climate change has direct negative impact on biodiversity through changing bioclimatic conditions, induced land-use change, and other mechanisms.",
+  :studies []}]
