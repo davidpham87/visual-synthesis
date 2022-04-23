@@ -7,7 +7,8 @@
    [day8.re-frame.http-fx]
    [re-frame.core :as rf :refer (reg-event-fx)]
    [wyssacademy.visual-synthesis.db :as wvd]
-   [wyssacademy.visual-synthesis.dev :as dev]))
+   [wyssacademy.visual-synthesis.dev :as dev]
+   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]))
 
 
 (defn xhrio-map [{:keys [method event data format response-format uri]}]
@@ -49,7 +50,6 @@
 (reg-event-fx
  ::retrieve-edn-success
  (fn [{:keys [db]} [event {:keys [file callback]} results]]
-   (tap> [event {:keys [file callback]} results])
    {:db (assoc-in db [:data file] results)
     :fx [(when callback [:dispatch callback])]}))
 
@@ -97,7 +97,7 @@
  ::set-hover-landscape
  (fn [_ [_ from to]]
    {:fx [[:dispatch [::set-ui-states :selected-landscape from]]
-         [:dispatch [::set-ui-states :selected-source from]]
+         #_[:dispatch [::set-ui-states :selected-source from]]
          (when to [:dispatch [::set-ui-states :selected-destination to]])]}))
 
 (reg-event-fx

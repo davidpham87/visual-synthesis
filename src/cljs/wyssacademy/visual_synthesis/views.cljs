@@ -65,13 +65,16 @@
         (into
          ^{:key [@selected-source @selected-destination]}
          [wvcl/list {:class [:-pl-10]}]
-         (for [m @interactions
-               :let [_ (tap> {:interactions m})]]
+         (for [m @interactions]
            ^{:key (str (:link-description m) (:out m) (:in m))}
            [wvcl/list-item
             {:class    ["hover:bg-gray-50" "hover:text-black"]
              :on-click #(do
                           (rf/dispatch [::events/set-hover-landscape (keyword (:out m))
+                                        (keyword (:in m))])
+                          (rf/dispatch [::events/set-ui-states :selected-source
+                                        (keyword (:out m))])
+                          (rf/dispatch [::events/set-ui-states :selected-destination
                                         (keyword (:in m))])
                           (rf/dispatch [::tabs-ns/set-tab ::info :details-link]))}
             [:div.flex.flex-col
@@ -80,11 +83,14 @@
              [:div.flex.gap-2
               [:div.text-gray-400 "influences "]
               [:div.text-teal-600 (categories-map (:in m) (:in m))]]
-             [:div.mt-2 (:link-description m)]
+             #_[:div.mt-2 (:link-description m)]
              (when (pos? (count (:studies m)))
-               [:div.flex.justify-between.mt-2.text-red-400
-                [:div "Agreement between studies (" (count (:studies m)) ")"]
-                [:div (when-let [s (:agreement-between-studies m)]
+               [:div.flex.justify-between.mt-2.text-gray-600
+                (if (> (count (:studies m)) 1)
+                  [:p (str/capitalize (or (:agreement-between-studies m) "No")) " aggreement  between " (count (:studies m)) " studies."]
+                  [:p "One study is referenced."]
+                  )
+                #_[:div (when-let [s (:agreement-between-studies m)]
                         (str/capitalize (or s " ")))]])]]))]])))
 
 (defn landscape-elements []
@@ -117,7 +123,13 @@
            [details-summary])]]])))
 
 (defn landscape []
-  [wyssacademy.visual-synthesis.landscape/view])
+  [:div {:on-mouse-enter
+         #(do (rf/dispatch [::tabs-ns/set-tab
+                            :wyssacademy.visual-synthesis.views/info
+                            :interactions])
+              (rf/dispatch [::events/set-ui-states :selected-source nil])
+              (rf/dispatch [::events/set-ui-states :selected-destination nil]))}
+   [wyssacademy.visual-synthesis.landscape/view]])
 
 (defn app []
   [:main.w-screen.min-h-screen.overflow-x-hidden

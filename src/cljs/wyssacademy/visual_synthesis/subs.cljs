@@ -43,10 +43,13 @@
  :<- [::interactions]
  :<- [::ui-states-value :selected-source]
  :<- [::ui-states-value :selected-destination]
- (fn [[ms s d]]
+ :<- [::ui-states-value :selected-landscape]
+ (fn [[ms s d l]]
+   (tap> {:ms ms :l l})
    (cond
      s (filterv (fn [{:keys [out]}] (= out s)) ms)
      d (filterv (fn [{:keys [in]}] (= in d)) ms)
+     l (filterv (fn [{:keys [in out]}] (or (= in l) (= out l))) ms)
      :else (vec ms))))
 
 (reg-sub
@@ -69,8 +72,6 @@
  (fn [ms [_ ks]]
    (reduce-kv (fn [m k ms] (assoc m k (mapv #(select-keys % ks) ms)))
               {} (group-by (juxt :out :in) ms))))
-
-
 
 (defn kw->str [id]
   (let [id (or id "unfounded")]
