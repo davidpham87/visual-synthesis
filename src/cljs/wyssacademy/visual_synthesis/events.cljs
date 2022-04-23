@@ -50,7 +50,6 @@
 (reg-event-fx
  ::retrieve-edn-success
  (fn [{:keys [db]} [event {:keys [file callback]} results]]
-   (tap> [event {:keys [file callback]} results])
    {:db (assoc-in db [:data file] results)
     :fx [(when callback [:dispatch callback])]}))
 
@@ -98,9 +97,7 @@
  ::set-hover-landscape
  (fn [_ [_ from to]]
    {:fx [[:dispatch [::set-ui-states :selected-landscape from]]
-         [:dispatch [::set-ui-states :selected-source from]]
-         (when-not to
-           [:dispatch [::tabs-ns/set-tab :wyssacademy.visual-synthesis.views/info :interactions]])
+         #_[:dispatch [::set-ui-states :selected-source from]]
          (when to [:dispatch [::set-ui-states :selected-destination to]])]}))
 
 (reg-event-fx

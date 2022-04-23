@@ -16,7 +16,6 @@
  ::tab
  :<- [::tab-registry]
  (fn [m [_ path]]
-   (tap> {:m m :p path})
    (get-in m (if (vector? path) path [path]))))
 
 (def styles

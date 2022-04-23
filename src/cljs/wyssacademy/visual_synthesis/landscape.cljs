@@ -1,13 +1,14 @@
 (ns wyssacademy.visual-synthesis.landscape
   (:require
-   [cljs-bean.core :refer (->clj)]
    ["react-flow-renderer" :default ReactFlow :refer [Background Controls ReactFlowProvider Handle Position]]
+   [cljs-bean.core :refer (->clj)]
    [re-frame.core :refer (subscribe)]
+   [re-frame.core :as rf]
    [reagent.core :as r]
-   [wyssacademy.visual-synthesis.events :as events]
+   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]
    [wyssacademy.visual-synthesis.db :as db]
-   [wyssacademy.visual-synthesis.subs :as subs]
-   [re-frame.core :as rf]))
+   [wyssacademy.visual-synthesis.events :as events]
+   [wyssacademy.visual-synthesis.subs :as subs]))
 
 (def react-flow-pro (r/adapt-react-class ReactFlowProvider))
 (def react-flow (r/adapt-react-class ReactFlow))
@@ -16,7 +17,6 @@
 (def handle (r/adapt-react-class Handle))
 
 (defn landscape-component [data selected-node]
-  (tap> {:d [data selected-node]})
   [:div {:style {:padding 0 :margin 0}
          :class (into [:drop-shadow-xl]
                       (when (= (keyword (:key data)) selected-node)
@@ -74,14 +74,15 @@
             elements (into nodes ls)]
         ^{:key (str ls)}
         [:div
-         {:style              {:width                 1280
-                               :height                720
-                               :background-image      "url(img/landscape-16-9.webp)"
-                               :background-size       :contain
-                               :background-repeat     :no-repeat
-                               :background-color      "rgba(0,0,0,0.40)"
-                               :background-blend-mode (when @selected-node :darken)
-                               :position              :relative}}
+         {:style
+          {:width                 1280
+           :height                720
+           :background-image      "url(img/landscape-16-9.webp)"
+           :background-size       :contain
+           :background-repeat     :no-repeat
+           :background-color      "rgba(0,0,0,0.40)"
+           :background-blend-mode (when @selected-node :darken)
+           :position              :relative}}
          [react-flow-pro
           [react-flow
            {:nodes-draggable false
