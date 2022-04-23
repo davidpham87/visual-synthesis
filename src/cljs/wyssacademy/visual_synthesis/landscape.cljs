@@ -81,12 +81,7 @@
                                :background-repeat     :no-repeat
                                :background-color      "rgba(0,0,0,0.40)"
                                :background-blend-mode (when @selected-node :darken)
-                               :position              :relative}
-          #_#_:on-mouse-leave #(rf/dispatch [::events/unset-hover-landscape])}
-         #_[:div {:style {:width                 1280 :height 720
-                          :position              :absolute
-                          :background-blend-mode (when @selected-node :darken)}}
-            [:img {:src "img/empty_land_text.png"}]]
+                               :position              :relative}}
          [react-flow-pro
           [react-flow
            {:nodes-draggable false

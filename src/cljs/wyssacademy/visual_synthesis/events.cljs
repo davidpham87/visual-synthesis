@@ -7,7 +7,8 @@
    [day8.re-frame.http-fx]
    [re-frame.core :as rf :refer (reg-event-fx)]
    [wyssacademy.visual-synthesis.db :as wvd]
-   [wyssacademy.visual-synthesis.dev :as dev]))
+   [wyssacademy.visual-synthesis.dev :as dev]
+   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]))
 
 
 (defn xhrio-map [{:keys [method event data format response-format uri]}]
@@ -98,6 +99,8 @@
  (fn [_ [_ from to]]
    {:fx [[:dispatch [::set-ui-states :selected-landscape from]]
          [:dispatch [::set-ui-states :selected-source from]]
+         (when-not to
+           [:dispatch [::tabs-ns/set-tab :wyssacademy.visual-synthesis.views/info :interactions]])
          (when to [:dispatch [::set-ui-states :selected-destination to]])]}))
 
 (reg-event-fx
