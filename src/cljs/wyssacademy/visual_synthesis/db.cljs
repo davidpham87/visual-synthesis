@@ -58,7 +58,8 @@
                                            :zoom 0.2}}
 
    :out-of-landscape-influences
-   {:src "img/out-of-land-income.webp" :style {:top "50%" :left "20%"}}
+   {:src "img/out-landscape-influences-4.webp"
+    :style {:top "50%" :left "20%" :zoom 0.25}}
 
    :old-growth-forest
    {:src "img/old_growth_forest.png" :style {:top "60%" :left "-8%"}}
@@ -197,7 +198,7 @@
     {:key :out-of-landscape-influences,
      :label "Out of landscape influences"
      :image (:out-of-landscape-influences images)
-     :position {:x 740 :y 500}}
+     :position {:x 1000 :y -10}}
 
     {:key :wellbeing,
      :label "Wellbeing"
