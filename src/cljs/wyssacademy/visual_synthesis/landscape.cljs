@@ -76,10 +76,10 @@
         [:div
          {:style
           {:width                 1280
-           :height                720
-           :background-image      "url(img/landscape-16-9.webp)"
+           :height                960
+           :background-image      "url(img/background-landscape-4-3.webp)"
            :background-size       :contain
-           :background-repeat     :no-repeat
+           ;; :background-repeat     :no-repeat
            :background-color      "rgba(0,0,0,0.40)"
            :background-blend-mode (when @selected-node :darken)
            :position              :relative}}
