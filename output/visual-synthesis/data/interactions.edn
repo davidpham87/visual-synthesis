@@ -50,7 +50,7 @@
     :rank 1}
    {:study "raveloaritiana_2022",
     :explanation
-    "Old-growth forests are relatively unimportant for cultural ecosystem services.",
+    "Old-growth forests are less important than other land-use types for cultural ecosystem services in villages far away from old-growth forest.",
     :rank 2}]}
  {:effect 2,
   :agreement-between-studies "high",
@@ -158,7 +158,7 @@
     :explanation
     "Old-growth forest have the highest sound diversity index values - an ecological indicator - across most indices.",
     :rank 7}
-   {:study "miller_2018",
+   {:study "hending_2018",
     :explanation
     "Two lemur species occurred exclusivel in mature forest.",
     :rank 8}]}
@@ -175,11 +175,8 @@
     :rank 1}
    {:study "raveloaritiana_2022",
     :explanation
-    "Old-growth forests are relatively unimportant for cultural ecosystem services.",
-    :rank 2}
-   {:study "???",
-    :explanation "There doesn't seem to be any study on tourism…",
-    :rank 3}]}
+    "Old-growth forests are less important than other land-use types for cultural ecosystem services in villages far away from old-growth forest.",
+    :rank 2}]}
  {:effect 2,
   :agreement-between-studies "high",
   :out "Protected old-growth forest",
@@ -1155,6 +1152,20 @@
     :explanation
     "Pastures expands at the cost of shifting cultivation but does not cover large areas.",
     :rank 1}]}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Irrigated rice paddy",
+  :link-description
+  "Pastures expand at the cost of rice paddies after mudslides.",
+  :studies []}
+ {:effect -1,
+  :agreement-between-studies nil,
+  :out "Pasture",
+  :in "Waterbodies",
+  :link-description
+  "Pastures expand at the cost of coastal waterbodies (mangroves) after sand is carried in through heavy rain..",
+  :studies []}
  {:effect -1,
   :agreement-between-studies nil,
   :out "Pasture",

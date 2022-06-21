@@ -39,7 +39,7 @@
 #_(def data (ds/->dataset "resources/mock_tables/list_interactions.csv"))
 #_(def studies (ds/->dataset "resources/mock_tables/list_studies_utf8.csv"))
 (def data (ds/->dataset "resources/interaction_list_systematic.csv"))
-(def studies (ds/->dataset "resources/final_articles.csv"))
+#_(def studies (ds/->dataset "resources/final_articles.csv"))
 
 (comment
   (spit (io/file "resources/interactions.edn")
