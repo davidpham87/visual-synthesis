@@ -104,7 +104,6 @@
             {"image"
              (r/reactify-component
               (fn [props]
-                (println props)
                 (let [data (->clj (:data props))]
                   [landscape-component data @selected-node])))}
             :zoom-on-scroll  false
@@ -115,6 +114,6 @@
 
 (comment
   (into db/categories-react-flow @(subscribe [::subs/interactions-landscape]))
-  (println Position)
+  ;; (println Position)
   @(subscribe [::subs/interactions-landscape])
   )

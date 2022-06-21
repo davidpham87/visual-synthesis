@@ -106,5 +106,10 @@
    {:fx [[:dispatch [::set-ui-states :selected-landscape nil]]
          [:dispatch [::set-ui-states :selected-destination nil]]]}))
 
+(rf/reg-event-db
+ ::set-nav
+ (fn [db [_ key]]
+   (assoc db :nav-key key)))
+
 (comment
   (rf/dispatch [::success]))

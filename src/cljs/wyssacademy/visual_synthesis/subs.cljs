@@ -99,6 +99,10 @@
  (fn [ms]
    (mapv (fn [m] (ids->edge (:out m) (:in m) (:effect m))) ms)))
 
+(reg-sub
+ ::nav-key
+ (fn [db] (:nav-key db)))
+
 (comment
   (dev/log [::interactions])
   (dev/log [::studies])

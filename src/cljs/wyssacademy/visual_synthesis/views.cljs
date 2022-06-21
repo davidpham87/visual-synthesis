@@ -1,12 +1,13 @@
 (ns wyssacademy.visual-synthesis.views
   (:require
    ["@material-tailwind/react/Button$default" :as button]
-   ["@material-tailwind/react/Heading6$default" :as heading-6]
    ["@material-tailwind/react/Card$default" :as card]
-   ["@material-tailwind/react/CardHeader$default" :as card-header]
    ["@material-tailwind/react/CardBody$default" :as card-body]
+   ["@material-tailwind/react/CardHeader$default" :as card-header]
+   ["@material-tailwind/react/Heading6$default" :as heading-6]
    [clojure.string :as str]
    [re-frame.core :as rf :refer (subscribe)]
+   [wyssacademy.visual-synthesis.about :refer (about)]
    [wyssacademy.visual-synthesis.components.dropdown :as wvcd]
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
@@ -22,7 +23,7 @@
   [:div.mb-12
    [:div.fixed.z-40 {:class ["2xl:visible" "invisible"]}
     [:img.z-40 {:src "img/logo.webp"}]]
-   [navbar]])
+   [navbar {:event [::events/set-nav]}]])
 
 (defn footer []
   [:div.w-screen.overflow-x-hidden.px-20.pt-10.pb-10.bg-teal-700
@@ -142,18 +143,26 @@
               (rf/dispatch [::events/set-ui-states :selected-destination nil]))}
    [wyssacademy.visual-synthesis.landscape/view]])
 
+(defn main-view []
+  (let [nav-key (rf/subscribe [::subs/nav-key])]
+    (fn []
+      ^{:key @nav-key}
+      (case @nav-key
+        :about [about]
+        [:div.min-h-screen
+         [:div.flex.items-strech.h-full.flex-wrap.justify-between
+          [:div.mb-10 {:class ["w-auto"] :style {:min-height 600}} [landscape]]
+          [:div.pr-2.flex-grow {:class ["md:basis-full" "lg:basis-1/2"
+                                        "xl:basis-1/4" "xl:pl-4" "xl:w-full"]}
+           [infos]]]]))))
+
 (defn app []
   [:main.w-screen.min-h-screen.overflow-x-hidden.bg-neutral-100
    [header]
    [:div.px-5
     [:section
      [:div.flex]
-     [:div.min-h-screen
-      [:div.flex.items-strech.h-full.flex-wrap.justify-between
-       [:div.mb-10 {:class ["w-auto"] :style {:min-height 600}} [landscape]]
-       [:div.pr-2.flex-grow {:class ["md:basis-full" "lg:basis-1/2"
-                                     "xl:basis-1/4" "xl:pl-4" "xl:w-full"]}
-        [infos]]]]]]
+     [main-view]]]
    [footer]])
 
 (comment
