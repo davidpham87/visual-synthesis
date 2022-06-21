@@ -1,11 +1,13 @@
 (ns wyssacademy.visual-synthesis.landscape
   (:require
+   ["@material-tailwind/react/CardHeader$default" :as card-header]
    ["react-flow-renderer" :default ReactFlow :refer [Background Controls ReactFlowProvider Handle Position]]
    [cljs-bean.core :refer (->clj)]
    [re-frame.core :refer (subscribe)]
    [re-frame.core :as rf]
    [reagent.core :as r]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]
+   [wyssacademy.visual-synthesis.components.typography :as typography]
    [wyssacademy.visual-synthesis.db :as db]
    [wyssacademy.visual-synthesis.events :as events]
    [wyssacademy.visual-synthesis.subs :as subs]))
@@ -83,6 +85,17 @@
            :background-color      "rgba(0,0,0,0.40)"
            :background-blend-mode (when @selected-node :darken)
            :position              :relative}}
+         [:div
+          (when-let [data (db/categories-map-data @selected-node)]
+            [:div.pt-2.px-4.text-white.bg-teal-700.rounded-3xl
+             {:class []
+              :style {:position :absolute :left (get-in data [:position :x])
+                      :top (- (get-in data [:position :y]) 50)
+                      :text-align :center
+                      :z-index 999}}
+             [typography/h6
+              (or (wyssacademy.visual-synthesis.db/categories-map @selected-node)
+                  "Select an element to start")]])]
          [react-flow-pro
           [react-flow
            {:nodes-draggable false
@@ -97,8 +110,7 @@
             :zoom-on-scroll  false
             :zoom-on-pinch   false
             :elements        elements}
-           #_[controls]]]
-         ]))))
+           #_[controls]]]]))))
 
 
 (comment

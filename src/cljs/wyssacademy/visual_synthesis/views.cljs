@@ -1,17 +1,22 @@
 (ns wyssacademy.visual-synthesis.views
   (:require
    ["@material-tailwind/react/Button$default" :as button]
+   ["@material-tailwind/react/Heading6$default" :as heading-6]
+   ["@material-tailwind/react/Card$default" :as card]
+   ["@material-tailwind/react/CardHeader$default" :as card-header]
+   ["@material-tailwind/react/CardBody$default" :as card-body]
+   [clojure.string :as str]
    [re-frame.core :as rf :refer (subscribe)]
    [wyssacademy.visual-synthesis.components.dropdown :as wvcd]
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
+   [wyssacademy.visual-synthesis.components.typography :as typography]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
    [wyssacademy.visual-synthesis.details :refer (details-summary details-links)]
    [wyssacademy.visual-synthesis.events :as events]
    [wyssacademy.visual-synthesis.landscape :as wvl]
-   [wyssacademy.visual-synthesis.subs :as subs]
-   [clojure.string :as str]))
+   [wyssacademy.visual-synthesis.subs :as subs]))
 
 (defn header []
   [:div.mb-12
@@ -47,19 +52,24 @@
         categories-sorted    (sort-by :label categories)
         selected-source      (rf/subscribe [::subs/ui-states-value :selected-source])
         selected-destination (rf/subscribe [::subs/ui-states-value :selected-destination])
+        interaction          (subscribe [::subs/ui-states-value :selected-landscape])
         interactions         (subscribe [::subs/interactions-list-filtered])]
 
     (fn []
       [tab-content {}
-       [:div.flex.gap-4.mb-4
-        (into ^{:key @selected-source}
-              [wvcd/dropdown {:size :sm :color :teal :button-text "Source"}]
-              (xf :selected-source)
-              categories-sorted)
-        (into ^{:key @selected-destination} [wvcd/dropdown {:size :sm :color :teal :button-text "Destination"}]
-              (xf :selected-destination)
-              categories-sorted)
-        [:> button {:color :blue :on-click #(on-click {:key nil} :selected-source)} "Show all"]]
+       [:div
+        [:> heading-6 {:color :teal}
+         (or (wyssacademy.visual-synthesis.db/categories-map @interaction)
+             "Select an element to start")]
+        [:div.flex.gap-4.mb-4
+         (into ^{:key @selected-source}
+               [wvcd/dropdown {:size :sm :color :teal :button-text "Source"}]
+               (xf :selected-source)
+               categories-sorted)
+         (into ^{:key @selected-destination} [wvcd/dropdown {:size :sm :color :teal :button-text "Destination"}]
+               (xf :selected-destination)
+               categories-sorted)
+         [:> button {:color :blue :on-click #(on-click {:key nil} :selected-source)} "Show all"]]]
 
        [:div.overflow-y-scroll {:style {:height 500}}
         (into
@@ -105,11 +115,12 @@
         (:label m)])]]])
 
 (defn infos []
-  (let [tab-view (subscribe [::tabs-ns/tab ::info])]
+  (let [tab-view    (subscribe [::tabs-ns/tab ::info])
+        interaction (subscribe [::subs/ui-states-value :selected-landscape])]
     (fn []
-      [:div.flex
+      [:div
        ^{:key @tab-view}
-       [tabs {:id ::info
+       [tabs {:id    ::info
               :choices
               [{:id :summary :label "Summary"}
                {:id :interactions :label "Interactions"}
@@ -118,7 +129,7 @@
         [:div.min-w-full.flex-auto
          (case @tab-view
            :interactions [interactions-list]
-           :summary [details-summary]
+           :summary      [details-summary]
            :details-link [details-links]
            [details-summary])]]])))
 
@@ -132,7 +143,7 @@
    [wyssacademy.visual-synthesis.landscape/view]])
 
 (defn app []
-  [:main.w-screen.min-h-screen.overflow-x-hidden
+  [:main.w-screen.min-h-screen.overflow-x-hidden.bg-neutral-100
    [header]
    [:div.px-5
     [:section

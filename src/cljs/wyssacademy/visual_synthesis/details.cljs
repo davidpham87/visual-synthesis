@@ -123,8 +123,8 @@
         ^{:key @previous-interaction}
         [:div.flex.items-center.gap-4
          (into [wvcd/dropdown {:color :teal
-                              :button-text "Element"
-                              :size :sm}]
+                               :button-text "Element"
+                               :size :sm}]
                (map ->dropdown-item) (sort-by :label wyssacademy.visual-synthesis.db/categories))
          [:> button {:color :green :on-click #(reset! tab :influence)} "Influence"]
          [:> button {:color :green :on-click #(reset! tab :impacted)} "Impacted"]]]

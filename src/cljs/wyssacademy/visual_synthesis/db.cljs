@@ -215,6 +215,9 @@
 (def categories-map (reduce (fn [m {:keys [key label]}]
                               (assoc m key label)) {} categories))
 
+(def categories-map-data (reduce (fn [m {:keys [key] :as data}]
+                                   (assoc m key data)) {} categories))
+
 (def categories-react-flow
   (mapv (fn [m] {:id (name (or (:key m) "unfounded"))
                  :type :image
