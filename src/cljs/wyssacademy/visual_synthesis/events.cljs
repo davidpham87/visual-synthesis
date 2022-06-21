@@ -79,7 +79,10 @@
 (reg-event-fx
  ::parse-interactions
  (fn [{db :db} _]
-   {:db (update-in db [:data :interactions] #(mapv parse-interaction %))}))
+   {:db (update-in db [:data :interactions]
+                   #(->> %
+                         (mapv parse-interaction)
+                         (filterv (fn [m] (pos? (count (:studies m)))))))}))
 
 (reg-event-fx
  ::init-db

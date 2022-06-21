@@ -1,10 +1,10 @@
 (ns wyssacademy.visual-synthesis.views
   (:require
    ["@material-tailwind/react/Button$default" :as button]
-   ["@material-tailwind/react/Card$default" :as card]
-   ["@material-tailwind/react/CardBody$default" :as card-body]
-   ["@material-tailwind/react/CardHeader$default" :as card-header]
    ["@material-tailwind/react/Heading6$default" :as heading-6]
+   ["@material-tailwind/react/Card$default" :as card]
+   ["@material-tailwind/react/CardHeader$default" :as card-header]
+   ["@material-tailwind/react/CardBody$default" :as card-body]
    [clojure.string :as str]
    [re-frame.core :as rf :refer (subscribe)]
    [wyssacademy.visual-synthesis.about :refer (about)]
@@ -12,12 +12,12 @@
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
    [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
-   [wyssacademy.visual-synthesis.components.typography :as typography]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
    [wyssacademy.visual-synthesis.details :refer (details-summary details-links)]
    [wyssacademy.visual-synthesis.events :as events]
    [wyssacademy.visual-synthesis.landscape :as wvl]
-   [wyssacademy.visual-synthesis.subs :as subs]))
+   [wyssacademy.visual-synthesis.subs :as subs]
+   [wyssacademy.visual-synthesis.components.typography :as typography]))
 
 (defn header []
   [:div.mb-12
@@ -63,14 +63,11 @@
          (or (wyssacademy.visual-synthesis.db/categories-map @interaction)
              "Select an element to start")]
         [:div.flex.gap-4.mb-4
-         (into ^{:key @selected-source}
-               [wvcd/dropdown {:size :sm :color :teal :button-text "Source"}]
-               (xf :selected-source)
+         (into ^{:key @interaction}
+               [wvcd/dropdown {:size :sm :color :teal :button-text "Element"}]
+               (xf :selected-landscape)
                categories-sorted)
-         (into ^{:key @selected-destination} [wvcd/dropdown {:size :sm :color :teal :button-text "Destination"}]
-               (xf :selected-destination)
-               categories-sorted)
-         [:> button {:color :blue :on-click #(on-click {:key nil} :selected-source)} "Show all"]]]
+         [:> button {:color :blue :on-click #(on-click {:key nil} :selected-landscape)} "Show all"]]]
 
        [:div.overflow-y-scroll {:style {:height 500}}
         (into
@@ -115,11 +112,23 @@
                         :class ["hover:bg-gray-50" "hover:text-black"]}
         (:label m)])]]])
 
+(defn legends []
+  [:> card
+   [:> card-header {:color :teal} [:b "Link Strength"]]
+   [:> card-body
+    (into [:div.grid.grid-cols-5.gap-6]
+          (for [[score color]
+                [[-2 "#f32c22"] [-1 "#ef8575"] [0 "#fff1f2"] [1 "#7bb526"] [2 "#a5f531"]]]
+            [:div.flex.gap-2.items-center
+             [:svg {:width 215, :height 26}
+              [:g {:stroke-width 4, :stroke color, :fill color}
+               [:path {:d "M5 13 l215 0", :stroke-dasharray "10,10"}]]]
+             score]))]])
+
 (defn infos []
-  (let [tab-view    (subscribe [::tabs-ns/tab ::info])
-        interaction (subscribe [::subs/ui-states-value :selected-landscape])]
+  (let [tab-view    (subscribe [::tabs-ns/tab ::info])]
     (fn []
-      [:div
+      [:div.flex.flex-col.gap-4
        ^{:key @tab-view}
        [tabs {:id    ::info
               :choices
@@ -132,7 +141,8 @@
            :interactions [interactions-list]
            :summary      [details-summary]
            :details-link [details-links]
-           [details-summary])]]])))
+           [details-summary])]]
+       [legends]])))
 
 (defn landscape []
   [:div {:on-mouse-enter
