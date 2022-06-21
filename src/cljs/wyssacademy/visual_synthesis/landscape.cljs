@@ -60,7 +60,7 @@
                  (filter (fn [{:keys [source target]}]
                            (#{source target} (name (or @selected-node ""))))
                          @links)
-                 :else [] #_@links)
+                 :else [])
 
             nodes
             (-> (if @selected-node
