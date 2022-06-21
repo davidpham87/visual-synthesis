@@ -16,7 +16,8 @@
    [wyssacademy.visual-synthesis.details :refer (details-summary details-links)]
    [wyssacademy.visual-synthesis.events :as events]
    [wyssacademy.visual-synthesis.landscape :as wvl]
-   [wyssacademy.visual-synthesis.subs :as subs]))
+   [wyssacademy.visual-synthesis.subs :as subs]
+   [wyssacademy.visual-synthesis.components.typography :as typography]))
 
 (defn header []
   [:div.mb-12
@@ -62,14 +63,11 @@
          (or (wyssacademy.visual-synthesis.db/categories-map @interaction)
              "Select an element to start")]
         [:div.flex.gap-4.mb-4
-         (into ^{:key @selected-source}
-               [wvcd/dropdown {:size :sm :color :teal :button-text "Source"}]
-               (xf :selected-source)
+         (into ^{:key @interaction}
+               [wvcd/dropdown {:size :sm :color :teal :button-text "Element"}]
+               (xf :selected-landscape)
                categories-sorted)
-         (into ^{:key @selected-destination} [wvcd/dropdown {:size :sm :color :teal :button-text "Destination"}]
-               (xf :selected-destination)
-               categories-sorted)
-         [:> button {:color :blue :on-click #(on-click {:key nil} :selected-source)} "Show all"]]]
+         [:> button {:color :blue :on-click #(on-click {:key nil} :selected-landscape)} "Show all"]]]
 
        [:div.overflow-y-scroll {:style {:height 500}}
         (into
@@ -116,7 +114,7 @@
 
 (defn legends []
   [:> card
-   [:> card-header "Link Strength"]
+   [:> card-header {:color :teal} [:b "Link Strength"]]
    [:> card-body
     (into [:div.grid.grid-cols-5.gap-6]
           (for [[score color]

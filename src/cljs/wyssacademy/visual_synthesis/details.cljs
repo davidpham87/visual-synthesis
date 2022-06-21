@@ -14,7 +14,7 @@
    [clojure.string :as str]))
 
 (defn display-interactions [interactions]
-  [:div.h-96 {:style {:overflow-y :auto}}
+  [:div {:style {:overflow-y :auto :max-height 500}}
    (into
     [:ul.list-disc.pl-4.pr-4]
     (map
@@ -128,8 +128,7 @@
                (map ->dropdown-item) (sort-by :label wyssacademy.visual-synthesis.db/categories))
          [:> button {:color :green :on-click #(reset! tab :influence)} "Influence"]
          [:> button {:color :green :on-click #(reset! tab :impacted)} "Impacted"]]]
-
-       [:div.flex.w-full
+       [:div.flex.w-full.h-full
         (case @tab
           :impacted [display-interactions @previous-interaction-impacted]
           [display-interactions @previous-interaction-influence])]])))
