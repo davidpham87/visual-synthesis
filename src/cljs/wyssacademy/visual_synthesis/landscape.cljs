@@ -24,9 +24,9 @@
                       (when (= (keyword (:key data)) selected-node)
                         ["border-2" "rounded-full" "border-yellow-200"]))
          :on-mouse-enter #(rf/dispatch [::events/set-hover-landscape (keyword (:key data))])
-         :on-mouse-leave #(rf/dispatch [::events/unset-hover-landscape])
-         :on-click #(rf/dispatch [::events/set-ui-states :selected-landscape
-                                  (keyword (:key data))])}
+         :on-click #(do (rf/dispatch [::events/set-ui-states :selected-landscape
+                                      (keyword (:key data))])
+                        (rf/dispatch [::events/set-ui-states :hover? false]))}
    (when selected-node
      [handle {:type :target
               :id "top"
@@ -76,7 +76,11 @@
             elements (into nodes ls)]
         ^{:key (str ls)}
         [:div
-         {:style
+         {:on-mouse-enter #(rf/dispatch [::events/set-ui-states :hover? true])
+          :on-mouse-leave #(rf/dispatch [::events/set-ui-states :hover? false])
+          :on-click (fn []
+                      (when @selected-node (rf/dispatch [::events/unset-hover-landscape])))
+          :style
           {:width                 1280
            :height                960
            :background-image      "url(img/background-landscape-4-3.webp)"
