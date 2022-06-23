@@ -91,15 +91,16 @@
              [:div.flex.gap-2
               [:div.text-gray-400 "influences "]
               [:div.text-teal-600 (categories-map (:in m) (:in m))]]
-             #_[:div.mt-2 (:link-description m)]
-             (when (pos? (count (:studies m)))
-               [:div.flex.justify-between.mt-2.text-gray-600
-                (if (> (count (:studies m)) 1)
-                  [:p (str/capitalize (or (:agreement-between-studies m) "No")) " aggreement  between " (count (:studies m)) " studies."]
-                  [:p "One study is referenced."]
-                  )
-                #_[:div (when-let [s (:agreement-between-studies m)]
-                        (str/capitalize (or s " ")))]])]]))]])))
+             [typography/paragraph [:p.text-justify.pr-4.mt-1.mb-1 (:link-description m)]]
+             #_(when (pos? (count (:studies m)))
+                 [:div.flex.justify-between.mt-2.text-gray-600
+                  (if (> (count (:studies m)) 1)
+                    [:p (str/capitalize (or (:agreement-between-studies m) "No")) " aggreement  between " (count (:studies m)) " studies."]
+                    [:p "One study is referenced."]
+                    )
+                  #_[:div (when-let [s (:agreement-between-studies m)]
+                            (str/capitalize (or s " ")))]])
+             ]]))]])))
 
 (defn landscape-elements []
   [tab-content {:class ["min-w-full"]}
