@@ -110,7 +110,7 @@
                    (rf/dispatch [::events/set-ui-states :selected-source nil])
                    (rf/dispatch [::events/set-ui-states :selected-destination nil])
                    (rf/dispatch [::events/set-ui-states k (:key m)]))
-        tab (reagent/atom nil)]
+        tab (reagent/atom :influence)]
     (fn []
       (when @interaction
         (reset! previous-interaction-influence (get @interactions-by-origin @interaction))
@@ -120,7 +120,7 @@
       [:div.flex.flex-col.h-full
        [:> heading-6 {:color :teal}
         (or (wyssacademy.visual-synthesis.db/categories-map @previous-interaction)
-            "Select an element to start")]
+            "To start, click an element on the drawing or select an element from the dropdown menu")]
        [:div.flex.justify-between.w-full.items-center.mb-4
         ^{:key @previous-interaction}
         [:div.flex.items-center.gap-4
@@ -129,8 +129,12 @@
                                :size :sm}]
                (map ->dropdown-item)
                (sort-by :label wyssacademy.visual-synthesis.db/categories))
-         [:> button {:color :green :on-click #(reset! tab :influence)} "Influence"]
-         [:> button {:color :green :on-click #(reset! tab :impacted)} "Impacted"]]]
+         [:div {:class [(when (= @tab :influence) "shadow-lg")]}
+          [:> button {:color (if (= @tab :influence) :green :teal)
+                      :on-click #(reset! tab :influence)} "Influence"]]
+         [:div {:class [(when (= @tab :impacted) "shadow-lg")]}
+          [:> button {:color (if (= @tab :impacted) :green :teal)
+                      :on-click #(reset! tab :impacted)} "Impacted"]]]]
        [:div.flex.w-full.h-full
         (case @tab
           :impacted [display-interactions @previous-interaction-impacted]
