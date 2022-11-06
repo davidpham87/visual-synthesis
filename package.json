@@ -19,6 +19,7 @@
     "dependencies": {
         "@material-tailwind/react": "0.3.4",
         "@tailwindcss/forms": "^0.4.0",
+        "bowser": "^2.11.0",
         "create-react-class": "^15.7.0",
         "cytoscape": "^3.19.0",
         "cytoscape-dagre": "^2.3.2",
