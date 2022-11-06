@@ -43,4 +43,8 @@
   release
   {:doc "Advanced compilation of the app project."
    :task
-   (run '-release {:parallel true})}}}
+   (run '-release {:parallel true})}
+
+  copy-files
+  {:doc "Transfer files from output to docs"
+   :task (shell "rsync -r output/visual-synthesis/ docs/")}}}
