@@ -6,10 +6,10 @@
    [clojure.string :as str]
    [day8.re-frame.http-fx]
    [re-frame.core :as rf :refer (reg-event-fx)]
+   [wyssacademy.visual-synthesis.components.browser :as browser]
+   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]
    [wyssacademy.visual-synthesis.db :as wvd]
-   [wyssacademy.visual-synthesis.dev :as dev]
-   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]))
-
+   [wyssacademy.visual-synthesis.dev :as dev]))
 
 (defn xhrio-map [{:keys [method event data format response-format uri]}]
   {:method     (or method :get)
@@ -89,7 +89,8 @@
  (fn [_ _]
    {:db wyssacademy.visual-synthesis.db/default-db
     :fx [[:dispatch [::retrieve-interactions]]
-         [:dispatch [::retrieve-studies]]]}))
+         [:dispatch [::retrieve-studies]]
+         [::browser/set-browser]]}))
 
 (reg-event-fx
  ::set-ui-states
@@ -117,4 +118,7 @@
    (assoc db :nav-key key)))
 
 (comment
+
+  (rf/dispatch [::init-db])
+
   (rf/dispatch [::success]))

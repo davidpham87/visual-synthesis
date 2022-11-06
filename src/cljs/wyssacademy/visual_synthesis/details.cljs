@@ -18,21 +18,22 @@
    (into
     [:ul.list-disc.pl-4.pr-4]
     (map
-     (fn [m] [:li.mb-4 {}
-              [:div.text-justify.flex.justify-between.gap-3.items-center
-               [:div (:link-description m)]
-               [:> button
-                {:size :sm
-                 :on-click #(do
-                              (rf/dispatch [::events/set-ui-states :selected-source (:out m)])
-                              (rf/dispatch [::events/set-ui-states :selected-destination (:in m)])
-                              (rf/dispatch
-                               [::tabs-ns/set-tab :wyssacademy.visual-synthesis.views/info
-                                :details-link]))
-                 :style {:display :inline}
-                 :class [:ml-2 :h-10]
-                 :color :teal}
-                [:> icon {:name "article" :size :sm}]]]]))
+     (fn [m]
+       [:li.mb-4 {}
+        [:div.text-justify.flex.justify-between.gap-3.items-center
+         [:div (:link-description m)]
+         [:> button
+          {:size :sm
+           :on-click #(do
+                        (rf/dispatch [::events/set-ui-states :selected-source (:out m)])
+                        (rf/dispatch [::events/set-ui-states :selected-destination (:in m)])
+                        (rf/dispatch
+                         [::tabs-ns/set-tab :wyssacademy.visual-synthesis.views/info
+                          :details-link]))
+           :style {:display :inline}
+           :class [:ml-2 :h-10]
+           :color :teal}
+          [:> icon {:name "article" :size :sm}]]]]))
     interactions)])
 
 (def previous-interaction (reagent/atom {}))

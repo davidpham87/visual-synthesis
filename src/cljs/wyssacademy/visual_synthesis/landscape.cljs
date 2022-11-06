@@ -5,6 +5,7 @@
    [re-frame.core :refer (subscribe)]
    [re-frame.core :as rf]
    [reagent.core :as r]
+   [wyssacademy.visual-synthesis.components.browser :as browser]
    [wyssacademy.visual-synthesis.components.typography :as typography]
    [wyssacademy.visual-synthesis.db :as db]
    [wyssacademy.visual-synthesis.events :as events]
@@ -16,8 +17,10 @@
 (def controls (r/adapt-react-class Controls))
 (def handle (r/adapt-react-class Handle))
 
-(defn landscape-component [data selected-node]
-  [:div {:style {:padding 0 :margin 0}
+(defn landscape-component [data selected-node firefox?]
+  [:div {:style (cond-> {:padding 0 :margin 0}
+                  #_#_firefox? (merge {:transform (str "scale(" (:zoom data)")")
+                                   :transform-origin "0 0"}))
          :class (into [:drop-shadow-xl]
                       (when (= (keyword (:key data)) selected-node)
                         ["border-2" "rounded-full" "border-yellow-200"]))
@@ -31,7 +34,7 @@
               :position :left}])
    [:img.drop-shadow-xl
     {:src (:src data)
-     :style {:zoom (:zoom data)}}]
+     #_#_:style (when-not firefox? {:zoom (:zoom data)})}]
    (when selected-node
      [handle {:type :source
               :id "a"
@@ -44,7 +47,10 @@
         (subscribe [::subs/ui-states-value :selected-landscape])
 
         selected-destination
-        (subscribe [::subs/ui-states-value :selected-destination])]
+        (subscribe [::subs/ui-states-value :selected-destination])
+
+        firefox?
+        (subscribe [::browser/firefox?])]
 
     (fn []
       (let [ls (cond
@@ -91,10 +97,13 @@
           (when-let [data (db/categories-map-data @selected-node)]
             [:div.pt-2.px-4.text-white.bg-teal-700.rounded-3xl
              {:class []
-              :style {:position :absolute :left (get-in data [:position :x])
-                      :top (- (get-in data [:position :y]) 50)
-                      :text-align :center
-                      :z-index 999}}
+              :style
+              {:position :absolute
+               :left (get-in data [:position :x])
+               :top (- (get-in data [:position :y]) 50)
+               :text-align :center
+               :z-index 999
+               :transform (str "scale(" (:zoom data )")")}}
              [typography/h6
               (or (wyssacademy.visual-synthesis.db/categories-map @selected-node)
                   "Select an element to start")]])]
@@ -107,7 +116,7 @@
              (r/reactify-component
               (fn [props]
                 (let [data (->clj (:data props))]
-                  [landscape-component data @selected-node])))}
+                  [landscape-component data @selected-node @firefox?])))}
             :zoom-on-scroll  false
             :zoom-on-pinch   false
             :elements        elements}
