@@ -109,7 +109,7 @@
                    (merge {:top (str (+ 40 (rand-int 25)) "%")
                            :left (str (rand-int 90) "%")}
                           (get-in m [:image :style])))))
-   [{:key :waterbodies, :label "Waterbodies"
+   [#_{:key :waterbodies, :label "Waterbodies"
      :image (:waterbodies images)
      :position {:x 0 :y 370}}
 
@@ -144,15 +144,13 @@
      :image (:cultural-ecosystem-services images)
      :position {:x 870 :y 360}}
 
-
-
     {:key :forest-fragment, :label "Forest fragment"
      :image (:forest-fragment images)
      :position {:x 950 :y 650}}
 
     {:key :irrigated-rice-paddy, :label "Irrigated rice paddy"
      :image (:irrigated-rice-paddy images)
-     :position {:x 425 :y 735}}
+     :position {:x 440 :y 740}}
 
     {:key :non-agricultural-income,
      :label "Non Agricultural Income"

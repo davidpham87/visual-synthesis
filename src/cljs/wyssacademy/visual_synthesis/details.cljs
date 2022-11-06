@@ -18,21 +18,22 @@
    (into
     [:ul.list-disc.pl-4.pr-4]
     (map
-     (fn [m] [:li.mb-4 {}
-              [:div.text-justify.flex.justify-between.gap-3.items-center
-               [:div (:link-description m)]
-               [:> button
-                {:size :sm
-                 :on-click #(do
-                              (rf/dispatch [::events/set-ui-states :selected-source (:out m)])
-                              (rf/dispatch [::events/set-ui-states :selected-destination (:in m)])
-                              (rf/dispatch
-                               [::tabs-ns/set-tab :wyssacademy.visual-synthesis.views/info
-                                :details-link]))
-                 :style {:display :inline}
-                 :class [:ml-2 :h-10]
-                 :color :teal}
-                [:> icon {:name "article" :size :sm}]]]]))
+     (fn [m]
+       [:li.mb-4 {}
+        [:div.text-justify.flex.justify-between.gap-3.items-center
+         [:div (:link-description m)]
+         [:> button
+          {:size :sm
+           :on-click #(do
+                        (rf/dispatch [::events/set-ui-states :selected-source (:out m)])
+                        (rf/dispatch [::events/set-ui-states :selected-destination (:in m)])
+                        (rf/dispatch
+                         [::tabs-ns/set-tab :wyssacademy.visual-synthesis.views/info
+                          :details-link]))
+           :style {:display :inline}
+           :class [:ml-2 :h-10]
+           :color :teal}
+          [:> icon {:name "article" :size :sm}]]]]))
     interactions)])
 
 (def previous-interaction (reagent/atom {}))
@@ -100,10 +101,11 @@
         interactions-by-destination (subscribe [::subs/interactions-by-destination [:link-description :in :out]])
         interaction (subscribe [::subs/ui-states-value :selected-landscape])
         ->dropdown-item
-        (fn [m] [wvcd/item
-                 {:color :teal :ripple :light
-                  :on-click #(rf/dispatch [::events/set-hover-landscape (:key m)])}
-                 (:label m)])
+        (fn [m]
+          [wvcd/item
+           {:color :teal :ripple :light
+            :on-click #(rf/dispatch [::events/set-hover-landscape (:key m) nil true])}
+           (:label m)])
         show-all (fn [m k]
                    (rf/dispatch [::events/set-ui-states :selected-source nil])
                    (rf/dispatch [::events/set-ui-states :selected-destination nil])
@@ -125,7 +127,8 @@
          (into [wvcd/dropdown {:color :teal
                                :button-text "Element"
                                :size :sm}]
-               (map ->dropdown-item) (sort-by :label wyssacademy.visual-synthesis.db/categories))
+               (map ->dropdown-item)
+               (sort-by :label wyssacademy.visual-synthesis.db/categories))
          [:> button {:color :green :on-click #(reset! tab :influence)} "Influence"]
          [:> button {:color :green :on-click #(reset! tab :impacted)} "Impacted"]]]
        [:div.flex.w-full.h-full

@@ -18,14 +18,15 @@
        (str/split (:out (sh/sh "ls")))
        (filter #(re-find #"png$" %))))
 
-(doseq [s (ls-jpg)]
-  (let [out (str/replace s #"\.jpg$" ".webp")]
-    (println (sh/sh "cwebp" s "-o" out))))
+(comment
+  (doseq [s (ls-jpg)]
+    (let [out (str/replace s #"\.jpg$" ".webp")]
+      (println (sh/sh "cwebp" s "-o" out))))
 
-(doseq [s (ls-png)]
-  (let [out (str/replace s #"\.png$" ".webp")]
-    (println (sh/sh "cwebp" s "-o" out))))
+  (doseq [s (ls-png)]
+    (future (let [out (str/replace s #"\.png$" ".webp")]
+              (println (sh/sh "cwebp" s "-mt" "-lossless" "-o" out)))))
 
-(doseq [s (ls-webp)]
-  (let [out (str/replace s #"\.webp$" ".png")]
-    (println (sh/sh "dwebp" s "-o" out))))
+  (doseq [s (ls-webp)]
+    (let [out (str/replace s #"\.webp$" ".png")]
+      (println (sh/sh "dwebp" s "-o" out)))))

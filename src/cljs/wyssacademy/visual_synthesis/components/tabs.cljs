@@ -43,16 +43,18 @@
          children)])
 
 (defc tab-item [{:keys [active?] :as m} & children]
-  [:li.text-center
+  [:li.text-center.cursor-pointer
    (into
-    [:a (merge-with into
-                    {:class
-                     (cond-> ["flex" "items-center" "justify-center" "gap-1" "rounded-lg"
-                              "text-sm" "font-medium" "py-4" "px-6" "leading-normal"
-                              "text-white" "transition-all" "duration-300"]
-                       active? (into ["bg-white" "bg-opacity-20"])
-                       true identity)}
-                    (merge {:role :tablist} (dissoc m :active?)))]
+    [:a
+     (merge-with
+      into
+      {:class
+       (cond-> ["flex" "items-center" "justify-center" "gap-1" "rounded-lg"
+                "text-sm" "font-medium" "py-4" "px-6" "leading-normal"
+                "text-white" "transition-all" "duration-300"]
+         active? (into ["bg-white" "bg-opacity-20"])
+         true    identity)}
+      (merge {:role :tablist} (dissoc m :active?)))]
     children)])
 
 (defn tabs [{:keys [choices id]} & children]

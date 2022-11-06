@@ -6,10 +6,10 @@
    [clojure.string :as str]
    [day8.re-frame.http-fx]
    [re-frame.core :as rf :refer (reg-event-fx)]
+   [wyssacademy.visual-synthesis.components.browser :as browser]
+   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]
    [wyssacademy.visual-synthesis.db :as wvd]
-   [wyssacademy.visual-synthesis.dev :as dev]
-   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]))
-
+   [wyssacademy.visual-synthesis.dev :as dev]))
 
 (defn xhrio-map [{:keys [method event data format response-format uri]}]
   {:method     (or method :get)
@@ -89,7 +89,8 @@
  (fn [_ _]
    {:db wyssacademy.visual-synthesis.db/default-db
     :fx [[:dispatch [::retrieve-interactions]]
-         [:dispatch [::retrieve-studies]]]}))
+         [:dispatch [::retrieve-studies]]
+         [::browser/set-browser]]}))
 
 (reg-event-fx
  ::set-ui-states
@@ -98,11 +99,12 @@
 
 (reg-event-fx
  ::set-hover-landscape
- (fn [{db :db} [_ from to]]
+ (fn [{db :db} [_ from to force?]]
    (let [hover? (get-in db [:ui-states :hover?] true)]
-     {:fx [(when hover? [:dispatch [::set-ui-states :selected-landscape from]])
-           #_[:dispatch [::set-ui-states :selected-source from]]
-           (when (and to hover?) [:dispatch [::set-ui-states :selected-destination to]])]})))
+     {:fx [(when (or force? hover?)
+             [:dispatch [::set-ui-states :selected-landscape from]])
+           (when (and to hover?)
+             [:dispatch [::set-ui-states :selected-destination to]])]})))
 
 (reg-event-fx
  ::unset-hover-landscape
@@ -116,4 +118,7 @@
    (assoc db :nav-key key)))
 
 (comment
+
+  (rf/dispatch [::init-db])
+
   (rf/dispatch [::success]))
