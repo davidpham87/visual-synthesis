@@ -98,11 +98,12 @@
 
 (reg-event-fx
  ::set-hover-landscape
- (fn [{db :db} [_ from to]]
+ (fn [{db :db} [_ from to force?]]
    (let [hover? (get-in db [:ui-states :hover?] true)]
-     {:fx [(when hover? [:dispatch [::set-ui-states :selected-landscape from]])
-           #_[:dispatch [::set-ui-states :selected-source from]]
-           (when (and to hover?) [:dispatch [::set-ui-states :selected-destination to]])]})))
+     {:fx [(when (or force? hover?)
+             [:dispatch [::set-ui-states :selected-landscape from]])
+           (when (and to hover?)
+             [:dispatch [::set-ui-states :selected-destination to]])]})))
 
 (reg-event-fx
  ::unset-hover-landscape

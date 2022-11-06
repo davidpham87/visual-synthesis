@@ -100,10 +100,11 @@
         interactions-by-destination (subscribe [::subs/interactions-by-destination [:link-description :in :out]])
         interaction (subscribe [::subs/ui-states-value :selected-landscape])
         ->dropdown-item
-        (fn [m] [wvcd/item
-                 {:color :teal :ripple :light
-                  :on-click #(rf/dispatch [::events/set-hover-landscape (:key m)])}
-                 (:label m)])
+        (fn [m]
+          [wvcd/item
+           {:color :teal :ripple :light
+            :on-click #(rf/dispatch [::events/set-hover-landscape (:key m) nil true])}
+           (:label m)])
         show-all (fn [m k]
                    (rf/dispatch [::events/set-ui-states :selected-source nil])
                    (rf/dispatch [::events/set-ui-states :selected-destination nil])
@@ -125,7 +126,8 @@
          (into [wvcd/dropdown {:color :teal
                                :button-text "Element"
                                :size :sm}]
-               (map ->dropdown-item) (sort-by :label wyssacademy.visual-synthesis.db/categories))
+               (map ->dropdown-item)
+               (sort-by :label wyssacademy.visual-synthesis.db/categories))
          [:> button {:color :green :on-click #(reset! tab :influence)} "Influence"]
          [:> button {:color :green :on-click #(reset! tab :impacted)} "Impacted"]]]
        [:div.flex.w-full.h-full
