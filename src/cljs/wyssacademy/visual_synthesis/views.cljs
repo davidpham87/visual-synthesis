@@ -3,18 +3,18 @@
    ["@material-tailwind/react/Button$default" :as button]
    ["@material-tailwind/react/Card$default" :as card]
    ["@material-tailwind/react/CardBody$default" :as card-body]
-   ["@material-tailwind/react/CardHeader$default" :as card-header]
    ["@material-tailwind/react/Heading6$default" :as heading-6]
-   [clojure.string :as str]
    [re-frame.core :as rf :refer (subscribe)]
    [wyssacademy.visual-synthesis.about :refer (about)]
    [wyssacademy.visual-synthesis.components.dropdown :as wvcd]
    [wyssacademy.visual-synthesis.components.list :as wvcl]
    [wyssacademy.visual-synthesis.components.navbar :refer (navbar)]
-   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer (tabs tab-content)]
+   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns :refer
+    (tabs tab-content)]
    [wyssacademy.visual-synthesis.components.typography :as typography]
    [wyssacademy.visual-synthesis.db :refer (categories categories-map)]
-   [wyssacademy.visual-synthesis.details :refer (details-summary details-links)]
+   [wyssacademy.visual-synthesis.details
+    :refer (details-summary details-links)]
    [wyssacademy.visual-synthesis.events :as events]
    [wyssacademy.visual-synthesis.landscape :as wvl]
    [wyssacademy.visual-synthesis.subs :as subs]))
@@ -152,12 +152,13 @@
        [legends]])))
 
 (defn landscape []
-  [:div {:on-mouse-enter
-         #(do (rf/dispatch [::tabs-ns/set-tab
-                            :wyssacademy.visual-synthesis.views/info
-                            :interactions])
-              (rf/dispatch [::events/set-ui-states :selected-source nil])
-              (rf/dispatch [::events/set-ui-states :selected-destination nil]))}
+  [:div
+   {:on-mouse-enter
+    #(do (rf/dispatch [::tabs-ns/set-tab
+                       :wyssacademy.visual-synthesis.views/info
+                       :interactions])
+         (rf/dispatch [::events/set-ui-states :selected-source nil])
+         (rf/dispatch [::events/set-ui-states :selected-destination nil]))}
    [wyssacademy.visual-synthesis.landscape/view]])
 
 (defn main-view []
@@ -168,7 +169,8 @@
         :about [about]
         [:div.min-h-screen
          [:div.flex.items-strech.h-full.flex-wrap.justify-between
-          [:div.mb-10 {:class ["w-auto"] :style {:min-height 600}} [landscape]]
+          [:div.mb-10 {:class ["w-auto"] :style {:min-height 600}}
+           [landscape]]
           [:div.pr-2.flex-grow {:class ["md:basis-full" "lg:basis-1/2"
                                         "xl:basis-1/4" "xl:pl-4" "xl:w-full"]}
            [infos]]]]))))
@@ -183,6 +185,7 @@
    [footer]])
 
 (comment
+  3
   (count @(subscribe [::subs/interactions]))
   @(subscribe [::subs/interactions-list-filtered])
   )

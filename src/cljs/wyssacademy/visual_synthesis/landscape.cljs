@@ -1,12 +1,10 @@
 (ns wyssacademy.visual-synthesis.landscape
   (:require
-   ["@material-tailwind/react/CardHeader$default" :as card-header]
-   ["react-flow-renderer" :default ReactFlow :refer [Background Controls ReactFlowProvider Handle Position]]
+   ["react-flow-renderer" :default ReactFlow :refer [Background Controls ReactFlowProvider Handle]]
    [cljs-bean.core :refer (->clj)]
    [re-frame.core :refer (subscribe)]
    [re-frame.core :as rf]
    [reagent.core :as r]
-   [wyssacademy.visual-synthesis.components.tabs :as tabs-ns]
    [wyssacademy.visual-synthesis.components.typography :as typography]
    [wyssacademy.visual-synthesis.db :as db]
    [wyssacademy.visual-synthesis.events :as events]
