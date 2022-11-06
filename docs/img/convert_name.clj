@@ -47,7 +47,7 @@
 
 (defn resize-images []
   (doseq [{:keys [src zoom]} images]
-    (println  [ "convert" "-resize" (str (int (* 100 zoom)) "%") src src])
+    (println  [ "convert" "-scale" (str (int (* 100 zoom)) "%") src src])
     (println (:out (sh/sh "convert" "-scale" (str (int (* 100 zoom)) "%")   "-unsharp" "0x1"
                           src src)))))
 
