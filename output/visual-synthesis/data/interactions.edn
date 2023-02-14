@@ -1454,7 +1454,7 @@
   :link-description
   "Microclimate regulation - a key regulating ecosystem service - directly contributes to wellbeing locally.",
   :studies []}
- {:effect -2,
+ {:effect 2,
   :agreement-between-studies nil,
   :out "Regulating ecosystem services",
   :in "Climate change",
@@ -1846,7 +1846,7 @@
     :explanation
     "International conservation NGO run programs to increase paddy rice yields in a bid to reduce forest-threatening subsistence shifting cultivation.",
     :rank 1}]}
- {:effect 1,
+ {:effect -1,
   :agreement-between-studies nil,
   :out "Out-of-landscape influences",
   :in "Climate change",
