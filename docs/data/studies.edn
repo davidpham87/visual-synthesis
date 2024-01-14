@@ -734,13 +734,15 @@
   "Martin, Dominic Andreas; Andrianisaina, Fanilo; Fulgence, Thio Rosin; Osen, Kristina; Rakotomalala, Anjaharinony Andry Ny Aina; Raveloaritiana, Estelle; Soazafy, Marie Rolande; Wurz, Annemarie; Andriafanomezantsoa, Rouvah; Andriamaniraka, Harilala; Andrianarimisa, Aristide; Barkmann, Jan; Dröge, Saskia; Grass, Ingo; Guerrero-Ramirez, Nathaly; Hänke, Hendrik; Hölscher, Dirk; Rakouth, Bakolimalala; Ranarijaona, Hery Lisy Tiana; Randriamanantena, Romual; Ratsoavina, Fanomezana Mihaja; Ravaomanarivo, Lala Harivelo Raveloson; Schwab, Dominik; Tscharntke, Teja; Zemp, Delphine Clara; Kreft, Holger"}
  {:read "1",
   :excluded 0,
-  :abstract "",
-  :journal "People and Nature",
+  :abstract "Tropical agricultural landscapes often consist of a mosaic of different land uses, yet little is known about the spectrum of ecosystem service bundles and materials they provide to rural households. We interviewed 320 households on the different benefits received from prevalent land-use types in north-eastern Madagascar (old-growth forests, forest fragments, vanilla agroforests, woody fallows, herbaceous fallows, and rice paddies) in terms of ecosystem services and plant uses. Old-growth forests and forest fragments were reported as important for regulating services (e.g. water regulation), whilst fallow lands and vanilla agroforests as important for provisioning services (food, medicine, fodder). Households reported the usage of 285 plant species (56% non-endemics) and collected plants from woody fallows for varying purposes, whilst plants from forest fragments, predominantly endemics, were used for construction and weaving. Multiple land-use types are thus complementary for providing ecosystem services, with fallow lands being particularly important. Hence, balancing societal needs and conservation goals should be based on diversified and comprehensive land management.",
+  :journal "Ambio",
   :title
-  "Complementary ecosystem services from multiple land uses highlight the value of mosaic landscapes in Madagascar",
-  :year 2022,
+  "Complementary ecosystem services from multiple land uses highlight the importance of tropical mosaic landscapes",
+  :year 2023,
   :project "DT",
   :added-later 1,
+  :doi "https://doi.org/10.1007/s13280-023-01888-3"
+  :url "https://link.springer.com/article/10.1007/s13280-023-01888-3"
   :code "raveloaritiana_2022",
   :authors
   "Raveloaritiana, E., Wurz, A., Grass, I., Osen, K., Martin, D. A., Soazafy, M. R., Bemamy, C., Ranarijaona, H. L. T., Kreft, H., Hölscher, D., Rakouth, B., Tscharntke, T. "}]
