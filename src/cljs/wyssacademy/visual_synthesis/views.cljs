@@ -61,10 +61,10 @@
        [:div
         [:> heading-6 {:color :teal}
          (or (wyssacademy.visual-synthesis.db/categories-map @interaction)
-             "Select an element to start")]
+             "Select a factor to start")]
         [:div.flex.gap-4.mb-4
          (into ^{:key @interaction}
-               [wvcd/dropdown {:size :sm :color :teal :button-text "Element"}]
+               [wvcd/dropdown {:size :sm :color :teal :button-text "Factor"}]
                (xf :selected-landscape)
                categories-sorted)
          [:> button {:color :blue :on-click #(on-click {:key nil} :selected-landscape)} "Show all"]]]
@@ -116,7 +116,7 @@
 (defn legends []
   (let [->label {-2 "strong negative effect"
                  -1 "moderate negative effect"
-                 0 "neutral interaction"
+                 0 "neutral link"
                  1 "moderate positive effect"
                  2 "strong positive effect"}]
     [:> card {:class ["mb-4" "-mt-4"]}
@@ -140,7 +140,7 @@
        [tabs {:id    ::info
               :choices
               [{:id :summary :label "Summary"}
-               {:id :interactions :label "Interactions"}
+               {:id :interactions :label "Links"}
                {:id :details-link :label "Details"}]
               :class [:w-full]}
         [:div.min-w-full.flex-auto

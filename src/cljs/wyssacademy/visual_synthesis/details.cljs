@@ -94,7 +94,7 @@
                       [:div.mb-2 doi]
                       [:p [:a.text-blue-400.mb-2 {:href url :target "_blank"} "Link"]]
                       [:p.text-justify.mb-4.mt-4.pl-2.pr-2.text-gray-500 abstract]]))]])]))]
-        [:p "Please select an interaction."]))))
+        [:p "Please select a link."]))))
 
 (defn detail-content []
   (let [interactions-by-origin (subscribe [::subs/interactions-by-origin [:link-description :in :out]])
@@ -120,21 +120,21 @@
       [:div.flex.flex-col.h-full
        [:> heading-6 {:color :teal}
         (or (wyssacademy.visual-synthesis.db/categories-map @previous-interaction)
-            "To start, click an element on the drawing or select an element from the dropdown menu")]
+            "To start, click a factor on the drawing or select an factor from the dropdown menu")]
        [:div.flex.justify-between.w-full.items-center.mb-4
         ^{:key @previous-interaction}
         [:div.flex.items-center.gap-4
          (into [wvcd/dropdown {:color :teal
-                               :button-text "Element"
+                               :button-text "Factor"
                                :size :sm}]
                (map ->dropdown-item)
                (sort-by :label wyssacademy.visual-synthesis.db/categories))
          [:div {:class [(when (= @tab :influence) "shadow-lg")]}
           [:> button {:color (if (= @tab :influence) :green :teal)
-                      :on-click #(reset! tab :influence)} "Influence"]]
+                      :on-click #(reset! tab :influence)} "Influences"]]
          [:div {:class [(when (= @tab :impacted) "shadow-lg")]}
           [:> button {:color (if (= @tab :impacted) :green :teal)
-                      :on-click #(reset! tab :impacted)} "Impacted"]]]]
+                      :on-click #(reset! tab :impacted)} "Impacted by"]]]]
        [:div.flex.w-full.h-full
         (case @tab
           :impacted [display-interactions @previous-interaction-impacted]
