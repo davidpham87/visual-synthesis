@@ -106,7 +106,7 @@
                :transform (str "scale(" (:zoom data )")")}}
              [typography/h6
               (or (wyssacademy.visual-synthesis.db/categories-map @selected-node)
-                  "Select an element to start")]])]
+                  "Select an factor to start")]])]
          [react-flow-pro
           [react-flow
            {:nodes-draggable false

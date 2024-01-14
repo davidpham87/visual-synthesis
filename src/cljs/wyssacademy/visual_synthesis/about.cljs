@@ -3,22 +3,39 @@
    [wyssacademy.visual-synthesis.components.typography :as typography]))
 
 (defn about []
-  [:div.w-full.justify-center.grid.pb-10.transition-opacity.opacity-100
-   [:div.w-96.text-justify
-    [typography/paragraph "The synthesis of scientific knowledge becomes ever more important given
-  the exponentially increasing number of published research articles and
-  social, ecological and climate crises. To date, most syntheses have focused
-  on few variables across regions, while interdisciplinary syntheses on local
-  social-ecological systems remain rare."]
-    [typography/paragraph "At Wyss Academy, we believe that such social-ecological systems
-  syntheses may be well suited for reaching diverse audiences in an accessible
-  way and to offer an entry point for targeted interventions. To illustrate the
-  case, we have conducted a systematic review resulting in an interactive
-  visual synthesis on the nexus between land use, conservation, and
-  human-wellbeing in north-eastern Madagascar."]
-    [typography/paragraph "This visual synthesis depicts an archetypical landscape in north-eastern
-  Madagascar. Within the landscape, 22 elements illustrate biophysical
-  landscape elements, ecosystem services, wellbeing, human activities, and
-  telecouplings. Links between the elements – each supported by literature
-  sources – highlight the connections between elements."]
-    [typography/h6 "Please note that this is a Beta-Version. We are working on a full documentation of the goals, methods, and outcomes."]]])
+  [:div.w-full.justify-center.grid.px-10.pb-10.transition-opacity.opacity-100
+   [:div {:class ["text-justify" "max-w-xl"]}
+    [typography/paragraph "Many social-ecological systems are in an
+unsustainable state. Bringing together disjunct published findings on complex
+interactions in social-ecological systems may enable the identification of
+leverage points for transformations towards sustainability. However, such
+interdisciplinary synthesis studies on specific regional social-ecological
+systems main rare."]
+    [typography/paragraph
+     "Here, we pair a review of systematically identified studies
+with a cross- impact analysis to create an interactive visual social-ecological
+systems synthesis on nflicts and synergies between land use, biodiversity
+conservation, and human wellbeing in north-eastern Madagascar. "]
+    [typography/paragraph
+     [:a {:href "https://visualsynthesis.wyssacademy.org"
+          :style {:color "blue"}}
+      "The interactive visual synthesis"]
+     " depicts an archetypical regional landscape with 22 factors comprising
+physical landscape elements, ecosystem services, wellbeing, human activities,
+and telecouplings. To understand the connections between these factors, we
+assess directional causal links based on literature sources. The visual
+synthesis shows that research has so far focused on links between land use and
+biodiversity while links to human wellbeing were studied more seldomly. We then
+identify chains and cycles that emerge from the links between factors and rate
+them based on their plausibility and relevance. "]
+    [typography/paragraph "All eight top-rated chains and cycles relate to subsistence and
+commercial agriculture, revealing promising leverage points at which
+interventions could improve outcomes for biodiversity and wellbeing. In sum, we
+show how interactive visual syntheses can be a useful way to make disjunct
+published findings on regional social-ecological systems more accessible, to
+find research gaps, and to identify leverage points for sustainability
+transformations."]
+    [typography/paragraph
+     "A " [:a {:href "https://github.com/davidpham87/visual-synthesis"
+               :style {:color "blue"}} "github repository"]
+     " is available to replicate our work."]]])
