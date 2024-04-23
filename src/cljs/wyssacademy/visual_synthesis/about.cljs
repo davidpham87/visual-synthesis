@@ -13,7 +13,7 @@ interdisciplinary synthesis studies on specific regional social-ecological
 systems main rare."]
     [typography/paragraph
      "Here, we pair a review of systematically identified studies
-with a cross- impact analysis to create an interactive visual social-ecological
+with a cross-impact analysis to create an interactive visual social-ecological
 systems synthesis on nflicts and synergies between land use, biodiversity
 conservation, and human wellbeing in north-eastern Madagascar. "]
     [typography/paragraph
@@ -35,7 +35,23 @@ show how interactive visual syntheses can be a useful way to make disjunct
 published findings on regional social-ecological systems more accessible, to
 find research gaps, and to identify leverage points for sustainability
 transformations."]
+    [:div.py-3]
     [typography/paragraph
-     "A " [:a {:href "https://github.com/davidpham87/visual-synthesis"
-               :style {:color "blue"}} "github repository"]
-     " is available to replicate our work."]]])
+     [:b "Please cite this work as: "]
+     [:br]
+     [:div.py-1]
+     "Martin, D.A., Pham- Truffert, M., Gillham, L., Andriamihaja, O.R.,
+     Andriatsitohaina, R.N.N., Diebold, C.L., Fulgence, T.R., Kellner, E.,
+     Llopis, J.C., Messerli, P., Rakotomalala, A.N.A., Raveloaritiana, E.,
+     Wurz, A., Zaehringer, J.G., & Heinimann, A."
+     [:br]
+     "Interactive visual syntheses for social-ecological systems understanding"
+     [:br]
+     [:div.text-left
+      [:em "Socio-Environmental Systems Modelling, vol. 6, 18637, 2024, "
+       [:a {:href "https://doi.org/10.18174/sesmo.18637"
+        :style {:color "blue"}} "doi:10.18174/sesmo.18637"]]]]
+    [:div.py-3]
+    [typography/paragraph
+     "The code of the visual synthesis is " [:a {:href "https://github.com/davidpham87/visual-synthesis"
+               :style {:color "blue"}} "open-source"] "."]]])
